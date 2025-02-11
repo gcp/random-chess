@@ -188,8 +188,8 @@ def log_writer(file_path: str, log_queue: queue.Queue, header: str):
             if item is None:
                 break
             f.write("|".join(str(x) for x in item) + "\n")
-            # Uncomment below if you want each line written to disk immediately:
-            # f.flush()
+            # Write each line to disk immediately
+            f.flush()
             log_queue.task_done()
 
 

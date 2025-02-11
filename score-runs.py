@@ -41,8 +41,25 @@ import argparse
 import sys
 import os
 import math
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Configure matplotlib to use non-GUI backend if needed
+plt.switch_backend("Agg")  # Remove this if you want interactive plots
 
 Z_VALUE = 1.96  # for ~95% confidence
+
+# Plot styling
+plt.style.use("ggplot")
+# COLOR_EXACT = "#2ca02c"
+# COLOR_F1 = "#1f77b4"
+# ERROR_BAR_COLOR = "#d62728"
+ERROR_BAR_WIDTH = 0.8
+
+COLOR_F1 = "#1f77b4"  # Example color for F1 bars
+COLOR_EXACT = "#ff7f0e"  # Example color for Exact Match bars
+ERROR_BAR_COLOR = "black"
+
 
 def parse_moves(moves_str):
     """
@@ -83,13 +100,13 @@ def compute_f1(m_pred, m_gt):
     fn = len(m_gt - m_pred)
 
     precision = tp / (tp + fp) if (tp + fp) > 0 else 0.0
-    recall    = tp / (tp + fn) if (tp + fn) > 0 else 0.0
+    recall = tp / (tp + fn) if (tp + fn) > 0 else 0.0
 
     f1 = 0.0
     if (precision + recall) > 0.0:
         f1 = 2.0 * precision * recall / (precision + recall)
 
-    exact_match = (m_pred == m_gt)
+    exact_match = m_pred == m_gt
     return (precision, recall, f1, exact_match)
 
 
@@ -135,7 +152,7 @@ def process_log_file(fpath):
 
         # FEN    = parts[0]
         llm_str = parts[1].strip()  # LLM_MOVES
-        gt_str  = parts[2].strip()  # LEGAL_MOVES
+        gt_str = parts[2].strip()  # LEGAL_MOVES
         pass_fail = parts[3].strip()
         error_str = parts[4].strip()
 
@@ -144,7 +161,7 @@ def process_log_file(fpath):
         #     continue
 
         m_pred = parse_moves(llm_str)
-        m_gt   = parse_moves(gt_str)
+        m_gt = parse_moves(gt_str)
 
         precision, recall, f1, exact_match = compute_f1(m_pred, m_gt)
 
@@ -177,7 +194,7 @@ def f1_confidence_interval(f1_values):
 
     mean_f1 = sum(f1_values) / n
     # sample standard deviation
-    sq_diffs = [(x - mean_f1)**2 for x in f1_values]
+    sq_diffs = [(x - mean_f1) ** 2 for x in f1_values]
     var_f1 = sum(sq_diffs) / (n - 1)
     std_f1 = math.sqrt(var_f1)
 
@@ -187,21 +204,99 @@ def f1_confidence_interval(f1_values):
     return (lower, upper)
 
 
+def plot_leaderboard(results, output_file="leaderboard.png"):
+    """Generate a horizontal bar chart visualization of the results."""
+    # Sort results by F1 score (descending)
+    sorted_results = sorted(results, key=lambda x: x["avg_f1"], reverse=True)
+
+    # Prepare data for plotting
+    labels = [os.path.basename(r["file"]) for r in sorted_results]
+    f1_scores = [r["avg_f1"] * 100 for r in sorted_results]
+    ci_lower = [(r["avg_f1"] - r["ci_low"]) * 100 for r in sorted_results]
+    ci_upper = [(r["ci_high"] - r["avg_f1"]) * 100 for r in sorted_results]
+    exact_pct = [r["exact_matches"] / r["positions"] * 100 for r in sorted_results]
+
+    # Create figure
+    fig, ax = plt.subplots(figsize=(10, 6))
+
+    # Positions along the y-axis
+    y = np.arange(len(labels))
+    height = 0.4  # Thickness of each group (F1 bar + Exact bar)
+
+    # Plot F1 scores with error bars (horizontal bars)
+    rects1 = ax.barh(
+        y=y - (height / 4),  # shift upward for side-by-side grouping
+        width=f1_scores,
+        height=height / 2,
+        label="Macro-average F1",
+        color=COLOR_F1,
+        xerr=[ci_lower, ci_upper],  # horizontal error bars
+        error_kw={"ecolor": ERROR_BAR_COLOR, "capsize": 4},
+    )
+
+    # Plot exact match percentages (horizontal bars)
+    rects2 = ax.barh(
+        y=y + (height / 4),  # shift downward for side-by-side grouping
+        width=exact_pct,
+        height=height / 2,
+        label="Exact Match %",
+        color=COLOR_EXACT,
+    )
+
+    # Add labels, title, and custom y-axis tick labels
+    ax.set_xlabel("Percentage")
+    ax.set_title("Random-Chess LLM Leaderboard")
+    ax.set_yticks(y)
+    ax.set_yticklabels(labels)
+    ax.legend()
+
+    # Invert y-axis so that the best scorer is at the top
+    ax.invert_yaxis()
+
+    # Function to add labels to the right of each bar, avoiding overlap with error bars
+    def autolabel_horizontal(rects):
+        for rect in rects:
+            width = rect.get_width()
+            y_pos = rect.get_y() + rect.get_height() / 2
+            # Place the label slightly to the right of the bar
+            ax.annotate(
+                f"{width:.1f}%",
+                xy=(width, y_pos),
+                xytext=(20, 0),  # points offset
+                textcoords="offset points",
+                ha="left",
+                va="center",
+                fontsize=8,
+            )
+
+    autolabel_horizontal(rects1)
+    autolabel_horizontal(rects2)
+
+    plt.tight_layout()
+    plt.savefig(output_file, dpi=300)
+    print(f"\nSaved leaderboard plot to {output_file}")
+
+
 def main():
     parser = argparse.ArgumentParser(
-        description="Compute macro-average F1 from one or more results log files."
+        description="Compute scores and plot leaderboard from results logs."
     )
     parser.add_argument(
         "--files",
         "-f",
         nargs="+",
         required=True,
-        help="Paths to results log files from the chess-moves script.",
+        help="Paths to results log files",
+    )
+    parser.add_argument(
+        "--plot",
+        "-p",
+        default="leaderboard.png",
+        help="Output filename for leaderboard plot",
     )
     args = parser.parse_args()
 
-    # We'll compute (avg_f1, position_count, exact_matches, f1_values) for each file
-    # Then rank them by F1, tie-break by exact matches
+    # Process files
     results = []
     for fpath in args.files:
         avg_f1, count, exact_count, f1_list = process_log_file(fpath)
@@ -217,19 +312,16 @@ def main():
             }
         )
 
-    # Sort by descending F1, then descending exact_matches
-    # (If you wanted to incorporate the interval, you'd have to define more logic)
+    # Generate text report
     results.sort(key=lambda r: (r["avg_f1"], r["exact_matches"]), reverse=True)
 
-    print()
-    print("Scoring Summary (macro-average F1, tie-break by exact matches)")
+    print("\nScoring Summary (macro-average F1, tie-break by exact matches)")
     print("(95% CI computed by normal approximation)")
     print()
     print("| Rank | File                     | #Pos |    F1(%)         | Exact% |")
     print("|------|--------------------------|------|------------------|--------|")
 
-    rank = 1
-    for r in results:
+    for rank, r in enumerate(results, 1):
         file_name = os.path.basename(r["file"])
         avg_f1_pct = r["avg_f1"] * 100
         ci_low_pct = r["ci_low"] * 100
@@ -237,10 +329,7 @@ def main():
         ci_plusminus = (ci_high_pct - ci_low_pct) / 2.0
         exact_pct = r["exact_matches"] / r["positions"] * 100
 
-        # We'll display: F1%  [L% - U%]
-        # with 1 decimal place each
         f1_str = f"{avg_f1_pct:>5.1f}% ± {ci_plusminus:>4.1f}%"
-
         print(
             f"| {rank:>4} "
             f"| {file_name:<24} "
@@ -248,9 +337,9 @@ def main():
             f"| {f1_str:<16} "
             f"| {exact_pct:>5.1f}% |"
         )
-        rank += 1
 
-    print()
+    # Generate plot
+    plot_leaderboard(results, args.plot)
 
 
 if __name__ == "__main__":

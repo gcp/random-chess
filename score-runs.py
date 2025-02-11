@@ -263,10 +263,10 @@ def plot_leaderboard(results, output_file="leaderboard.png"):
             # Determine offset based on data series
             if "Macro-average F1" in str(rect.get_label()):  # F1 bars
                 offset_x = 15
-                offset_y = 3  # Shift F1 labels slightly up
+                offset_y = 20  # Shift F1 labels slightly up
             else:  # Exact match bars
                 offset_x = 5
-                offset_y = -3  # Shift exact match labels slightly down
+                offset_y = 0  # Shift exact match labels slightly down
 
             ax.annotate(
                 f"{width:.1f}%",

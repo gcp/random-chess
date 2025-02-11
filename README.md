@@ -25,7 +25,7 @@ As the positions are randomly generated, memory based answers are not useful, an
 ## Installation
 
 ```bash
-pip install python-chess openai
+pip install python-chess openai matplotlib
 
 ## Usage
 
@@ -68,6 +68,8 @@ python score-runs.py --files results/*.results
 |    6 | gpt-4o (2024-08-06)      | 200  |  37.1% ±  2.3%   |   0.0% |
 |    7 | claude-3.5-haiku         | 200  |  27.8% ±  2.8%   |   0.0% |
 |    8 | gemini-flash-2.0         | 200  |  11.3% ±  3.4%   |   0.0% |
+
+![Graph of leaderboard](results/leaderboard.png)
 
 ## Future
 

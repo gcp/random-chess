@@ -51,9 +51,6 @@ Z_VALUE = 1.96  # for ~95% confidence
 
 # Plot styling
 plt.style.use("ggplot")
-# COLOR_EXACT = "#2ca02c"
-# COLOR_F1 = "#1f77b4"
-# ERROR_BAR_COLOR = "#d62728"
 ERROR_BAR_WIDTH = 0.8
 
 COLOR_F1 = "#1f77b4"  # Example color for F1 bars

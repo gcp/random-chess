@@ -223,7 +223,7 @@ def plot_leaderboard(results, output_file="leaderboard.png"):
 
     # Positions along the y-axis
     y = np.arange(len(labels))
-    height = 0.4  # Thickness of each group (F1 bar + Exact bar)
+    height = 0.8  # Thickness of each group (F1 bar + Exact bar)
 
     # Plot F1 scores with error bars (horizontal bars)
     rects1 = ax.barh(
@@ -272,8 +272,8 @@ def plot_leaderboard(results, output_file="leaderboard.png"):
             )
 
     # Apply different offsets to each series
-    autolabel_horizontal(rects1, x_offset=15, y_offset=2)  # F1 bars
-    autolabel_horizontal(rects2, x_offset=5, y_offset=-2)  # Exact match bars
+    autolabel_horizontal(rects1, x_offset=5, y_offset=10)  # F1 bars
+    autolabel_horizontal(rects2, x_offset=5, y_offset=-1)  # Exact match bars
 
     plt.tight_layout()
     plt.savefig(output_file, dpi=300)

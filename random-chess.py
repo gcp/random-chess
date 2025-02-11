@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import asyncio
 import chess
 import random
@@ -16,6 +18,7 @@ DEFAULT_CONCURRENCY = 1
 DEFAULT_TIMEOUT = 600.0  # 10 minutes
 DEFAULT_POSITIONS = 200  # default to 200 positions
 CONFIDENCE_LEVEL = 1.96  # ~95% confidence intervals
+MAX_RETRIES = 3  # we'll retry up to 3 times total
 
 
 def generate_positions(num_positions: int = 200) -> list:
@@ -70,7 +73,6 @@ def parse_llm_response(response: str) -> list:
 
     # Extract whatever follows "Legal moves:" up to the end of the line (or next newline).
     raw_str = match.group(1).strip()
-
     # Remove possible leading/trailing quotes or brackets.
     # - Leading: any combo of double quote, single quote, or '['
     # - Trailing: any combo of double quote, single quote, or ']'
@@ -110,8 +112,12 @@ async def process_position(
     stream: bool,
 ) -> bool:
     """
-    Process a single position with optional streaming support.
-    Returns True if the LLM's parsed moves == correct moves; else False.
+    Process a single position with up to 3 retries on exceptions.
+
+    Returns True if LLM's parsed moves == correct moves.
+    Returns False if the LLM returned something but was incorrect.
+    If all attempts fail due to an exception, we raise an exception
+    so the progress monitor counts it as an "error".
     """
     prompt = (
         f"Given the chess position in FEN notation: {fen}\n"
@@ -119,67 +125,70 @@ async def process_position(
         "Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.\n"
     )
 
-    try:
-        async with sem:
-            full_response = ""
-            stream_buffer = ""
+    async with sem:
+        for attempt in range(MAX_RETRIES):
+            try:
+                full_response = ""
+                stream_buffer = ""
 
-            if stream:
-                # Simple heading for streaming output
-                print(f"\n\033[36mPosition\033[0m | FEN: {fen}")
-                print("\033[33mLLM Thinking:\033[0m ", end="", flush=True)
+                # For the first attempt, if streaming, show the heading
+                if stream and attempt == 0:
+                    print(f"\n\033[36mPosition\033[0m | FEN: {fen}")
+                    print("\033[33mLLM Thinking:\033[0m ", end="", flush=True)
 
-            # The 'timeout' here is for the OpenAI client library
-            response = await client.chat.completions.create(
-                model=model,
-                messages=[{"role": "user", "content": prompt}],
-                stream=stream,
-                timeout=timeout,  # Belongs to the OpenAI call
-            )
+                response = await client.chat.completions.create(
+                    model=model,
+                    messages=[{"role": "user", "content": prompt}],
+                    stream=stream,
+                    timeout=timeout,
+                )
 
-            if stream:
-                # If streaming, accumulate partial chunks
-                async for chunk in response:
-                    content = chunk.choices[0].delta.content or ""
-                    full_response += content
-                    stream_buffer += content
+                if stream:
+                    # Collect streaming chunks
+                    async for chunk in response:
+                        content = chunk.choices[0].delta.content or ""
+                        full_response += content
+                        stream_buffer += content
+                        if len(stream_buffer) > 10 or "\n" in stream_buffer:
+                            print(stream_buffer, end="", flush=True)
+                            stream_buffer = ""
+                    print()  # final flush
+                else:
+                    # Non-streaming: read the entire response at once
+                    full_response = response.choices[0].message.content
 
-                    # Just a simple flush every so often or if newline
-                    if len(stream_buffer) > 10 or "\n" in stream_buffer:
-                        print(stream_buffer, end="", flush=True)
-                        stream_buffer = ""
-                # Final flush
-                print()
-            else:
-                # Non-streaming: read the entire response at once
-                full_response = response.choices[0].message.content
+                parsed_moves = parse_llm_response(full_response)
+                is_perfect = parsed_moves == correct_moves
 
-            parsed_moves = parse_llm_response(full_response)
-            is_perfect = parsed_moves == correct_moves
+                # Results log: 5 fields = FEN, LLM_MOVES, LEGAL_MOVES, PASS_FAIL, ERROR
+                results_queue.put((fen, parsed_moves, correct_moves, is_perfect, ""))
+                # Conversation log: 6 fields = PROMPT, FULL_RESPONSE, PARSED_MOVES, CORRECT_MOVES, PASS_FAIL, ERROR
+                conv_queue.put(
+                    (prompt, full_response, parsed_moves, correct_moves, is_perfect, "")
+                )
 
-            # Results log: 5 fields = FEN, LLM_MOVES, LEGAL_MOVES, PASS_FAIL, ERROR
-            results_queue.put((fen, parsed_moves, correct_moves, is_perfect, ""))
-            # Conversation log: 6 fields = PROMPT, FULL_RESPONSE, PARSED_MOVES, CORRECT_MOVES, PASS_FAIL, ERROR
-            conv_queue.put(
-                (prompt, full_response, parsed_moves, correct_moves, is_perfect, "")
-            )
+                return is_perfect
 
-            return is_perfect
+            except Exception as e:
+                # We'll retry if not on the last attempt
+                last_error = f"{type(e).__name__}: {e}"
+                if attempt < MAX_RETRIES - 1:
+                    await asyncio.sleep(2)  # minor delay before retry
+                    continue
+                else:
+                    # Final attempt also failed => raise an exception
+                    # But first log it as an error
+                    results_queue.put((fen, [], correct_moves, False, last_error))
+                    conv_queue.put((prompt, "", [], correct_moves, False, last_error))
 
-    except Exception as e:
-        error_msg = f"{type(e).__name__}: {str(e)}"
-        results_queue.put((fen, [], correct_moves, False, error_msg))
-        conv_queue.put((prompt, "", [], correct_moves, False, error_msg))
-        return False
+                    # Raise so the monitor sees an actual exception
+                    raise RuntimeError(last_error)
 
 
 def log_writer(file_path: str, log_queue: queue.Queue, header: str):
     """
     Dedicated log writer thread.
     Reads from the queue until it encounters None, then exits.
-
-    Because we use a single thread and a queue, no additional lock is needed.
-    The queue provides the necessary synchronization.
     """
     with open(file_path, "w") as f:
         f.write(header)
@@ -188,36 +197,51 @@ def log_writer(file_path: str, log_queue: queue.Queue, header: str):
             if item is None:
                 break
             f.write("|".join(str(x) for x in item) + "\n")
-            # Write each line to disk immediately
             f.flush()
             log_queue.task_done()
 
 
 def is_error(task: asyncio.Task) -> bool:
     """
-    Helper function for progress monitoring: returns True if
-    the task is done AND either raised an exception or returned False.
+    Returns True if this task ended with an exception.
+    Because we re-raise on final attempt for real errors,
+    those get counted properly.
     """
     if not task.done():
         return False
-    ex = task.exception()
-    if ex is not None:
-        return True
+    return task.exception() is not None
+
+
+def is_wrong(task: asyncio.Task) -> bool:
+    """
+    Return True if the task completed (no exception) but returned False,
+    i.e. the LLM answered but got the moves wrong.
+    """
+    if not task.done():
+        return False
+    if task.exception() is not None:
+        return False
     return task.result() is False
 
 
 async def monitor_progress(tasks: list[asyncio.Task], start_time: datetime):
     """
     Prints progress every second until all tasks have completed.
+
+    We show:
+      Processed: # done
+      Wrong: # tasks done with no exception but returned False
+      Errors: # tasks that ended in an exception
     """
     total = len(tasks)
     while True:
         done_count = sum(t.done() for t in tasks)
         error_count = sum(is_error(t) for t in tasks)
+        wrong_count = sum(is_wrong(t) for t in tasks)
 
         elapsed = (datetime.now() - start_time).total_seconds()
         print(
-            f"\rProcessed: {done_count}/{total} | Errors: {error_count} | Elapsed: {elapsed:.1f}s",
+            f"\rProcessed: {done_count}/{total} | Wrong: {wrong_count} | Errors: {error_count} | Elapsed: {elapsed:.1f}s",
             end="",
             flush=True,
         )
@@ -237,7 +261,6 @@ async def main_async(args):
     If --stream is enabled, we skip the progress display.
     Otherwise, we show progress updates.
     """
-
     # Validate streaming vs concurrency
     if args.stream and args.concurrency != 1:
         raise ValueError("Streaming mode requires concurrency=1")
@@ -248,14 +271,12 @@ async def main_async(args):
     model = args.model or os.getenv("LLM_MODEL")
 
     if not all([base_url, api_key, model]):
-        raise ValueError(
-            "Missing required parameters. Need base URL, API key, and model name."
-        )
+        raise ValueError("Missing required parameters (base URL, API key, model).")
 
     # Initialize client
     client = AsyncOpenAI(base_url=base_url, api_key=api_key)
 
-    # Generate positions (configurable via --positions)
+     # Generate positions (configurable via --positions)
     positions = generate_positions(num_positions=args.positions)
 
     # Prepare logging queues & threads
@@ -320,20 +341,19 @@ async def main_async(args):
     # Cleanly stop log threads
     results_queue.put(None)
     conv_queue.put(None)
-
     for t in loggers:
         t.join()
 
     # Calculate final stats
     total = len(positions)
-    perfect_count = sum((r is True) for r in results if not isinstance(r, Exception))
-    accuracy = perfect_count / total if total else 0.0
+    correct_count = sum((r is True) for r in results if not isinstance(r, Exception))
+    accuracy = correct_count / total if total else 0.0
 
     # Compute confidence interval
     low, high = wilson_score_interval(accuracy, total)
     margin = (high - low) / 2
-
     elapsed = (datetime.now() - start_time).total_seconds()
+
     print(f"\nProcessed {total} positions in {elapsed:.1f} seconds.")
     print(f"Accuracy: {accuracy:.1%} ± {margin:.1%} (95% CI)")
     print(f"Confidence interval: {low:.1%} - {high:.1%}")

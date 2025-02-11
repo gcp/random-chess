@@ -1,0 +1,985 @@
+PROMPT|FULL_RESPONSE|PARSED_MOVES|CORRECT_MOVES|PASS_FAIL|ERROR
+Given the chess position in FEN notation: 2rk4/pp2pp1p/7b/3p4/3Rn1b1/N7/P1PPPPP1/2nQKBNq w - - 2 22
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a3b1,a3b5,a3c4,c2c3,c2c4,d1c1,d1d2,d1d3,d2d3,d4a4,d4b4,d4c4,d4d2,d4d3,d4d5,d4e4,e2e3,f2f3,f2f4,g1f3,g1h3,g2g3]|['a3b1', 'a3b5', 'a3c4', 'c2c3', 'c2c4', 'd1c1', 'd1d2', 'd1d3', 'd2d3', 'd4a4', 'd4b4', 'd4c4', 'd4d2', 'd4d3', 'd4d5', 'd4e4', 'e2e3', 'f2f3', 'f2f4', 'g1f3', 'g1h3', 'g2g3']|['a3b1', 'a3b5', 'a3c4', 'c2c3', 'c2c4', 'd1c1', 'd2d3', 'd4a4', 'd4b4', 'd4c4', 'd4d3', 'd4d5', 'd4e4', 'e2e3', 'f2f3', 'f2f4', 'g1f3', 'g1h3', 'g2g3']|False|
+Given the chess position in FEN notation: r1bqkb1r/ppppp2p/8/5p1n/4Pp2/2NP2PB/PPPN1P1P/R2QK1R1 b Q - 6 17
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [e8f7,f8g7,f8h6,a7a6,a7a5,b7b6,b7b5,c7c6,c7c5,d7d6,d7d5,e7e6,e7e5,h7h6,f5e4,f4f3,f4g3,h5g7,h5f6,h5g3]|['a7a5', 'a7a6', 'b7b5', 'b7b6', 'c7c5', 'c7c6', 'd7d5', 'd7d6', 'e7e5', 'e7e6', 'e8f7', 'f4f3', 'f4g3', 'f5e4', 'f8g7', 'f8h6', 'h5f6', 'h5g3', 'h5g7', 'h7h6']|['a7a5', 'a7a6', 'a8b8', 'b7b5', 'b7b6', 'c7c5', 'c7c6', 'd7d5', 'd7d6', 'e7e5', 'e7e6', 'e8f7', 'f4f3', 'f4g3', 'f5e4', 'f8g7', 'f8h6', 'h5f6', 'h5g3', 'h5g7', 'h7h6', 'h8g8']|False|
+Given the chess position in FEN notation: r2k1bnr/pp4pp/n1q1bp2/2pp1p2/P3NP2/1P1PPK1N/2P1B1PP/2R2Q1R b - - 3 23
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [d8c8,d8d7,d8e8,a8b8,a8c8,f8e7,f8d6,g8e7,g8h6,a6b4,a6c7,a6b8,c6b5,c6b6,c6d6,c6c7,c6c8,c6d7,c6e8,c6e4,e6d7,e6c8,b7b6,b7b5,c5c4,d5d4,d5e4,f5e4,g7g6,g7g5,h7h6,h7h5]|['a6b4', 'a6b8', 'a6c7', 'a8b8', 'a8c8', 'b7b5', 'b7b6', 'c5c4', 'c6b5', 'c6b6', 'c6c7', 'c6c8', 'c6d6', 'c6d7', 'c6e4', 'c6e8', 'd5d4', 'd5e4', 'd8c8', 'd8d7', 'd8e8', 'e6c8', 'e6d7', 'f5e4', 'f8d6', 'f8e7', 'g7g5', 'g7g6', 'g8e7', 'g8h6', 'h7h5', 'h7h6']|['a6b4', 'a6b8', 'a6c7', 'a8b8', 'a8c8', 'b7b5', 'b7b6', 'c5c4', 'c6a4', 'c6b5', 'c6b6', 'c6c7', 'c6c8', 'c6d6', 'c6d7', 'c6e8', 'd5d4', 'd5e4', 'd8c7', 'd8c8', 'd8d7', 'd8e7', 'd8e8', 'e6c8', 'e6d7', 'e6f7', 'f5e4', 'f8d6', 'f8e7', 'g7g5', 'g7g6', 'g8e7', 'g8h6', 'h7h5', 'h7h6']|False|
+Given the chess position in FEN notation: rn1qkbr1/N1pppppp/bp6/8/8/2KPn2Q/PPP2PPP/R1B2BR1 b q - 1 17
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [d8c8,a8a7,g8h8,a6b5,a6c4,a6d3,a6b7,a6c8,b8a7,b8c6,e3d5,e3f5,e3c4,e3g4,e3d1,e3f1,b6b5,c7c6,c7c5,d7d6,d7d5,e7e6,e7e5,f7f6,f7f5,g7g6,g7g5,h7h6,h7h5]|['a6b5', 'a6b7', 'a6c4', 'a6c8', 'a6d3', 'a8a7', 'b6b5', 'b8a7', 'b8c6', 'c7c5', 'c7c6', 'd7d5', 'd7d6', 'd8c8', 'e3c4', 'e3d1', 'e3d5', 'e3f1', 'e3f5', 'e3g4', 'e7e5', 'e7e6', 'f7f5', 'f7f6', 'g7g5', 'g7g6', 'g8h8', 'h7h5', 'h7h6']|['a6b5', 'a6b7', 'a6c4', 'a6c8', 'a6d3', 'a8a7', 'b6b5', 'b8c6', 'c7c5', 'c7c6', 'd7d5', 'd7d6', 'd8c8', 'e3c2', 'e3c4', 'e3d1', 'e3d5', 'e3f1', 'e3f5', 'e3g2', 'e3g4', 'e7e5', 'e7e6', 'f7f5', 'f7f6', 'g7g5', 'g7g6', 'g8h8', 'h7h5', 'h7h6']|False|
+Given the chess position in FEN notation: N1q2b1r/1ppkp2Q/p4n2/3p1p2/4b2P/8/P1n2PPR/R1BK1B2 w - - 1 19
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a8b6,a8c7,h7g7,h7f7,h7e7,h7h8,h7h6,h7h5,h7g8,h7g6,h7f5,a1b1,h2e2,h2d2,h2c2,h2b2,h2h3,h2h1,c1a3,c1b2,c1d2,c1e3,c1f4,c1g5,c1h6,f1e2,f1d3,f1c4,f1b5,f1a6,d1e1,d1e2,a2a3,a2a4,f2f3,f2f4,g2g3,g2g4,h4h5]|['a1b1', 'a2a3', 'a2a4', 'a8b6', 'a8c7', 'c1a3', 'c1b2', 'c1d2', 'c1e3', 'c1f4', 'c1g5', 'c1h6', 'd1e1', 'd1e2', 'f1a6', 'f1b5', 'f1c4', 'f1d3', 'f1e2', 'f2f3', 'f2f4', 'g2g3', 'g2g4', 'h2b2', 'h2c2', 'h2d2', 'h2e2', 'h2h1', 'h2h3', 'h4h5', 'h7e7', 'h7f5', 'h7f7', 'h7g6', 'h7g7', 'h7g8', 'h7h5', 'h7h6', 'h7h8']|['a1b1', 'a2a3', 'a2a4', 'a8b6', 'a8c7', 'c1a3', 'c1b2', 'c1d2', 'c1e3', 'c1f4', 'c1g5', 'c1h6', 'd1d2', 'd1e2', 'f1a6', 'f1b5', 'f1c4', 'f1d3', 'f1e2', 'f2f3', 'f2f4', 'g2g3', 'g2g4', 'h2h1', 'h2h3', 'h4h5', 'h7e7', 'h7f5', 'h7f7', 'h7g6', 'h7g7', 'h7g8', 'h7h5', 'h7h6', 'h7h8']|False|
+Given the chess position in FEN notation: 5kr1/p1pqp2p/2rp2p1/1N2bb2/1P4B1/P4P1P/2PP2P1/RNK5 b - - 0 29
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a7a5,a7a6,c6a6,c6b6,c6c2,c6c3,c6c4,c6c5,d6d5,d7c8,d7d8,d7e6,d7e8,e5a1,e5b2,e5c3,e5d4,e5f4,e5f6,e5g3,e5g7,e5h2,e5h8,e7e6,f5c2,f5d3,f5e4,f5e6,f5g4,f8e8,f8f7,f8g7,g6g5,g8g7,g8h8,h7h5,h7h6]|['a7a5', 'a7a6', 'c6a6', 'c6b6', 'c6c2', 'c6c3', 'c6c4', 'c6c5', 'd6d5', 'd7c8', 'd7d8', 'd7e6', 'd7e8', 'e5a1', 'e5b2', 'e5c3', 'e5d4', 'e5f4', 'e5f6', 'e5g3', 'e5g7', 'e5h2', 'e5h8', 'e7e6', 'f5c2', 'f5d3', 'f5e4', 'f5e6', 'f5g4', 'f8e8', 'f8f7', 'f8g7', 'g6g5', 'g8g7', 'g8h8', 'h7h5', 'h7h6']|['a7a5', 'a7a6', 'c6a6', 'c6b6', 'c6c2', 'c6c3', 'c6c4', 'c6c5', 'd6d5', 'd7c8', 'd7d8', 'd7e6', 'd7e8', 'e5a1', 'e5b2', 'e5c3', 'e5d4', 'e5f4', 'e5f6', 'e5g3', 'e5g7', 'e5h2', 'e5h8', 'e7e6', 'f5c2', 'f5d3', 'f5e4', 'f5e6', 'f5g4', 'f8e8', 'f8f7', 'f8g7', 'g6g5', 'g8g7', 'g8h8', 'h7h5', 'h7h6']|True|
+Given the chess position in FEN notation: 1r1qk2r/p1p1pp2/1p5p/2Ppb3/7N/3b2PB/PP1PPK1P/RNB3R1 b k - 1 21
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a7a5,a7a6,b6b4,b6b5,b6c5,b8a8,b8b7,b8c8,c7c6,d3a6,d3b1,d3b5,d3c2,d3c4,d3e2,d3e4,d3f5,d3g6,d3h7,d5d4,d8c8,d8d6,d8d7,d8f8,d8g8,e5b2,e5c3,e5d4,e5f6,e5g3,e5g7,e7e6,e8d7,e8f8,e8g8,f7f5,f7f6,h6h5,h8f8,h8g8,h8h7]|['a7a5', 'a7a6', 'b6b4', 'b6b5', 'b6c5', 'b8a8', 'b8b7', 'b8c8', 'c7c6', 'd3a6', 'd3b1', 'd3b5', 'd3c2', 'd3c4', 'd3e2', 'd3e4', 'd3f5', 'd3g6', 'd3h7', 'd5d4', 'd8c8', 'd8d6', 'd8d7', 'd8f8', 'd8g8', 'e5b2', 'e5c3', 'e5d4', 'e5f6', 'e5g3', 'e5g7', 'e7e6', 'e8d7', 'e8f8', 'e8g8', 'f7f5', 'f7f6', 'h6h5', 'h8f8', 'h8g8', 'h8h7']|['a7a5', 'a7a6', 'b6b5', 'b6c5', 'b8a8', 'b8b7', 'b8c8', 'c7c6', 'd3a6', 'd3b1', 'd3b5', 'd3c2', 'd3c4', 'd3e2', 'd3e4', 'd3f5', 'd3g6', 'd3h7', 'd5d4', 'd8c8', 'd8d6', 'd8d7', 'e5b2', 'e5c3', 'e5d4', 'e5d6', 'e5f4', 'e5f6', 'e5g3', 'e5g7', 'e7e6', 'e8f8', 'e8g8', 'f7f5', 'f7f6', 'h6h5', 'h8f8', 'h8g8', 'h8h7']|False|
+Given the chess position in FEN notation: 2bqk1nr/2ppp1bp/5rp1/1p6/pPn1Pp2/2N2Q1P/P2PKPP1/R1B2BR1 w k - 3 17
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a1b1,a2a3,c1a3,c1b2,c3a4,c3b1,c3b5,c3d1,c3d5,d2d3,d2d4,e2d1,e2d3,e2e1,e4e5,f3d3,f3e3,f3f4,f3g3,f3g4,f3h5,g1h1,g2g3,g2g4,h3h4]|['a1b1', 'a2a3', 'c1a3', 'c1b2', 'c3a4', 'c3b1', 'c3b5', 'c3d1', 'c3d5', 'd2d3', 'd2d4', 'e2d1', 'e2d3', 'e2e1', 'e4e5', 'f3d3', 'f3e3', 'f3f4', 'f3g3', 'f3g4', 'f3h5', 'g1h1', 'g2g3', 'g2g4', 'h3h4']|['a1b1', 'a2a3', 'c1a3', 'c1b2', 'c3a4', 'c3b1', 'c3b5', 'c3d1', 'c3d5', 'd2d3', 'd2d4', 'e2d1', 'e2d3', 'e2e1', 'e4e5', 'f3d3', 'f3e3', 'f3f4', 'f3g3', 'f3g4', 'f3h5', 'g1h1', 'g2g3', 'g2g4', 'h3h4']|True|
+Given the chess position in FEN notation: 1rb1kbr1/1p1pq1p1/2p1pp1p/p4R2/N1B1n2N/2n5/PPPP2PP/R1B1K3 b - - 3 28
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [e8d8,e8d7,e8f7,e7d6,e7c5,e7b4,e7a3,e7f7,b8a8,g8h8,e4c5,e4d6,e4g5,e4g3,e4f2,c3a4,c3b5,c3d5,c3e2,c3d1,c3b1,b7b6,b7b5,c6c5,d7d6,d7d5,e6e5,e6f5,g7g6,g7g5,h6h5]|['b7b5', 'b7b6', 'b8a8', 'c3a4', 'c3b1', 'c3b5', 'c3d1', 'c3d5', 'c3e2', 'c6c5', 'd7d5', 'd7d6', 'e4c5', 'e4d6', 'e4f2', 'e4g3', 'e4g5', 'e6e5', 'e6f5', 'e7a3', 'e7b4', 'e7c5', 'e7d6', 'e7f7', 'e8d7', 'e8d8', 'e8f7', 'g7g5', 'g7g6', 'g8h8', 'h6h5']|['b7b5', 'b7b6', 'b8a8', 'c3a2', 'c3a4', 'c3b1', 'c3b5', 'c3d1', 'c3d5', 'c3e2', 'c6c5', 'd7d5', 'd7d6', 'e4c5', 'e4d2', 'e4d6', 'e4f2', 'e4g3', 'e4g5', 'e6e5', 'e6f5', 'e7a3', 'e7b4', 'e7c5', 'e7d6', 'e7d8', 'e7f7', 'e8d8', 'e8f7', 'g7g5', 'g7g6', 'g8h8', 'h6h5']|False|
+Given the chess position in FEN notation: rn3r2/pBppq1p1/4p2p/5p2/1k1b2P1/NPnPB1RP/P1Q2P2/2R1K3 b - - 6 29
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [e7e8,e7d8,e7c8,e7f7,e7d6,e7c5,e7f6,e7g5,e7h4,f8f7,f8f6,f8e8,f8d8,f8c8,b8a6,b8c6,c3a4,c3a2,c3b1,c3d1,c3e2,c3e4,c3b5,c3d5,a7a6,a7a5,c7c6,c7c5,d7d6,d7d5,e6e5,f5f4,f5g4,g7g6,g7g5,h6h5]|['a7a5', 'a7a6', 'b8a6', 'b8c6', 'c3a2', 'c3a4', 'c3b1', 'c3b5', 'c3d1', 'c3d5', 'c3e2', 'c3e4', 'c7c5', 'c7c6', 'd7d5', 'd7d6', 'e6e5', 'e7c5', 'e7c8', 'e7d6', 'e7d8', 'e7e8', 'e7f6', 'e7f7', 'e7g5', 'e7h4', 'f5f4', 'f5g4', 'f8c8', 'f8d8', 'f8e8', 'f8f6', 'f8f7', 'g7g5', 'g7g6', 'h6h5']|['a7a5', 'a7a6', 'b4a3', 'b4a5', 'b4c5', 'b8a6', 'b8c6', 'c3a2', 'c3a4', 'c3b1', 'c3b5', 'c3d1', 'c3d5', 'c3e2', 'c3e4', 'c7c5', 'c7c6', 'd4b6', 'd4c5', 'd4e3', 'd4e5', 'd4f6', 'd7d5', 'd7d6', 'e6e5', 'e7c5', 'e7d6', 'e7d8', 'e7e8', 'e7f6', 'e7f7', 'e7g5', 'e7h4', 'f5f4', 'f5g4', 'f8c8', 'f8d8', 'f8e8', 'f8f6', 'f8f7', 'f8g8', 'f8h8', 'g7g5', 'g7g6', 'h6h5']|False|
+Given the chess position in FEN notation: 1r2N2r/pp2bppp/1q2k2n/1nPpp3/1P3P2/3PB1P1/PQ2P2P/3KR3 w - - 14 27
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a2a3,a2a4,b2a1,b2a3,b2a4,b2a5,b2a6,b2a7,b2b1,b2b3,b2c1,b2c2,b2c3,b2d2,b2d4,b2e5,b4b5,c5b6,c5c6,d1c1,d1c2,d1d2,d3b1,d3b5,d3c2,d3c4,d3e4,d3f5,d3g6,d3h7,e1f1,e1g1,e1h1,e2e3,e8c7,e8d6,e8f6,e8g7,f4e5,f4f5,g3g4,h2h3,h2h4]|['a2a3', 'a2a4', 'b2a1', 'b2a3', 'b2a4', 'b2a5', 'b2a6', 'b2a7', 'b2b1', 'b2b3', 'b2c1', 'b2c2', 'b2c3', 'b2d2', 'b2d4', 'b2e5', 'b4b5', 'c5b6', 'c5c6', 'd1c1', 'd1c2', 'd1d2', 'd3b1', 'd3b5', 'd3c2', 'd3c4', 'd3e4', 'd3f5', 'd3g6', 'd3h7', 'e1f1', 'e1g1', 'e1h1', 'e2e3', 'e8c7', 'e8d6', 'e8f6', 'e8g7', 'f4e5', 'f4f5', 'g3g4', 'h2h3', 'h2h4']|['a2a3', 'a2a4', 'b2a1', 'b2a3', 'b2b1', 'b2b3', 'b2c1', 'b2c2', 'b2c3', 'b2d2', 'b2d4', 'b2e5', 'c5b6', 'c5c6', 'd1c1', 'd1c2', 'd1d2', 'd3d4', 'e1f1', 'e1g1', 'e1h1', 'e3c1', 'e3d2', 'e3d4', 'e3f2', 'e3g1', 'e8c7', 'e8d6', 'e8f6', 'e8g7', 'f4e5', 'f4f5', 'g3g4', 'h2h3', 'h2h4']|False|
+Given the chess position in FEN notation: r1b2b2/pp1pkprp/N5p1/7P/2q5/2BP4/P1RPP1P1/3KnB2 b - - 11 25
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a8b8,b7a6,b7b6,c4a2,c4a4,c4b3,c4b4,c4b5,c4c3,c4c5,c4c6,c4c7,c4d3,c4d4,c4d5,c4e4,c4e6,c4f4,c4f6,c4g4,c4h4,d7d6,e1c2,e1d3,e1f3,e1g2,e7d6,e7d8,e7e8,f7f6,g6g5,g6h5,g7g8,h7h6]|['a8b8', 'b7a6', 'b7b6', 'c4a2', 'c4a4', 'c4b3', 'c4b4', 'c4b5', 'c4c3', 'c4c5', 'c4c6', 'c4c7', 'c4d3', 'c4d4', 'c4d5', 'c4e4', 'c4e6', 'c4f4', 'c4f6', 'c4g4', 'c4h4', 'd7d6', 'e1c2', 'e1d3', 'e1f3', 'e1g2', 'e7d6', 'e7d8', 'e7e8', 'f7f6', 'g6g5', 'g6h5', 'g7g8', 'h7h6']|['a8b8', 'b7a6', 'b7b5', 'b7b6', 'c4a2', 'c4a4', 'c4a6', 'c4b3', 'c4b4', 'c4b5', 'c4c3', 'c4c5', 'c4c6', 'c4c7', 'c4d3', 'c4d4', 'c4d5', 'c4e4', 'c4e6', 'c4f4', 'c4g4', 'c4h4', 'd7d5', 'd7d6', 'e1c2', 'e1d3', 'e1f3', 'e1g2', 'e7d6', 'e7d8', 'e7e6', 'e7e8', 'f7f5', 'f7f6', 'g6g5', 'g6h5', 'g7g8', 'h7h6']|False|
+Given the chess position in FEN notation: r3kb1r/p1pbppq1/Q5p1/8/4PP2/1PB2RPp/P1P1N2P/R4K2 b q - 2 29
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a8b8,a8c8,a8d8,c7c5,c7c6,d7a4,d7a6,d7b5,d7c6,d7e6,d7f5,d7g4,e7e5,e7e6,e8d8,f7f5,f7f6,g6g5,g7c3,g7d4,g7e5,g7f6,g7g8,g7h4,g7h5,g7h6,g7h7,h3h2,h8g8,h8h4,h8h5,h8h6,h8h7]|['a8b8', 'a8c8', 'a8d8', 'c7c5', 'c7c6', 'd7a4', 'd7a6', 'd7b5', 'd7c6', 'd7e6', 'd7f5', 'd7g4', 'e7e5', 'e7e6', 'e8d8', 'f7f5', 'f7f6', 'g6g5', 'g7c3', 'g7d4', 'g7e5', 'g7f6', 'g7g8', 'g7h4', 'g7h5', 'g7h6', 'g7h7', 'h3h2', 'h8g8', 'h8h4', 'h8h5', 'h8h6', 'h8h7']|['a8b8', 'a8c8', 'a8d8', 'c7c5', 'c7c6', 'd7a4', 'd7b5', 'd7c6', 'd7c8', 'd7e6', 'd7f5', 'd7g4', 'e7e5', 'e7e6', 'e8d8', 'f7f5', 'f7f6', 'g6g5', 'g7c3', 'g7d4', 'g7e5', 'g7f6', 'g7g8', 'g7h6', 'g7h7', 'h8g8', 'h8h4', 'h8h5', 'h8h6', 'h8h7']|False|
+Given the chess position in FEN notation: r1b1Q3/pp1ppp1p/1kn5/1B2bN2/8/1qPKP3/3P2PP/2B4R w - - 2 23
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [d3e2,e8e7,e8d7,e8f7,e8c8,e8d8,e8f8,e8g8,e8h8,h1g1,h1f1,h1e1,h1d1,c1a3,c1b2,b5a4,b5a6,b5c4,b5c6,f5e7,f5g7,f5d6,f5h6,f5g3,f5d4,f5h4,e3e4,g2g3,g2g4,h2h3,h2h4]|['b5a4', 'b5a6', 'b5c4', 'b5c6', 'c1a3', 'c1b2', 'd3e2', 'e3e4', 'e8c8', 'e8d7', 'e8d8', 'e8e7', 'e8f7', 'e8f8', 'e8g8', 'e8h8', 'f5d4', 'f5d6', 'f5e7', 'f5g3', 'f5g7', 'f5h4', 'f5h6', 'g2g3', 'g2g4', 'h1d1', 'h1e1', 'h1f1', 'h1g1', 'h2h3', 'h2h4']|['b5a4', 'b5a6', 'b5c4', 'b5c6', 'c1a3', 'c1b2', 'd3e2', 'd3e4', 'e3e4', 'e8c8', 'e8d7', 'e8d8', 'e8e7', 'e8f7', 'e8f8', 'e8g8', 'e8h8', 'f5d4', 'f5d6', 'f5e7', 'f5g3', 'f5g7', 'f5h4', 'f5h6', 'g2g3', 'g2g4', 'h1d1', 'h1e1', 'h1f1', 'h1g1', 'h2h3', 'h2h4']|False|
+Given the chess position in FEN notation: rnb5/pp1p1p2/2p2kpr/P3pP1R/3P2P1/8/2P1P1B1/qQB2K2 b - - 1 23
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a1a2,a1a3,a1a4,a1a5,a1b2,a1c3,a1d4,a1g7,a1h8,a7a6,b7b5,b7b6,b8a6,c6c5,d7d5,d7d6,e5d4,e5e4,f6e6,f6e7,f6g7,g6f5,g6g5,g6h5,h6h5,h6h7,h6h8]|['a1a2', 'a1a3', 'a1a4', 'a1a5', 'a1b2', 'a1c3', 'a1d4', 'a1g7', 'a1h8', 'a7a6', 'b7b5', 'b7b6', 'b8a6', 'c6c5', 'd7d5', 'd7d6', 'e5d4', 'e5e4', 'f6e6', 'f6e7', 'f6g7', 'g6f5', 'g6g5', 'g6h5', 'h6h5', 'h6h7', 'h6h8']|['a1a2', 'a1a3', 'a1a4', 'a1a5', 'a1b1', 'a1b2', 'a1c3', 'a1d4', 'a7a6', 'b7b5', 'b7b6', 'b8a6', 'c6c5', 'd7d5', 'd7d6', 'e5d4', 'e5e4', 'f6e7', 'f6g7', 'g6f5', 'g6g5', 'g6h5', 'h6h5', 'h6h7', 'h6h8']|False|
+Given the chess position in FEN notation: 2bqkbn1/1r1pr3/p2Q4/1pp5/4pN2/3P1P2/PnP3PP/RN1BK2R w - - 0 21
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a2a3,a2a4,b1a3,b1c3,b1d2,c2c3,c2c4,d1e2,d3d4,d3e4,d6a6,d6b6,d6c5,d6c6,d6c7,d6d4,d6d5,d6d7,d6e5,d6e6,d6e7,d6f6,d6g6,d6h6,e1d2,e1e2,e1f1,e1f2,f3e4,f4d5,f4e2,f4e6,f4g6,f4h3,f4h5,g2g3,g2g4,h1f1,h1g1,h2h3,h2h4]|['a2a3', 'a2a4', 'b1a3', 'b1c3', 'b1d2', 'c2c3', 'c2c4', 'd1e2', 'd3d4', 'd3e4', 'd6a6', 'd6b6', 'd6c5', 'd6c6', 'd6c7', 'd6d4', 'd6d5', 'd6d7', 'd6e5', 'd6e6', 'd6e7', 'd6f6', 'd6g6', 'd6h6', 'e1d2', 'e1e2', 'e1f1', 'e1f2', 'f3e4', 'f4d5', 'f4e2', 'f4e6', 'f4g6', 'f4h3', 'f4h5', 'g2g3', 'g2g4', 'h1f1', 'h1g1', 'h2h3', 'h2h4']|['a2a3', 'a2a4', 'b1a3', 'b1c3', 'b1d2', 'c2c3', 'c2c4', 'd1e2', 'd3d4', 'd3e4', 'd6a6', 'd6b6', 'd6b8', 'd6c5', 'd6c6', 'd6c7', 'd6d4', 'd6d5', 'd6d7', 'd6e5', 'd6e6', 'd6e7', 'd6f6', 'd6g6', 'd6h6', 'e1d2', 'e1e2', 'e1f1', 'e1f2', 'f3e4', 'f4d5', 'f4e2', 'f4e6', 'f4g6', 'f4h3', 'f4h5', 'g2g3', 'g2g4', 'h1f1', 'h1g1', 'h2h3', 'h2h4']|False|
+Given the chess position in FEN notation: 5bn1/1p1Npbpr/2n2pkp/p5Nq/2P3P1/P6B/P1KPPR1P/R1B5 b - - 11 27
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [h5g5,h5h4,h5h3,h5g4,f7e6,f7d5,f7c4,f7e8,c6a7,c6b4,c6b8,c6d4,c6d8,c6e5,g8e6,h7h8,h7d7,a5a4,b7b6,b7b5,e7e6,f6f5,f6g5,h6g5]|['a5a4', 'b7b5', 'b7b6', 'c6a7', 'c6b4', 'c6b8', 'c6d4', 'c6d8', 'c6e5', 'e7e6', 'f6f5', 'f6g5', 'f7c4', 'f7d5', 'f7e6', 'f7e8', 'g8e6', 'h5g4', 'h5g5', 'h5h3', 'h5h4', 'h6g5', 'h7d7', 'h7h8']|['a5a4', 'b7b5', 'b7b6', 'c6a7', 'c6b4', 'c6b8', 'c6d4', 'c6d8', 'c6e5', 'e7e5', 'e7e6', 'f6f5', 'f6g5', 'f7c4', 'f7d5', 'f7e6', 'f7e8', 'g6g5', 'h5g4', 'h5g5', 'h5h3', 'h5h4', 'h6g5', 'h7h8']|False|
+Given the chess position in FEN notation: r1b3kr/N1pQpp2/p6p/1p4p1/7P/1P2nPP1/P1P1P3/RNB1KR2 b Q - 0 26
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a6a5,a8a7,a8b8,b5b4,c7c5,c7c6,c8b7,c8d7,e3c2,e3c4,e3d1,e3d5,e3f1,e3f5,e3g2,e3g4,e7e5,e7e6,f7f5,f7f6,g5g4,g5h4,g8f7,g8g7,g8h7,h6h5,h8h7]|['a6a5', 'a8a7', 'a8b8', 'b5b4', 'c7c5', 'c7c6', 'c8b7', 'c8d7', 'e3c2', 'e3c4', 'e3d1', 'e3d5', 'e3f1', 'e3f5', 'e3g2', 'e3g4', 'e7e5', 'e7e6', 'f7f5', 'f7f6', 'g5g4', 'g5h4', 'g8f7', 'g8g7', 'g8h7', 'h6h5', 'h8h7']|['a6a5', 'a8a7', 'a8b8', 'b5b4', 'c7c5', 'c7c6', 'c8b7', 'c8d7', 'e3c2', 'e3c4', 'e3d1', 'e3d5', 'e3f1', 'e3f5', 'e3g2', 'e3g4', 'e7e5', 'e7e6', 'f7f5', 'f7f6', 'g5g4', 'g5h4', 'g8f8', 'g8g7', 'g8h7', 'h6h5', 'h8h7']|False|
+Given the chess position in FEN notation: rn2kbnr/1p1qp1pp/2p2p2/p2p4/P1P2P2/1Q1b1K2/1P1PP1PP/RNB2BR1 b kq - 4 12
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [e8d8,e7d8,e7e6,e7e5,e7e4,e7e3,e7d6,e7c5,e7b4,e7a3,a8a7,a8a6,b8a6,b8c6,b8a7,g8h6,d3c4,d3e4,d3f5,d3g6,d3b5,d3a6,d3c2,d5d4,d5c4,c6c5,b7b6,b7b5,d7d6,g7g6,g7g5,h7h6,h7h5,f6f5]|['a8a6', 'a8a7', 'b7b5', 'b7b6', 'b8a6', 'b8a7', 'b8c6', 'c6c5', 'd3a6', 'd3b5', 'd3c2', 'd3c4', 'd3e4', 'd3f5', 'd3g6', 'd5c4', 'd5d4', 'd7d6', 'e7a3', 'e7b4', 'e7c5', 'e7d6', 'e7d8', 'e7e3', 'e7e4', 'e7e5', 'e7e6', 'e8d8', 'f6f5', 'g7g5', 'g7g6', 'g8h6', 'h7h5', 'h7h6']|['a8a6', 'a8a7', 'b7b5', 'b7b6', 'b8a6', 'c6c5', 'd3b1', 'd3c2', 'd3c4', 'd3e2', 'd3e4', 'd3f5', 'd3g6', 'd5c4', 'd5d4', 'd7c7', 'd7c8', 'd7d6', 'd7d8', 'd7e6', 'd7f5', 'd7g4', 'd7h3', 'e7e5', 'e7e6', 'e8d8', 'e8f7', 'f6f5', 'g7g5', 'g7g6', 'g8h6', 'h7h5', 'h7h6']|False|
+Given the chess position in FEN notation: 3kr3/rpp2ppp/3bB1n1/p2p4/P3bn2/1RPPPNP1/1PK2P1P/2BQ3R b - - 2 26
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [d8c7,d8e7,e8e6,f7e6]|['d8c7', 'd8e7', 'e8e6', 'f7e6']|['a7a6', 'a7a8', 'b7b5', 'b7b6', 'c7c5', 'c7c6', 'd5d4', 'd6a3', 'd6b4', 'd6c5', 'd6e5', 'd6e7', 'd6f8', 'd8e7', 'e4d3', 'e4f3', 'e4f5', 'e8e6', 'e8e7', 'e8f8', 'e8g8', 'e8h8', 'f4d3', 'f4e2', 'f4e6', 'f4g2', 'f4h3', 'f4h5', 'f7e6', 'f7f5', 'f7f6', 'g6e5', 'g6e7', 'g6f8', 'g6h4', 'g6h8', 'h7h5', 'h7h6']|False|
+Given the chess position in FEN notation: r1bqkb2/ppp1pp1r/6pn/3pn2p/7P/2P4N/PP1PPPP1/RNBQKB1R w KQq - 3 8
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [d1c2,d1b3,d1a4,h1h2,h1g1,b1a3,h3g1,h3f4,h3g5,a2a3,a2a4,b2b3,b2b4,d2d3,d2d4,e2e3,e2e4,f2f3,f2f4,g2g3,g2g4,c3c4]|['a2a3', 'a2a4', 'b1a3', 'b2b3', 'b2b4', 'c3c4', 'd1a4', 'd1b3', 'd1c2', 'd2d3', 'd2d4', 'e2e3', 'e2e4', 'f2f3', 'f2f4', 'g2g3', 'g2g4', 'h1g1', 'h1h2', 'h3f4', 'h3g1', 'h3g5']|['a2a3', 'a2a4', 'b1a3', 'b2b3', 'b2b4', 'c3c4', 'd1a4', 'd1b3', 'd1c2', 'd2d3', 'd2d4', 'e2e3', 'e2e4', 'f2f3', 'f2f4', 'g2g3', 'g2g4', 'h1g1', 'h1h2', 'h3f4', 'h3g1', 'h3g5']|True|
+Given the chess position in FEN notation: rn1k3r/ppp3pp/8/1b1p2b1/1QPPpP1P/8/PPKNP1P1/R1B2BR1 w - - 2 20
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a1b1,a2a3,a2a4,b2b3,b4a3,b4a4,b4a5,b4a6,b4a7,b4b3,b4b5,b4c3,b4c5,b4d6,b4e7,b4f8,c2b1,c2b3,c2c3,c2d1,c2d3,c4b5,c4c5,c4d5,d2b1,d2b3,d2e4,d2f3,e2e3,f4f5,f4g5,g1h1,g2g3,g2g4,h4g5,h4h5]|['a1b1', 'a2a3', 'a2a4', 'b2b3', 'b4a3', 'b4a4', 'b4a5', 'b4a6', 'b4a7', 'b4b3', 'b4b5', 'b4c3', 'b4c5', 'b4d6', 'b4e7', 'b4f8', 'c2b1', 'c2b3', 'c2c3', 'c2d1', 'c2d3', 'c4b5', 'c4c5', 'c4d5', 'd2b1', 'd2b3', 'd2e4', 'd2f3', 'e2e3', 'f4f5', 'f4g5', 'g1h1', 'g2g3', 'g2g4', 'h4g5', 'h4h5']|['a1b1', 'a2a3', 'a2a4', 'b2b3', 'b4a3', 'b4a4', 'b4a5', 'b4b3', 'b4b5', 'b4c3', 'b4c5', 'b4d6', 'b4e7', 'b4f8', 'c2b1', 'c2b3', 'c2c3', 'c2d1', 'c4b5', 'c4c5', 'c4d5', 'd2b1', 'd2b3', 'd2e4', 'd2f3', 'e2e3', 'f4f5', 'f4g5', 'g1h1', 'g2g3', 'g2g4', 'h4g5', 'h4h5']|False|
+Given the chess position in FEN notation: rq1kr3/p1ppbp1p/b2Np2n/1p4N1/2B5/1PB1P3/PnPP1PPP/1R1QK1R1 b - - 2 19
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [b8c8,b8b7,b8b6,e8f8,e8g8,e8h8,a6b7,a6c8,e7d6,e7f6,e7f8,e7g5,h6g8,h6f5,h6g4,b2a4,b2a3,b2d3,b2a1,b2c4,b2d1,c7c6,c7d6,d7d6,e6e5,f7f6,b5b4,b5c4]|['a6b7', 'a6c8', 'b2a1', 'b2a3', 'b2a4', 'b2c4', 'b2d1', 'b2d3', 'b5b4', 'b5c4', 'b8b6', 'b8b7', 'b8c8', 'c7c6', 'c7d6', 'd7d6', 'e6e5', 'e7d6', 'e7f6', 'e7f8', 'e7g5', 'e8f8', 'e8g8', 'e8h8', 'f7f6', 'h6f5', 'h6g4', 'h6g8']|['a6b7', 'a6c8', 'b2a4', 'b2c4', 'b2d1', 'b2d3', 'b5b4', 'b5c4', 'b8b6', 'b8b7', 'b8c8', 'c7c5', 'c7c6', 'c7d6', 'e6e5', 'e7d6', 'e7f6', 'e7f8', 'e7g5', 'e8f8', 'e8g8', 'e8h8', 'f7f5', 'f7f6', 'h6f5', 'h6g4', 'h6g8']|False|
+Given the chess position in FEN notation: Qn2k2r/2pp1ppp/2b5/1p6/2P1pPn1/1P4P1/P2PN3/1RB1KR2 w - - 1 23
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a8a7,a8a6,a8a5,a8a4,a8a3,a8b8,a8c8,a8d8,a8b7,a8c6,b1a1,b1b2,f1d1,f1f2,f1f3,c1a3,c1b2,e1d1,a2a3,a2a4,d2d3,d2d4,b3b4,g3g4,c4c5,c4b5,f4f5,e2d4,e2c3,e2g1]|['a2a3', 'a2a4', 'a8a3', 'a8a4', 'a8a5', 'a8a6', 'a8a7', 'a8b7', 'a8b8', 'a8c6', 'a8c8', 'a8d8', 'b1a1', 'b1b2', 'b3b4', 'c1a3', 'c1b2', 'c4b5', 'c4c5', 'd2d3', 'd2d4', 'e1d1', 'e2c3', 'e2d4', 'e2g1', 'f1d1', 'f1f2', 'f1f3', 'f4f5', 'g3g4']|['a2a3', 'a2a4', 'a8a3', 'a8a4', 'a8a5', 'a8a6', 'a8a7', 'a8b7', 'a8b8', 'a8c6', 'b1a1', 'b1b2', 'b3b4', 'c1a3', 'c1b2', 'c4b5', 'c4c5', 'd2d3', 'd2d4', 'e1d1', 'e2c3', 'e2d4', 'e2g1', 'f1f2', 'f1f3', 'f1g1', 'f1h1', 'f4f5']|False|
+Given the chess position in FEN notation: rnbqkb1r/pppp1p1p/3B1np1/4p3/8/1P2KP2/P1PPP1PP/RN1Q1BNR b kq - 5 6
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a7a5,a7a6,b7b5,b7b6,b8a6,b8c6,c7c5,c7c6,d8d6,d8e7,d8f6,d8g5,d8h4,e5e4,f7f5,f7f6,f8a3,f8b4,f8c5,f8d6,f8e7,g6e7,g6f4,g6h4,h6h5,h7h5,h8g8]|['a7a5', 'a7a6', 'b7b5', 'b7b6', 'b8a6', 'b8c6', 'c7c5', 'c7c6', 'd8d6', 'd8e7', 'd8f6', 'd8g5', 'd8h4', 'e5e4', 'f7f5', 'f7f6', 'f8a3', 'f8b4', 'f8c5', 'f8d6', 'f8e7', 'g6e7', 'g6f4', 'g6h4', 'h6h5', 'h7h5', 'h8g8']|['a7a5', 'a7a6', 'b7b5', 'b7b6', 'b8a6', 'b8c6', 'c7c5', 'c7c6', 'c7d6', 'd8e7', 'e5e4', 'f6d5', 'f6e4', 'f6g4', 'f6g8', 'f6h5', 'f8d6', 'f8e7', 'f8g7', 'f8h6', 'g6g5', 'h7h5', 'h7h6', 'h8g8']|False|
+Given the chess position in FEN notation: rn1qkb1r/p1pppppp/bp6/8/P3nP2/1P3N2/RBPPP1PP/1N1QKB1R b Kkq - 6 7
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a6b5,a6c4,a6d3,a6e2,b6b5,b8c6,c7c5,c7c6,d7d5,d7d6,d8c8,e4c3,e4c5,e4d2,e4d6,e4f2,e4f6,e4g3,e4g5,e7e5,e7e6,f7f5,f7f6,f8a3,f8b4,f8c5,f8d6,g7g5,g7g6,h7h5,h7h6,h8g8]|['a6b5', 'a6c4', 'a6d3', 'a6e2', 'b6b5', 'b8c6', 'c7c5', 'c7c6', 'd7d5', 'd7d6', 'd8c8', 'e4c3', 'e4c5', 'e4d2', 'e4d6', 'e4f2', 'e4f6', 'e4g3', 'e4g5', 'e7e5', 'e7e6', 'f7f5', 'f7f6', 'f8a3', 'f8b4', 'f8c5', 'f8d6', 'g7g5', 'g7g6', 'h7h5', 'h7h6', 'h8g8']|['a6b5', 'a6b7', 'a6c4', 'a6c8', 'a6d3', 'a6e2', 'b6b5', 'b8c6', 'c7c5', 'c7c6', 'd7d5', 'd7d6', 'd8c8', 'e4c3', 'e4c5', 'e4d2', 'e4d6', 'e4f2', 'e4f6', 'e4g3', 'e4g5', 'e7e5', 'e7e6', 'f7f5', 'f7f6', 'g7g5', 'g7g6', 'h7h5', 'h7h6', 'h8g8']|False|
+Given the chess position in FEN notation: 2bq1k1b/pppppp2/7p/6n1/P2P2n1/5P2/1PP1PRNP/1R1QKB2 b - - 0 27
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [f8e8,f8e7,f8g7,f8g8,g4f2,g4f6,f7f6]|['f7f6', 'f8e7', 'f8e8', 'f8g7', 'f8g8', 'g4f2', 'g4f6']|['a7a5', 'a7a6', 'b7b5', 'b7b6', 'c7c5', 'c7c6', 'd7d5', 'd7d6', 'd8e8', 'e7e5', 'e7e6', 'f7f5', 'f7f6', 'f8e8', 'f8g7', 'f8g8', 'g4e3', 'g4e5', 'g4f2', 'g4f6', 'g4h2', 'g5e4', 'g5e6', 'g5f3', 'g5h3', 'g5h7', 'h6h5', 'h8d4', 'h8e5', 'h8f6', 'h8g7']|False|
+Given the chess position in FEN notation: 1rb4r/3nkp1p/8/pp6/6n1/3P2qP/PPP1PPP1/RN1QKBR1 w Q - 0 20
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [e1d1,e1d2,e1e2,e1f1,d1c1,d1d2,d1e2,d1f3,d1g4,g1h1,f1e2,b1a3,b1c3,b1d2,a2a3,a2a4,b2b3,b2b4,c2c3,c2c4,d3d4,e2e3,e2e4,f2g3,h3h4,h3g4]|['a2a3', 'a2a4', 'b1a3', 'b1c3', 'b1d2', 'b2b3', 'b2b4', 'c2c3', 'c2c4', 'd1c1', 'd1d2', 'd1e2', 'd1f3', 'd1g4', 'd3d4', 'e1d1', 'e1d2', 'e1e2', 'e1f1', 'e2e3', 'e2e4', 'f1e2', 'f2g3', 'g1h1', 'h3g4', 'h3h4']|['a2a3', 'a2a4', 'b1a3', 'b1c3', 'b1d2', 'b2b3', 'b2b4', 'c2c3', 'c2c4', 'd1c1', 'd1d2', 'd3d4', 'e1d2', 'e2e3', 'e2e4', 'f2g3', 'g1h1', 'h3g4', 'h3h4']|False|
+Given the chess position in FEN notation: r1b1k2n/p2p2p1/1q3p2/b3p2p/3pKP1N/2N5/4P1PP/R2Q1B1R w q - 2 27
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a1a2,a1a3,a1a4,a1a5,a1b1,a1c1,c3a4,c3b1,c3b5,c3d5,d1a4,d1b1,d1b3,d1c1,d1c2,d1d2,d1d3,d1d4,d1e1,d1f3,d1g4,d1h5,e2e3,e4d3,e4f3,e4f5,f4e5,f4f5,g2g3,g2g4,h1g1,h2h3,h4f3,h4f5,h4g6]|['a1a2', 'a1a3', 'a1a4', 'a1a5', 'a1b1', 'a1c1', 'c3a4', 'c3b1', 'c3b5', 'c3d5', 'd1a4', 'd1b1', 'd1b3', 'd1c1', 'd1c2', 'd1d2', 'd1d3', 'd1d4', 'd1e1', 'd1f3', 'd1g4', 'd1h5', 'e2e3', 'e4d3', 'e4f3', 'e4f5', 'f4e5', 'f4f5', 'g2g3', 'g2g4', 'h1g1', 'h2h3', 'h4f3', 'h4f5', 'h4g6']|['a1a2', 'a1a3', 'a1a4', 'a1a5', 'a1b1', 'a1c1', 'c3a2', 'c3a4', 'c3b1', 'c3b5', 'c3d5', 'd1a4', 'd1b1', 'd1b3', 'd1c1', 'd1c2', 'd1d2', 'd1d3', 'd1d4', 'd1e1', 'e2e3', 'e4d3', 'e4d5', 'e4f3', 'e4f5', 'f4e5', 'f4f5', 'g2g3', 'g2g4', 'h1g1', 'h2h3', 'h4f3', 'h4f5', 'h4g6']|False|
+Given the chess position in FEN notation: 2b2knr/rppp2bp/3q1p2/pB2p3/Q5P1/1nP2N2/PP1PPP1P/R1B3RK b - - 9 17
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a7a6,a7a8,b3a1,b3c1,b3c5,b3d2,b3d4,b7b6,c7c5,c7c6,d6a3,d6a6,d6b4,d6b6,d6c5,d6c6,d6d3,d6d4,d6d5,d6e6,d6e7,d6g6,d6h6,e5e4,f6f5,f8e7,f8e8,f8f7,g7h6,g8e7,g8h6,h7h5,h7h6]|['a7a6', 'a7a8', 'b3a1', 'b3c1', 'b3c5', 'b3d2', 'b3d4', 'b7b6', 'c7c5', 'c7c6', 'd6a3', 'd6a6', 'd6b4', 'd6b6', 'd6c5', 'd6c6', 'd6d3', 'd6d4', 'd6d5', 'd6e6', 'd6e7', 'd6g6', 'd6h6', 'e5e4', 'f6f5', 'f8e7', 'f8e8', 'f8f7', 'g7h6', 'g8e7', 'g8h6', 'h7h5', 'h7h6']|['a7a6', 'a7a8', 'b3a1', 'b3c1', 'b3c5', 'b3d2', 'b3d4', 'b7b6', 'c7c5', 'c7c6', 'd6a3', 'd6a6', 'd6b4', 'd6b6', 'd6c5', 'd6c6', 'd6d2', 'd6d3', 'd6d4', 'd6d5', 'd6e6', 'd6e7', 'e5e4', 'f6f5', 'f8e7', 'f8e8', 'f8f7', 'g7h6', 'g8e7', 'g8h6', 'h7h5', 'h7h6']|False|
+Given the chess position in FEN notation: 1rbqkb1r/pppppppp/8/n7/8/N3n2N/PPPPKPPP/R1B4R b k - 1 9
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a5b3,a5c4,a5c6,a7a6,b7b5,b7b6,b8a8,c7c5,c7c6,d7d5,d7d6,e3c2,e3c4,e3d1,e3d5,e3f1,e3f5,e3g2,e3g4,e7e5,e7e6,f7f5,f7f6,g7g5,g7g6,h7h5,h7h6,h8g8]|['a5b3', 'a5c4', 'a5c6', 'a7a6', 'b7b5', 'b7b6', 'b8a8', 'c7c5', 'c7c6', 'd7d5', 'd7d6', 'e3c2', 'e3c4', 'e3d1', 'e3d5', 'e3f1', 'e3f5', 'e3g2', 'e3g4', 'e7e5', 'e7e6', 'f7f5', 'f7f6', 'g7g5', 'g7g6', 'h7h5', 'h7h6', 'h8g8']|['a5b3', 'a5c4', 'a5c6', 'a7a6', 'b7b5', 'b7b6', 'b8a8', 'c7c5', 'c7c6', 'd7d5', 'd7d6', 'e3c2', 'e3c4', 'e3d1', 'e3d5', 'e3f1', 'e3f5', 'e3g2', 'e3g4', 'e7e5', 'e7e6', 'f7f5', 'f7f6', 'g7g5', 'g7g6', 'h7h5', 'h7h6', 'h8g8']|True|
+Given the chess position in FEN notation: 1rnk4/ppq1ppb1/3p1n1r/3p3p/Q2B1P2/1P1P3P/P3PK2/R4B2 w - - 6 26
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a1b1,a1c1,a1d1,a1e1,a2a3,a4a3,a4a5,a4a6,a4a7,a4b4,a4b5,a4c4,a4c6,a4d7,a4e8,b3b4,d4a7,d4b2,d4b6,d4c3,d4c5,d4e3,d4e5,d4f6,e2e3,e2e4,f2e1,f2e3,f2f3,f2g1,f2g2,f2g3,f4f5,h3h4]|['a1b1', 'a1c1', 'a1d1', 'a1e1', 'a2a3', 'a4a3', 'a4a5', 'a4a6', 'a4a7', 'a4b4', 'a4b5', 'a4c4', 'a4c6', 'a4d7', 'a4e8', 'b3b4', 'd4a7', 'd4b2', 'd4b6', 'd4c3', 'd4c5', 'd4e3', 'd4e5', 'd4f6', 'e2e3', 'e2e4', 'f2e1', 'f2e3', 'f2f3', 'f2g1', 'f2g2', 'f2g3', 'f4f5', 'h3h4']|['a1b1', 'a1c1', 'a1d1', 'a1e1', 'a2a3', 'a4a3', 'a4a5', 'a4a6', 'a4a7', 'a4b4', 'a4b5', 'a4c4', 'a4c6', 'a4d7', 'a4e8', 'b3b4', 'd4a7', 'd4b2', 'd4b6', 'd4c3', 'd4c5', 'd4e3', 'd4e5', 'd4f6', 'e2e3', 'e2e4', 'f1g2', 'f2e1', 'f2e3', 'f2f3', 'f2g1', 'f2g2', 'f2g3', 'f4f5', 'h3h4']|False|
+Given the chess position in FEN notation: r1b1qb2/p1pkp1p1/8/1p1n1p2/6Pp/P3P3/NP1P1PBP/R1B1K1NR w - - 2 25
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a1b1,a2b4,a2c3,a3a4,b2b3,b2b4,d2d3,d2d4,e1d1,e1d2,e1e2,e1f1,e1f2,e3e4,f2f3,f2f4,g1e2,g1f3,g1h3,g2d5,g2e4,g2f1,g2f3,g2h3,g4f5,g4g5,h2h3]|['a1b1', 'a2b4', 'a2c3', 'a3a4', 'b2b3', 'b2b4', 'd2d3', 'd2d4', 'e1d1', 'e1d2', 'e1e2', 'e1f1', 'e1f2', 'e3e4', 'f2f3', 'f2f4', 'g1e2', 'g1f3', 'g1h3', 'g2d5', 'g2e4', 'g2f1', 'g2f3', 'g2h3', 'g4f5', 'g4g5', 'h2h3']|['a1b1', 'a2b4', 'a2c3', 'a3a4', 'b2b3', 'b2b4', 'd2d3', 'd2d4', 'e1d1', 'e1e2', 'e1f1', 'e3e4', 'f2f3', 'f2f4', 'g1e2', 'g1f3', 'g1h3', 'g2d5', 'g2e4', 'g2f1', 'g2f3', 'g2h3', 'g4f5', 'g4g5', 'h2h3']|False|
+Given the chess position in FEN notation: r1b2br1/npp1p1p1/p2k3n/5p2/P6P/6PB/RPPNPPR1/2BQK3 b - - 2 20
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [d6c5,d6c6,d6d5,d6d7,d6e5,d6e6,a8b8,g8h8,c8e6,a7b5,a7c6,h6g4,h6f7,a6a5,b7b6,b7b5,c7c6,c7c5,e7e6,e7e5,g7g6,g7g5,f5f4]|['a6a5', 'a7b5', 'a7c6', 'a8b8', 'b7b5', 'b7b6', 'c7c5', 'c7c6', 'c8e6', 'd6c5', 'd6c6', 'd6d5', 'd6d7', 'd6e5', 'd6e6', 'e7e5', 'e7e6', 'f5f4', 'g7g5', 'g7g6', 'g8h8', 'h6f7', 'h6g4']|['a6a5', 'a7b5', 'a7c6', 'a8b8', 'b7b5', 'b7b6', 'c7c5', 'c7c6', 'c8d7', 'c8e6', 'd6c5', 'd6c6', 'd6d5', 'd6d7', 'd6e5', 'd6e6', 'e7e5', 'e7e6', 'f5f4', 'g7g5', 'g7g6', 'g8h8', 'h6f7', 'h6g4']|False|
+Given the chess position in FEN notation: 1rb1kb1N/1p2p1pr/q1p5/p2pBp1p/7P/7N/P1RPPnP1/4KB1R b - - 3 23
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a5a4,a6a7,a6a8,a6b5,a6b6,a6c4,a6d3,a6e2,b7b5,b7b6,c6c5,c8d7,c8e6,d5d4,e7e6,e8d8,e8f8,f2d1,f2d3,f2e4,f2g4,f5f4,g7g5,g7g6,h7a7,h7c7,h7d7,h7f7,h7h6,h7h8]|['a5a4', 'a6a7', 'a6a8', 'a6b5', 'a6b6', 'a6c4', 'a6d3', 'a6e2', 'b7b5', 'b7b6', 'c6c5', 'c8d7', 'c8e6', 'd5d4', 'e7e6', 'e8d8', 'e8f8', 'f2d1', 'f2d3', 'f2e4', 'f2g4', 'f5f4', 'g7g5', 'g7g6', 'h7a7', 'h7c7', 'h7d7', 'h7f7', 'h7h6', 'h7h8']|['a5a4', 'a6a7', 'a6a8', 'a6b5', 'a6b6', 'a6c4', 'a6d3', 'a6e2', 'b7b5', 'b7b6', 'b8a8', 'c6c5', 'c8d7', 'c8e6', 'd5d4', 'e7e6', 'e8d7', 'e8d8', 'f2d1', 'f2d3', 'f2e4', 'f2g4', 'f2h1', 'f2h3', 'f5f4', 'g7g5', 'g7g6', 'h7h6', 'h7h8']|False|
+Given the chess position in FEN notation: 3r1br1/1p3ppp/2p1k3/n2ppb2/8/2P1PBK1/PP1P1n1P/RNBR4 w - - 3 28
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+||[]|['a2a3', 'a2a4', 'b1a3', 'b2b3', 'b2b4', 'c3c4', 'd1e1', 'd1f1', 'd1g1', 'd1h1', 'd2d3', 'd2d4', 'e3e4', 'f3d5', 'f3e2', 'f3e4', 'f3g2', 'f3g4', 'f3h1', 'f3h5', 'g3f2', 'g3g2', 'g3h4', 'h2h3', 'h2h4']|False|
+Given the chess position in FEN notation: r1bqkb1r/p2pp3/1p1p3p/2n3n1/7P/5pPR/PPPPP3/R1BQKBN1 w q - 0 16
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|also. brick.
+Third,Bishop f8 cannot attack f2.
+
+Black knights:Cannot reach from their current positions to f2. For exenples Knight on g5 reaches f2 only via moves of three markets (unlikely using knight's minimal jumps). Number on c5 searching to reach f2 (too far).
+
+Pawns: No Black Ps x canattack towards d. Testarurus Exam-preets place.Pawn bg6ᅳ pads a has panston hwd can age well attacks.g5 and e5,So so not attacking any squares near f2.
+
+Rooks h8 possibly attack along the F-file, path h8 to f8)),ns but The rook on a8's earlier is on the a-file, with pawnen range\d?
+
+Thus, f2 isn't attacked.
+
+Therefore, the White king is able to makeUpon that move.e a to f2.
+
+So, lepois move f2. This is considisible.
+
+Next, move.y białe’s pieces.
+
+Let's compile all possible moves for each piece.
+
+White's pieces:
+
+King at e1: possible move: Kf2.
+
+Queens at d1: possible moves.
+
+Queen can move any direction. Startingaoi.
+
+But check destination squares that are not occupied byoth same-color pieces or pi. puce allowed.
+
+Queen starting swap various movement on d1. What pieces do they have dirhe Dain.
+
+Suspected possible moves: including checks,XD capture if applicable.
+
+Queen on d1:
+
+Possible squares in he conductor.
+
+- Iking vertically (along d-file): from d1.
+
+Fell entries to up (towRank_d8). But on d1's Ooklies would proceed. Check tiles mapped.
+
+File D is:
+
+d-dish on the queens' file d.
+
+WhitAnother use queen.con D1, looking north (same file, rank stays ks1 max öster). Because the d-file iszik d8 are filled with a pawn on d7, which wos anger. See hered priorRank7 knowledgeAs white's queen is on loveseat dL,, she can move up toWardr d2, d.R wum not block.
+
+ nk:
+
+d1 to d2: empty (Paar n d2 is a pawn for White? According to earlier analysis, the PPPPP3 on rank2. PPPPP→s e.g. Pawns on a2–e2, so d2 is occupied by a pawn.
+
+ thus queen on d1 can’t move to d2. This kick possible.
+
+ realistically, queen can move along rank 1 (acrs first counter) but there are relation pairs. Or and complex.
+
+Alasis,y: queen’s is see’s queens nd-l at d1.
+Other options for quen.
+
+From d1, possible movable sqUAGGA:
+
+The queen can move any number of squares various, horizontally,vertically, or diagonally.
+
+Surrounding s for queen d1.
+
+A. Horizontal queen movement (rank 1):
+
+Whhiping a1 to g1 and h1.
+
+Rank 1's comment pieces: R. pawn md1's queen because those are their starting positions.
+
+On the same rank (d1, Queen); O the her heavy onques:
+
+ (a1: rook, c1: bishop; e1: King, f1: bishop, g1: knight. 
+
+Que fazer ifmove via rank 1?
+
+she can move left: ideology former but ogas occupied by rook at a1. Or blocking by qu
+
+Bishop on c1 (Blockqu access to any sDfiled). So queen cannot move left beyond becauseデータ.
+
+Thus, queen could only move writeont over to right from d1: wanting mshi eg. Tickets to e1 (occupied by king,
+K O-f1iyu can't.
+
+Eligible side-running horizontallyK : queen cannot move along the rank.
+
+C. Vertical (file d):
+
+north (e.g., d1>
+
+Pie pawn You attain; pawn on d2, eou can the de lane after.
+ queen can move to d if there are no Obst Odd between.Ham Knights poop is skom d need but blockership.
+
+ Checking file d rankings:
+
+d1: Queen.
+
+D2: white pawn.
+
+ own asicgay trousers movement to fil d ends pd2, blocked by pawn.
+
+Thus, queen can't move along the d-file direction over.
+
+The Wohnfor a sigle.qr move queen’s possible routes.
+
+C.choicegma mycans.HTML Travel. ubel dette ve go. You elf', but the forum hemnes skype. 
+ queen movement diagonal:could move in square factor rise. E.g., fromdTax.
+
+From d1, queen can move in all fordiag directions:
+
+- au nord-west: moving diagonally towards funk tyleLeft.
+
+Example: d1 to a4 (wait, diagonal moving plus one to west and... ?
+
+Wait my  1950 m thick queen can call phonesquares such as d1 to a4 (west3), but merely ask move each step]
+
+ queen can mosh (until hitting a Piece or board edge.
+
+Let’s take diagonal moves orso:
+
+1. Diagonally northeast: from d1, diagonals has files increasing and adding corruption.
+
+Yes, maks this would increment the both.g algo.hmmight apprxbe Indoneso establishes sheaf east and fifth.
+
+But. from d1, with king on e1, own bishop and other pieces limit this direction.
+
+Example, diagonal lumination east: d1→ e2 (pawn on east square), so blocked.
+
+F!
+
+Alternatively, diagonal top-rig.
+
+D1 →e sto ofil at e3(+)... but queen needs to move m ways forward headedn't posibles since exit JovianO:
+
+ queen from vt if diagonally to the northamel: evai, but niece check squareer.
+
+ queeb FS d1.rotX:
+
+Keywords to examine all possible diamond movement from d1:
+
+(a) Diagonal a king-opicNorthweX: left-deephai designine d1 → c2,,n etc.
+
+(b) Zhebekin, we check the diamonds to wart.
+
+Cash:
+
+(c) South (rank is 1, cannot move south).
+
+balla small:
+
+whjel to move about many diamonds:
+
+alla challenges.
+
+For example:
+
+ queen DiTrail dissolve'tavoli's:
+
+ a. Northwest Myalingi wojac obscuring d1 to c2:dear would think to c2.
+If c2 is's a white pawn. From rank2, c2 is’s empty? No because PPPPP3 hijaą’s Pawna on a2-e2. a2, b2, c2, et. yes.aAs PPPPP3 results in a2-e2 having pawns. Thus, queena Cannot move to c2 because there's a pawn there.
+
+signs:queen moving from d1 to gfexor adifferent briding megiKFDIRNR an expect.
+
+Let me complete.
+
+em iak’s idea of diagonal moves:
+
+dea For example, from d1 going southeast (increasing file, decreasing rank?), not possible since already at thicknessS rank.
+
+Au, upphasy:
+
+Chats CMaj s okay.
+
+   From d. i,n another direction:
+
+Wait, queen is on d1; possible move is To
+
+Potential diag csal ways that are being blocked:
+
+- Moving doomSl example'd1e southeast I ("/ --> opponent wall.d1 woldner's moving directly tolower ranks hey the)'.
+
+Queen can also: move inaig. So, aLC eg).
+
+Checking captures:
+
+ queen may itter capture|[]|['a1b1', 'a2a3', 'a2a4', 'b2b3', 'b2b4', 'c2c3', 'c2c4', 'd2d3', 'd2d4', 'e1f2', 'e2e3', 'e2e4', 'e2f3', 'f1g2', 'g1f3', 'g3g4', 'h3h1', 'h3h2', 'h4g5', 'h4h5']|False|
+Given the chess position in FEN notation: r1b1kbr1/pppqp1pp/n4p2/3p1PQ1/6n1/2NP4/PPP1P1PP/R1B1KBNR b KQq - 8 8
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [e8d8,e8d7,e8e7,e8f7,e8f8,d7d8,d7e7,d7f7,d7c6,d7b5,d7a4,d7e6,d7f5,a8b8,g8h8,f8e7,f8d6,f8c5,f8b4,f8a3,a6b8,a6c5,a6b4,g4h6,g4e5,g4e3,g4f2,g4h2,b7b6,b7b5,c7c6,c7c5,e7e6,e7e5,g7g6,h7h6,h7h5,d5d4]|['a6b4', 'a6b8', 'a6c5', 'a8b8', 'b7b5', 'b7b6', 'c7c5', 'c7c6', 'd5d4', 'd7a4', 'd7b5', 'd7c6', 'd7d8', 'd7e6', 'd7e7', 'd7f5', 'd7f7', 'e7e5', 'e7e6', 'e8d7', 'e8d8', 'e8e7', 'e8f7', 'e8f8', 'f8a3', 'f8b4', 'f8c5', 'f8d6', 'f8e7', 'g4e3', 'g4e5', 'g4f2', 'g4h2', 'g4h6', 'g7g6', 'g8h8', 'h7h5', 'h7h6']|['a6b4', 'a6b8', 'a6c5', 'a8b8', 'b7b5', 'b7b6', 'c7c5', 'c7c6', 'd5d4', 'd7a4', 'd7b5', 'd7c6', 'd7d6', 'd7d8', 'd7e6', 'd7f5', 'e7e5', 'e7e6', 'e8d8', 'e8f7', 'f6g5', 'g4e3', 'g4e5', 'g4f2', 'g4h2', 'g4h6', 'g7g6', 'g8h8', 'h7h5', 'h7h6']|False|
+Given the chess position in FEN notation: 3rkb1r/pp2n1pp/3p1p2/1b6/P7/5Pn1/NP4PP/2R1K2R b k - 0 27
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+||[]|['a7a5', 'a7a6', 'b5a4', 'b5a6', 'b5c4', 'b5c6', 'b5d3', 'b5d7', 'b5e2', 'b5f1', 'b7b6', 'd6d5', 'd8a8', 'd8b8', 'd8c8', 'd8d7', 'e7c6', 'e7c8', 'e7d5', 'e7f5', 'e7g6', 'e7g8', 'e8d7', 'e8f7', 'f6f5', 'g3e2', 'g3e4', 'g3f1', 'g3f5', 'g3h1', 'g3h5', 'g7g5', 'g7g6', 'h7h5', 'h7h6', 'h8g8']|False|
+Given the chess position in FEN notation: r1bqkb1r/pppppp1p/3nn3/6p1/7Q/NPPB1N2/P2P1PPP/R1B1K2R w k - 2 12
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+||[]|['a1b1', 'a3b1', 'a3b5', 'a3c2', 'a3c4', 'b3b4', 'c1b2', 'c3c4', 'd3a6', 'd3b1', 'd3b5', 'd3c2', 'd3c4', 'd3e2', 'd3e4', 'd3f1', 'd3f5', 'd3g6', 'd3h7', 'e1d1', 'e1e2', 'e1f1', 'f3d4', 'f3e5', 'f3g1', 'f3g5', 'g2g3', 'g2g4', 'h1f1', 'h1g1', 'h2h3', 'h4a4', 'h4b4', 'h4c4', 'h4d4', 'h4e4', 'h4f4', 'h4g3', 'h4g4', 'h4g5', 'h4h3', 'h4h5', 'h4h6', 'h4h7']|False|
+Given the chess position in FEN notation: rnb2b1r/pppp1kpp/4pn1B/4qp2/4N1P1/2NP4/PPP1PP1P/R2QKB1R w KQ - 3 8
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+||[]|['a1b1', 'a1c1', 'a2a3', 'a2a4', 'b2b3', 'b2b4', 'c3a4', 'c3b1', 'c3b5', 'c3d5', 'd1b1', 'd1c1', 'd1d2', 'd3d4', 'e1d2', 'e2e3', 'e4c5', 'e4d2', 'e4d6', 'e4f6', 'e4g3', 'e4g5', 'f1g2', 'f1h3', 'f2f3', 'f2f4', 'g4f5', 'g4g5', 'h1g1', 'h2h3', 'h2h4', 'h6c1', 'h6d2', 'h6e3', 'h6f4', 'h6g5', 'h6g7']|False|
+Given the chess position in FEN notation: rnbr2k1/pp1pppbp/2pB3Q/5p2/2P3P1/1P1P4/3N1PRP/R3KB2 b Q - 6 16
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a7a5,a7a6,b7b5,b7b6,b8a6,c6c5,d8e8,d8f8,e7d6,e7e5,e7e6,f5f4,f5g4,f7f6,g7a1,g7b2,g7c3,g7d4,g7e5,g7f6,g7h6,g7h8,g8f8,g8h8,h7h6]|['a7a5', 'a7a6', 'b7b5', 'b7b6', 'b8a6', 'c6c5', 'd8e8', 'd8f8', 'e7d6', 'e7e5', 'e7e6', 'f5f4', 'f5g4', 'f7f6', 'g7a1', 'g7b2', 'g7c3', 'g7d4', 'g7e5', 'g7f6', 'g7h6', 'g7h8', 'g8f8', 'g8h8', 'h7h6']|['a7a5', 'a7a6', 'b7b5', 'b7b6', 'b8a6', 'c6c5', 'd8e8', 'd8f8', 'e7d6', 'e7e5', 'e7e6', 'f5f4', 'f5g4', 'f7f6', 'g7a1', 'g7b2', 'g7c3', 'g7d4', 'g7e5', 'g7f6', 'g7f8', 'g7h6', 'g7h8', 'g8f8', 'g8h8']|False|
+Given the chess position in FEN notation: 1nN3r1/1p1pp2p/1r4k1/p1P3P1/3N4/2nP4/PBP1P1P1/RQ2KB2 w Q - 1 31
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+||[]|['a2a3', 'a2a4', 'b1c1', 'b1d1', 'b2a3', 'b2c1', 'b2c3', 'c5b6', 'c5c6', 'c8a7', 'c8b6', 'c8d6', 'c8e7', 'd4b3', 'd4b5', 'd4c6', 'd4e6', 'd4f3', 'd4f5', 'e1d2', 'e1f2', 'e2e3', 'e2e4', 'g2g3', 'g2g4']|False|
+Given the chess position in FEN notation: r3k1nr/p3np1p/1p4pP/4q3/2pR1P2/P7/1PP1PNb1/1RB1KB2 b - - 1 30
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [e8f8,e5a5,e5b5,e5c5,e5d5,e5f5,e5g5,e5h5,e5e6,e5e4,e5e3,e5f6,e5g7,e5d6,e5c7,e5b8,e5d4,a8b8,a8c8,a8d8,e7c6,e7c8,e7d5,g8f6,g8h6,g2h3,g2f3,g2e4,g2d5,g2c6,g2b7,a7a6,a7a5,b6b5,c4c3,f7f6,f7f5,g6g5]|['a7a5', 'a7a6', 'a8b8', 'a8c8', 'a8d8', 'b6b5', 'c4c3', 'e5a5', 'e5b5', 'e5b8', 'e5c5', 'e5c7', 'e5d4', 'e5d5', 'e5d6', 'e5e3', 'e5e4', 'e5e6', 'e5f5', 'e5f6', 'e5g5', 'e5g7', 'e5h5', 'e7c6', 'e7c8', 'e7d5', 'e8f8', 'f7f5', 'f7f6', 'g2b7', 'g2c6', 'g2d5', 'g2e4', 'g2f3', 'g2h3', 'g6g5', 'g8f6', 'g8h6']|['a7a5', 'a7a6', 'a8b8', 'a8c8', 'a8d8', 'b6b5', 'c4c3', 'e5a5', 'e5b5', 'e5b8', 'e5c5', 'e5c7', 'e5d4', 'e5d5', 'e5d6', 'e5e2', 'e5e3', 'e5e4', 'e5e6', 'e5f4', 'e5f5', 'e5f6', 'e5g5', 'e5g7', 'e5h5', 'e7c6', 'e7c8', 'e7d5', 'e7f5', 'e8f8', 'f7f5', 'f7f6', 'g2b7', 'g2c6', 'g2d5', 'g2e4', 'g2f1', 'g2f3', 'g2h1', 'g2h3', 'g6g5', 'g8f6', 'g8h6']|False|
+Given the chess position in FEN notation: r1b1kb2/pp1p1ppr/q6n/2p1p2p/7P/1PN1P1P1/1BPPNPK1/R5R1 b q - 1 18
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a6a2,a6a3,a6a4,a6a5,a6b5,a6b6,a6c4,a6c6,a6d3,a6d6,a6e2,a6e6,a6f6,a6g6,a8b8,b7b5,b7b6,c5c4,d7d5,d7d6,e5e4,e8d8,e8e7,f7f5,f7f6,f8d6,f8e7,g7g5,g7g6,h6f5,h6g4,h6g8,h7h8]|['a6a2', 'a6a3', 'a6a4', 'a6a5', 'a6b5', 'a6b6', 'a6c4', 'a6c6', 'a6d3', 'a6d6', 'a6e2', 'a6e6', 'a6f6', 'a6g6', 'a8b8', 'b7b5', 'b7b6', 'c5c4', 'd7d5', 'd7d6', 'e5e4', 'e8d8', 'e8e7', 'f7f5', 'f7f6', 'f8d6', 'f8e7', 'g7g5', 'g7g6', 'h6f5', 'h6g4', 'h6g8', 'h7h8']|['a6a1', 'a6a2', 'a6a3', 'a6a4', 'a6a5', 'a6b5', 'a6b6', 'a6c4', 'a6c6', 'a6d3', 'a6d6', 'a6e2', 'a6e6', 'a6f6', 'a6g6', 'a8b8', 'b7b5', 'b7b6', 'c5c4', 'd7d5', 'd7d6', 'e5e4', 'e8d8', 'e8e7', 'f7f5', 'f7f6', 'f8d6', 'f8e7', 'g7g5', 'g7g6', 'h6f5', 'h6g4', 'h6g8', 'h7h8']|False|
+Given the chess position in FEN notation: r1bqkb1r/1ppppnpp/p1B2n2/8/2Q1p3/N1P4N/PP1P1PPP/R1B1K2R b KQkq - 1 8
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+||[]|['a6a5', 'a8a7', 'a8b8', 'b7b5', 'b7b6', 'b7c6', 'd7c6', 'e4e3', 'e7e5', 'e7e6', 'f6d5', 'f6g4', 'f6g8', 'f6h5', 'f7d6', 'f7e5', 'f7g5', 'f7h6', 'g7g5', 'g7g6', 'h7h5', 'h7h6', 'h8g8']|False|
+Given the chess position in FEN notation: rn2kbr1/4p1pp/pp1p1p2/3B1qB1/2pP4/2P3P1/PP2PP1P/R3QKNR b q - 3 14
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a6a5,a8a7,b6b5,b8a7,b8c6,b8d7,d6d5,e7e6,e8d7,e8d8,e8f7,f5a1,f5b1,f5c2,f5c8,f5d3,f5d5,f5d7,f5e4,f5e5,f5e6,f5f3,f5f4,f5g4,f5g5,f5h3,g7g6,g8h8,h7h6]|['a6a5', 'a8a7', 'b6b5', 'b8a7', 'b8c6', 'b8d7', 'd6d5', 'e7e6', 'e8d7', 'e8d8', 'e8f7', 'f5a1', 'f5b1', 'f5c2', 'f5c8', 'f5d3', 'f5d5', 'f5d7', 'f5e4', 'f5e5', 'f5e6', 'f5f3', 'f5f4', 'f5g4', 'f5g5', 'f5h3', 'g7g6', 'g8h8', 'h7h6']|['a6a5', 'a8a7', 'b6b5', 'b8c6', 'b8d7', 'e7e5', 'e7e6', 'e8d7', 'e8d8', 'f5b1', 'f5c2', 'f5c8', 'f5d3', 'f5d5', 'f5d7', 'f5e4', 'f5e5', 'f5e6', 'f5f2', 'f5f3', 'f5f4', 'f5g4', 'f5g5', 'f5g6', 'f5h3', 'f6g5', 'g7g6', 'g8h8', 'h7h5', 'h7h6']|False|
+Given the chess position in FEN notation: r1bn1bR1/1p1p1k1p/p7/q3pp2/1R6/4P2P/P1PN1P2/2B1K3 b - - 3 26
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a5a3,a5a4,a5b4,a5b5,a5b6,a5c5,a5c7,a5d5,a8b8,b7b5,b7b6,d7d5,d7d6,d8c6,d8e6,e5e4,f5f4,f7e6,f7e7,f7e8,f7f6,f8b4,f8c5,f8d6,f8e7,f8g7,f8h6,h7h5,h7h6]|['a5a3', 'a5a4', 'a5b4', 'a5b5', 'a5b6', 'a5c5', 'a5c7', 'a5d5', 'a8b8', 'b7b5', 'b7b6', 'd7d5', 'd7d6', 'd8c6', 'd8e6', 'e5e4', 'f5f4', 'f7e6', 'f7e7', 'f7e8', 'f7f6', 'f8b4', 'f8c5', 'f8d6', 'f8e7', 'f8g7', 'f8h6', 'h7h5', 'h7h6']|['a5a2', 'a5a3', 'a5a4', 'a5b4', 'a5b5', 'a5b6', 'a5c5', 'a5c7', 'a5d5', 'a8a7', 'a8b8', 'b7b5', 'b7b6', 'd7d5', 'd7d6', 'd8c6', 'd8e6', 'e5e4', 'f5f4', 'f7e6', 'f7e7', 'f7e8', 'f7f6', 'f7g8', 'f8b4', 'f8c5', 'f8d6', 'f8e7', 'f8g7', 'f8h6', 'h7h5', 'h7h6']|False|
+Given the chess position in FEN notation: rnb1kb1r/1p1pqppp/p3p3/2p5/4N2n/PN6/1PPPPPPP/1RBQKB1R w Kkq - 7 8
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a3a4,b1a1,b3a1,b3a5,b3c5,b3d4,c2c3,c2c4,d2d3,d2d4,e1d2,e1f2,e2e3,e4c3,e4c5,e4d6,e4f6,e4g3,e4g5,f2f3,f2f4,g2g3,g2g4,h1g1,h2h3,h2h4]|['a3a4', 'b1a1', 'b3a1', 'b3a5', 'b3c5', 'b3d4', 'c2c3', 'c2c4', 'd2d3', 'd2d4', 'e1d2', 'e1f2', 'e2e3', 'e4c3', 'e4c5', 'e4d6', 'e4f6', 'e4g3', 'e4g5', 'f2f3', 'f2f4', 'g2g3', 'g2g4', 'h1g1', 'h2h3', 'h2h4']|['a3a4', 'b1a1', 'b3a1', 'b3a5', 'b3c5', 'b3d4', 'c2c3', 'c2c4', 'd2d3', 'd2d4', 'e2e3', 'e4c3', 'e4c5', 'e4d6', 'e4f6', 'e4g3', 'e4g5', 'f2f3', 'f2f4', 'g2g3', 'g2g4', 'h1g1', 'h2h3']|False|
+Given the chess position in FEN notation: n3kb1r/4pppp/1q6/1p1pn3/6b1/Q1P4B/PP1PPP1P/RKB4R b - - 3 23
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [e8d8,e8d7,h8g8,a8c7,b6a5,b6a6,b6a7,b6b7,b6b8,b6c5,b6c6,b6c7,b6d4,b6d6,b6d8,b6e3,b6e6,b6f6,b6g6,b6h6,e5c6,e5d7,e5g6,e5f3,e5d3,e5c4,b5b4,d5d4,e7e6,f7f6,g7g6,h7h6]|['a8c7', 'b5b4', 'b6a5', 'b6a6', 'b6a7', 'b6b7', 'b6b8', 'b6c5', 'b6c6', 'b6c7', 'b6d4', 'b6d6', 'b6d8', 'b6e3', 'b6e6', 'b6f6', 'b6g6', 'b6h6', 'd5d4', 'e5c4', 'e5c6', 'e5d3', 'e5d7', 'e5f3', 'e5g6', 'e7e6', 'e8d7', 'e8d8', 'f7f6', 'g7g6', 'h7h6', 'h8g8']|['a8c7', 'b5b4', 'b6a5', 'b6a6', 'b6a7', 'b6b7', 'b6b8', 'b6c5', 'b6c6', 'b6c7', 'b6d4', 'b6d6', 'b6d8', 'b6e3', 'b6e6', 'b6f2', 'b6f6', 'b6g6', 'b6h6', 'd5d4', 'e5c4', 'e5c6', 'e5d3', 'e5d7', 'e5f3', 'e5g6', 'e7e6', 'e8d7', 'e8d8', 'f7f5', 'f7f6', 'g4c8', 'g4d7', 'g4e2', 'g4e6', 'g4f3', 'g4f5', 'g4h3', 'g4h5', 'g7g5', 'g7g6', 'h7h5', 'h7h6', 'h8g8']|False|
+Given the chess position in FEN notation: r1bqkb1r/2p1ppp1/pp6/2Qp3p/PP2PB1P/6P1/2PN1P2/4KB1R b - - 1 28
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a6a5,a8a7,a8b8,b6b5,c7c6,c8b7,c8d7,c8e6,c8f5,c8g4,d5d4,d5e4,d8d6,d8d7,e7e5,e7e6,f7f5,f7f6,g7g5,g7g6,h5g4,h8g8,h8h6,h8h7]|['a6a5', 'a8a7', 'a8b8', 'b6b5', 'c7c6', 'c8b7', 'c8d7', 'c8e6', 'c8f5', 'c8g4', 'd5d4', 'd5e4', 'd8d6', 'd8d7', 'e7e5', 'e7e6', 'f7f5', 'f7f6', 'g7g5', 'g7g6', 'h5g4', 'h8g8', 'h8h6', 'h8h7']|['a6a5', 'a8a7', 'a8b8', 'b6b5', 'b6c5', 'c7c6', 'c8b7', 'c8d7', 'c8e6', 'c8f5', 'c8g4', 'c8h3', 'd5d4', 'd5e4', 'd8d6', 'd8d7', 'e7e5', 'e7e6', 'e8d7', 'f7f5', 'f7f6', 'g7g5', 'g7g6', 'h8g8', 'h8h6', 'h8h7']|False|
+Given the chess position in FEN notation: r1bq1br1/p1pppkp1/5pnp/1pn5/4PN2/8/PPPPKPPP/RNB4R b - - 1 12
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [f7e8,d8e8,a8b8,g8h8,c8a6,c8b7,c5a6,c5a4,c5b7,c5b3,c5d3,c5e6,c5e4,g6e5,g6f4,g6h4,g6h8,a7a6,a7a5,c7c6,d7d6,d7d5,e7e6,e7e5,g7g5,b5b4,h6h5]|['a7a5', 'a7a6', 'a8b8', 'b5b4', 'c5a4', 'c5a6', 'c5b3', 'c5b7', 'c5d3', 'c5e4', 'c5e6', 'c7c6', 'c8a6', 'c8b7', 'd7d5', 'd7d6', 'd8e8', 'e7e5', 'e7e6', 'f7e8', 'g6e5', 'g6f4', 'g6h4', 'g6h8', 'g7g5', 'g8h8', 'h6h5']|['a7a5', 'a7a6', 'a8b8', 'b5b4', 'c5a4', 'c5a6', 'c5b3', 'c5b7', 'c5d3', 'c5e4', 'c5e6', 'c7c6', 'c8a6', 'c8b7', 'd7d5', 'd7d6', 'd8e8', 'e7e5', 'e7e6', 'f6f5', 'f7e8', 'g6e5', 'g6f4', 'g6h4', 'g6h8', 'g8h8', 'h6h5']|False|
+Given the chess position in FEN notation: 1rb1k1r1/pN1pp2p/n6n/2p1b3/2PP3P/2N5/PP1PKPP1/R1B2B1R w - - 2 16
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+||[]|['a1b1', 'a2a3', 'a2a4', 'b2b3', 'b2b4', 'b7a5', 'b7c5', 'b7d6', 'b7d8', 'c3a4', 'c3b1', 'c3b5', 'c3d1', 'c3d5', 'c3e4', 'd2d3', 'd4c5', 'd4d5', 'd4e5', 'e2d1', 'e2d3', 'e2e1', 'e2e3', 'e2f3', 'f2f3', 'f2f4', 'g2g3', 'g2g4', 'h1g1', 'h1h2', 'h1h3', 'h4h5']|False|
+Given the chess position in FEN notation: r1bq1b1r/pppppkpp/5n2/1B6/8/4P3/1PPPnPPP/RN1K2NR w - - 0 8
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a1a2,a1a3,a1a4,a1a5,a1a6,a1a7,b1a3,b1c3,b2b3,b2b4,b5a2,b5a3,b5a4,b5a6,b5c4,b5c6,b5d3,b5e2,c2c3,c2c4,d1c1,d1e1,d1e2,d2d3,d2d4,e3e4,f2f3,f2f4,g1e2,g1f3,g1h3,g2g3,g2g4,h2h3,h2h4]|['a1a2', 'a1a3', 'a1a4', 'a1a5', 'a1a6', 'a1a7', 'b1a3', 'b1c3', 'b2b3', 'b2b4', 'b5a2', 'b5a3', 'b5a4', 'b5a6', 'b5c4', 'b5c6', 'b5d3', 'b5e2', 'c2c3', 'c2c4', 'd1c1', 'd1e1', 'd1e2', 'd2d3', 'd2d4', 'e3e4', 'f2f3', 'f2f4', 'g1e2', 'g1f3', 'g1h3', 'g2g3', 'g2g4', 'h2h3', 'h2h4']|['a1a2', 'a1a3', 'a1a4', 'a1a5', 'a1a6', 'a1a7', 'b1a3', 'b1c3', 'b2b3', 'b2b4', 'b5a4', 'b5a6', 'b5c4', 'b5c6', 'b5d3', 'b5d7', 'b5e2', 'c2c3', 'c2c4', 'd1e1', 'd1e2', 'd2d3', 'd2d4', 'e3e4', 'f2f3', 'f2f4', 'g1e2', 'g1f3', 'g1h3', 'g2g3', 'g2g4', 'h2h3', 'h2h4']|False|
+Given the chess position in FEN notation: 1rbqkb1r/ppppp3/5pp1/8/1P1P4/5n2/P1PnPPBP/RNQK1R2 b k - 1 13
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+||[]|['a7a5', 'a7a6', 'b7b5', 'b7b6', 'b8a8', 'c7c5', 'c7c6', 'd2b1', 'd2b3', 'd2c4', 'd2e4', 'd2f1', 'd7d5', 'd7d6', 'e7e5', 'e7e6', 'e8f7', 'f3d4', 'f3e1', 'f3e5', 'f3g1', 'f3g5', 'f3h2', 'f3h4', 'f6f5', 'f8g7', 'f8h6', 'g6g5', 'h8g8', 'h8h2', 'h8h3', 'h8h4', 'h8h5', 'h8h6', 'h8h7']|False|
+Given the chess position in FEN notation: rnb1kb1r/pp2ppp1/1qpp3n/1N5p/8/2P3PP/PP1PPP2/R1BQKBNR b Kkq - 1 7
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+||[]|['a7a5', 'a7a6', 'b6a5', 'b6a6', 'b6b5', 'b6c5', 'b6c7', 'b6d4', 'b6d8', 'b6e3', 'b6f2', 'b8a6', 'b8d7', 'c6b5', 'c6c5', 'c8d7', 'c8e6', 'c8f5', 'c8g4', 'c8h3', 'd6d5', 'e7e5', 'e7e6', 'e8d7', 'e8d8', 'f7f5', 'f7f6', 'g7g5', 'g7g6', 'h5h4', 'h6f5', 'h6g4', 'h6g8', 'h8g8', 'h8h7']|False|
+Given the chess position in FEN notation: rqbk1bnr/pp1ppp2/2p3Q1/3B4/3N3N/P2nP3/1PPP1PPP/R1B2RK1 w - - 7 21
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+||[]|['a1a2', 'a1b1', 'a3a4', 'b2b3', 'b2b4', 'c2c3', 'c2c4', 'c2d3', 'd4b3', 'd4b5', 'd4c6', 'd4e2', 'd4e6', 'd4f3', 'd4f5', 'd5a2', 'd5b3', 'd5c4', 'd5c6', 'd5e4', 'd5e6', 'd5f3', 'd5f7', 'e3e4', 'f1d1', 'f1e1', 'f2f3', 'f2f4', 'g1h1', 'g2g3', 'g2g4', 'g6c6', 'g6d3', 'g6d6', 'g6e4', 'g6e6', 'g6f5', 'g6f6', 'g6f7', 'g6g3', 'g6g4', 'g6g5', 'g6g7', 'g6g8', 'g6h5', 'g6h6', 'g6h7', 'h2h3', 'h4f3', 'h4f5']|False|
+Given the chess position in FEN notation: r2qk2r/p1pp1p1p/1pn1N1pn/4p3/5B2/b2P4/PP2PPPP/RQ2KB1R b Qkq - 0 10
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+||[]|['a3b2', 'a3b4', 'a3c5', 'a3d6', 'a3e7', 'a3f8', 'a7a5', 'a7a6', 'a8b8', 'a8c8', 'b6b5', 'c6a5', 'c6b4', 'c6b8', 'c6d4', 'c6e7', 'd7d5', 'd7d6', 'd7e6', 'd8b8', 'd8c8', 'd8e7', 'd8f6', 'd8g5', 'd8h4', 'e5e4', 'e5f4', 'e8e7', 'f7e6', 'f7f5', 'f7f6', 'g6g5', 'h6f5', 'h6g4', 'h6g8', 'h8f8', 'h8g8']|False|
+Given the chess position in FEN notation: b1r1qbnr/2p1pppp/4k3/1p1n4/6PP/8/RP1P1NB1/1N2KR2 b - - 1 20
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+||[]|['a8b7', 'a8c6', 'b5b4', 'c7c5', 'c7c6', 'c8b8', 'c8d8', 'd5b4', 'd5b6', 'd5c3', 'd5e3', 'd5f4', 'd5f6', 'e6d6', 'e6d7', 'e6e5', 'e6f6', 'e8c6', 'e8d7', 'e8d8', 'f7f5', 'f7f6', 'g7g5', 'g7g6', 'g8f6', 'g8h6', 'h7h5', 'h7h6']|False|
+Given the chess position in FEN notation: rn1qkb1r/1ppb1ppp/p3p3/1NNp4/8/8/PPPPPPBP/1RBQ1K1R b kq - 2 9
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+||[]|['a6a5', 'a6b5', 'a8a7', 'b7b6', 'b8c6', 'c7c6', 'd5d4', 'd7b5', 'd7c6', 'd7c8', 'd8c8', 'd8e7', 'd8f6', 'd8g5', 'd8h4', 'e6e5', 'e8e7', 'f7f5', 'f7f6', 'f8c5', 'f8d6', 'f8e7', 'g7g5', 'g7g6', 'h7h5', 'h7h6', 'h8g8']|False|
+Given the chess position in FEN notation: r2qk1nr/pbp1Nppp/4pb2/3p2Q1/1n6/4P3/PPPP1PPP/RNB1K2R b KQk - 1 13
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+||[]|['a7a5', 'a7a6', 'a8b8', 'a8c8', 'b4a2', 'b4a6', 'b4c2', 'b4c6', 'b4d3', 'b7a6', 'b7c6', 'b7c8', 'c7c5', 'c7c6', 'd5d4', 'd8b8', 'd8c8', 'd8d6', 'd8d7', 'd8e7', 'e6e5', 'e8d7', 'e8e7', 'e8f8', 'f6b2', 'f6c3', 'f6d4', 'f6e5', 'f6e7', 'f6g5', 'g7g6', 'g8e7', 'g8h6', 'h7h5', 'h7h6']|False|
+Given the chess position in FEN notation: rn1k1br1/pb1ppppp/2p5/p7/1P2N3/B6N/P1PPKPPP/4Q2R b - - 3 19
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+||[]|['a5a4', 'a5b4', 'a7a6', 'b7a6', 'b7c8', 'b8a6', 'c6c5', 'd7d5', 'd7d6', 'd8c7', 'd8c8', 'd8e8', 'e7e5', 'e7e6', 'f7f5', 'f7f6', 'g7g5', 'g7g6', 'g8h8', 'h7h5', 'h7h6']|False|
+Given the chess position in FEN notation: 1rbqkb1r/pp2pppp/n1pp1n2/4N3/1P6/P6P/2PPPPP1/RNBQKB1R w KQk - 0 6
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a1a2,a3a4,b1c3,b4b5,c1b2,c2c3,c2c4,d2d3,d2d4,e2e3,e2e4,e5c4,e5c6,e5d3,e5d7,e5f3,e5f7,e5g4,e5g6,f2f3,f2f4,g2g3,g2g4,h1g1,h1h2,h3h4]|['a1a2', 'a3a4', 'b1c3', 'b4b5', 'c1b2', 'c2c3', 'c2c4', 'd2d3', 'd2d4', 'e2e3', 'e2e4', 'e5c4', 'e5c6', 'e5d3', 'e5d7', 'e5f3', 'e5f7', 'e5g4', 'e5g6', 'f2f3', 'f2f4', 'g2g3', 'g2g4', 'h1g1', 'h1h2', 'h3h4']|['a1a2', 'a3a4', 'b1c3', 'b4b5', 'c1b2', 'c2c3', 'c2c4', 'd2d3', 'd2d4', 'e2e3', 'e2e4', 'e5c4', 'e5c6', 'e5d3', 'e5d7', 'e5f3', 'e5f7', 'e5g4', 'e5g6', 'f2f3', 'f2f4', 'g2g3', 'g2g4', 'h1g1', 'h1h2', 'h3h4']|True|
+Given the chess position in FEN notation: N1q1k1nr/p1p1ppbp/2np4/1p6/2PP1Q2/PP6/4PPBP/2R1K1NR w Kk - 1 20
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a3a4,a8b6,a8c7,b3b4,c1a1,c1b1,c1c2,c1c3,c1d1,c4c5,d4d5,e1d1,e1d2,e1f1,e2e3,e2e4,f2f3,f4c7,f4d2,f4d6,f4e3,f4e4,f4e5,f4f5,f4f6,f4f7,f4g3,f4g4,f4g5,f4h4,f4h6,g1f3,g1h3,g2c6,g2d3,g2d5,g2e4,g2f1,g2f3,g2h3,h2h3,h2h4]|['a3a4', 'a8b6', 'a8c7', 'b3b4', 'c1a1', 'c1b1', 'c1c2', 'c1c3', 'c1d1', 'c4c5', 'd4d5', 'e1d1', 'e1d2', 'e1f1', 'e2e3', 'e2e4', 'f2f3', 'f4c7', 'f4d2', 'f4d6', 'f4e3', 'f4e4', 'f4e5', 'f4f5', 'f4f6', 'f4f7', 'f4g3', 'f4g4', 'f4g5', 'f4h4', 'f4h6', 'g1f3', 'g1h3', 'g2c6', 'g2d3', 'g2d5', 'g2e4', 'g2f1', 'g2f3', 'g2h3', 'h2h3', 'h2h4']|['a3a4', 'a8b6', 'a8c7', 'b3b4', 'c1a1', 'c1b1', 'c1c2', 'c1c3', 'c1d1', 'c4b5', 'c4c5', 'd4d5', 'e1d1', 'e1d2', 'e1f1', 'e2e3', 'e2e4', 'f2f3', 'f4d2', 'f4d6', 'f4e3', 'f4e4', 'f4e5', 'f4f3', 'f4f5', 'f4f6', 'f4f7', 'f4g3', 'f4g4', 'f4g5', 'f4h4', 'f4h6', 'g1f3', 'g1h3', 'g2c6', 'g2d5', 'g2e4', 'g2f1', 'g2f3', 'g2h3', 'h2h3', 'h2h4']|False|
+Given the chess position in FEN notation: 4kb1r/prp1pp2/3pNn2/1p3bp1/1P6/N1R1PPK1/PBP1P1BP/2Q4R w k - 0 23
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a3b1,a3b5,a3c4,b2a1,c1a1,c1b1,c1d1,c1d2,c1e1,c1f1,c1g1,c3c4,c3c5,c3c6,c3c7,c3d3,e3e4,e6c5,e6c7,e6d4,e6d8,e6f4,e6f8,e6g5,e6g7,f3f4,g2f1,g2h3,g3f2,h1d1,h1e1,h1f1,h1g1,h2h3,h2h4]|['a3b1', 'a3b5', 'a3c4', 'b2a1', 'c1a1', 'c1b1', 'c1d1', 'c1d2', 'c1e1', 'c1f1', 'c1g1', 'c3c4', 'c3c5', 'c3c6', 'c3c7', 'c3d3', 'e3e4', 'e6c5', 'e6c7', 'e6d4', 'e6d8', 'e6f4', 'e6f8', 'e6g5', 'e6g7', 'f3f4', 'g2f1', 'g2h3', 'g3f2', 'h1d1', 'h1e1', 'h1f1', 'h1g1', 'h2h3', 'h2h4']|['a3b1', 'a3b5', 'a3c4', 'b2a1', 'c1a1', 'c1b1', 'c1d1', 'c1d2', 'c1e1', 'c1f1', 'c1g1', 'c3b3', 'c3c4', 'c3c5', 'c3c6', 'c3c7', 'c3d3', 'e3e4', 'e6c5', 'e6c7', 'e6d4', 'e6d8', 'e6f4', 'e6f8', 'e6g5', 'e6g7', 'f3f4', 'g2f1', 'g2h3', 'g3f2', 'h1d1', 'h1e1', 'h1f1', 'h1g1', 'h2h3', 'h2h4']|False|
+Given the chess position in FEN notation: 1nb2b1r/1pppq1pp/3rp3/p3k3/NP3p2/B3PPPP/P1PPK2R/R2Q1B2 w - - 8 29
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a1b1,a1c1,a3b2,a3c1,a4b2,a4b6,a4c3,a4c5,b4a5,b4b5,c2c3,c2c4,d1b1,d1c1,d1e1,d2d3,d2d4,e2e1,e2f2,e3e4,e3f4,f1g2,g3f4,g3g4,h2f2,h2g2,h3h4]|['a1b1', 'a1c1', 'a3b2', 'a3c1', 'a4b2', 'a4b6', 'a4c3', 'a4c5', 'b4a5', 'b4b5', 'c2c3', 'c2c4', 'd1b1', 'd1c1', 'd1e1', 'd2d3', 'd2d4', 'e2e1', 'e2f2', 'e3e4', 'e3f4', 'f1g2', 'g3f4', 'g3g4', 'h2f2', 'h2g2', 'h3h4']|['a1b1', 'a1c1', 'a3b2', 'a3c1', 'a4b2', 'a4b6', 'a4c3', 'a4c5', 'b4a5', 'b4b5', 'c2c3', 'c2c4', 'd1b1', 'd1c1', 'd1e1', 'd2d3', 'd2d4', 'e2e1', 'e2f2', 'e3e4', 'e3f4', 'f1g2', 'g3f4', 'g3g4', 'h2f2', 'h2g2', 'h2h1', 'h3h4']|False|
+Given the chess position in FEN notation: rn2q1nr/p2ppk1p/1pp2ppb/1bQ5/3P1PB1/6PN/PPP1P2P/RNB1K2R b - - 6 17
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [f7f8,f7g7,e8c8,e8d8,e8f8,b8a6,b5a4,b5a6,b5c4,b5d3,b5e2,h6g5,h6f4,h6g7,h6f8,a7a6,a7a5,d7d6,d7d5,b6c5,f6f5,g6g5]|['a7a5', 'a7a6', 'b5a4', 'b5a6', 'b5c4', 'b5d3', 'b5e2', 'b6c5', 'b8a6', 'd7d5', 'd7d6', 'e8c8', 'e8d8', 'e8f8', 'f6f5', 'f7f8', 'f7g7', 'g6g5', 'h6f4', 'h6f8', 'h6g5', 'h6g7']|['a7a5', 'a7a6', 'b5a4', 'b5a6', 'b5c4', 'b5d3', 'b5e2', 'b6c5', 'b8a6', 'd7d5', 'd7d6', 'e7e5', 'e7e6', 'e8c8', 'e8d8', 'e8f8', 'f6f5', 'f7f8', 'f7g7', 'g6g5', 'h6f4', 'h6f8', 'h6g5', 'h6g7']|False|
+Given the chess position in FEN notation: 4k1nr/rbppq2p/p1n2pp1/1p2p3/Pb2PP2/2NB2Q1/1PPP1NPP/R1B1K2R w KQk - 9 14
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a1a2,a1a3,a1b1,a4a5,a4b5,b2b3,b2b4,c1a3,c1e3,c3b1,c3b5,c3d1,c3d5,c3e2,d3b5,d3c4,d3e2,e1d1,e1e2,e1f1,e1g1,f2d1,f2e3,f2g4,f2h3,f4e5,f4f5,g2g4,g3e3,g3f3,g3g1,g3g4,g3g5,g3h3,g3h4,g3h5,h1f1,h1g1,h2h3,h2h4]|['a1a2', 'a1a3', 'a1b1', 'a4a5', 'a4b5', 'b2b3', 'b2b4', 'c1a3', 'c1e3', 'c3b1', 'c3b5', 'c3d1', 'c3d5', 'c3e2', 'd3b5', 'd3c4', 'd3e2', 'e1d1', 'e1e2', 'e1f1', 'e1g1', 'f2d1', 'f2e3', 'f2g4', 'f2h3', 'f4e5', 'f4f5', 'g2g4', 'g3e3', 'g3f3', 'g3g1', 'g3g4', 'g3g5', 'g3h3', 'g3h4', 'g3h5', 'h1f1', 'h1g1', 'h2h3', 'h2h4']|['a1a2', 'a1a3', 'a1b1', 'a4a5', 'a4b5', 'b2b3', 'c3a2', 'c3b1', 'c3b5', 'c3d1', 'c3d5', 'c3e2', 'd3b5', 'd3c4', 'd3e2', 'd3f1', 'e1d1', 'e1e2', 'e1f1', 'e1g1', 'f2d1', 'f2g4', 'f2h3', 'f4e5', 'f4f5', 'g3e3', 'g3f3', 'g3g4', 'g3g5', 'g3g6', 'g3h3', 'g3h4', 'h1f1', 'h1g1', 'h2h3', 'h2h4']|False|
+Given the chess position in FEN notation: 1nb1kb2/rp1pp1p1/5R1r/p1p1q2p/N5PP/PP6/1RPPnP2/2QK1BN1 w - - 2 19
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a4b6,a4c3,a4c5,b2a2,b2b1,b3b4,c2c3,c2c4,d2d3,d2d4,d1e1,f1e2,f1g2,f1h3,f2f3,f2f4,f6a6,f6b6,f6c6,f6d6,f6e6,f6f3,f6f4,f6f5,f6f7,f6f8,f6g6,f6h6,g1e2,g1f3,g1h3,g4g5,g4h5,c1a1,c1b1]|['a4b6', 'a4c3', 'a4c5', 'b2a2', 'b2b1', 'b3b4', 'c1a1', 'c1b1', 'c2c3', 'c2c4', 'd1e1', 'd2d3', 'd2d4', 'f1e2', 'f1g2', 'f1h3', 'f2f3', 'f2f4', 'f6a6', 'f6b6', 'f6c6', 'f6d6', 'f6e6', 'f6f3', 'f6f4', 'f6f5', 'f6f7', 'f6f8', 'f6g6', 'f6h6', 'g1e2', 'g1f3', 'g1h3', 'g4g5', 'g4h5']|['a4b6', 'a4c3', 'a4c5', 'b2a2', 'b2b1', 'b3b4', 'c1a1', 'c1b1', 'c2c3', 'c2c4', 'd1e1', 'd2d3', 'd2d4', 'f1e2', 'f1g2', 'f1h3', 'f2f3', 'f2f4', 'f6a6', 'f6b6', 'f6c6', 'f6d6', 'f6e6', 'f6f3', 'f6f4', 'f6f5', 'f6f7', 'f6f8', 'f6g6', 'f6h6', 'g1e2', 'g1f3', 'g1h3', 'g4g5', 'g4h5']|True|
+Given the chess position in FEN notation: 2r5/pbppkpn1/2n5/1p2pP2/4qN1p/P6B/PBPP3P/2R1Q1KR w - - 0 26
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [g1f1,c1a1,c1b1,c1d1,e1e2,e1e3,e1e4,e1f2,e1d1,e1f1,e1h4,f4g6,f4h5,f4e6,f4d5,f4e2,f4d3,b2a1,b2c3,b2d4,b2e5,h3f1,h3g4,a3a4,c2c3,c2c4,d2d3,d2d4,f5f6]|['a3a4', 'b2a1', 'b2c3', 'b2d4', 'b2e5', 'c1a1', 'c1b1', 'c1d1', 'c2c3', 'c2c4', 'd2d3', 'd2d4', 'e1d1', 'e1e2', 'e1e3', 'e1e4', 'e1f1', 'e1f2', 'e1h4', 'f4d3', 'f4d5', 'f4e2', 'f4e6', 'f4g6', 'f4h5', 'f5f6', 'g1f1', 'h3f1', 'h3g4']|['a3a4', 'b2a1', 'b2c3', 'b2d4', 'b2e5', 'c1a1', 'c1b1', 'c1d1', 'c2c3', 'c2c4', 'd2d3', 'd2d4', 'e1d1', 'e1e2', 'e1e3', 'e1e4', 'e1f1', 'e1f2', 'e1g3', 'e1h4', 'f4d3', 'f4d5', 'f4e2', 'f4e6', 'f4g2', 'f4g6', 'f4h5', 'f5f6', 'g1f1', 'g1f2', 'h3f1', 'h3g2', 'h3g4']|False|
+Given the chess position in FEN notation: 2r1k1nr/p2p1ppN/1q2p3/1Np4p/8/2P5/PP1P1PPP/1RB1KB1R b Kk - 2 17
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [e8d8,e8e7,b6a2,b6a3,b6a4,b6a5,b6a6,b6b5,b6b7,b6b8,b6c6,b6c7,b6d6,b6d8,c8a8,c8b8,c8d8,c8c7,c8c6,h8h7,h8h6,g8e7,g8f6,g8h6,a7a6,a7a5,d7d6,d7d5,f7f6,f7f5,g7g6,g7g5,e6e5,c5c4,h5h4]|['a7a5', 'a7a6', 'b6a2', 'b6a3', 'b6a4', 'b6a5', 'b6a6', 'b6b5', 'b6b7', 'b6b8', 'b6c6', 'b6c7', 'b6d6', 'b6d8', 'c5c4', 'c8a8', 'c8b8', 'c8c6', 'c8c7', 'c8d8', 'd7d5', 'd7d6', 'e6e5', 'e8d8', 'e8e7', 'f7f5', 'f7f6', 'g7g5', 'g7g6', 'g8e7', 'g8f6', 'g8h6', 'h5h4', 'h8h6', 'h8h7']|['a7a5', 'a7a6', 'b6a5', 'b6a6', 'b6b5', 'b6b7', 'b6b8', 'b6c6', 'b6c7', 'b6d6', 'b6d8', 'c5c4', 'c8a8', 'c8b8', 'c8c6', 'c8c7', 'c8d8', 'd7d5', 'd7d6', 'e6e5', 'e8d8', 'e8e7', 'f7f5', 'f7f6', 'g7g5', 'g7g6', 'g8e7', 'g8f6', 'g8h6', 'h5h4', 'h8h7']|False|
+Given the chess position in FEN notation: r1bqkbnr/1pppp1pp/p4p2/n7/3PP1P1/3K4/PPP1QP1P/RNB2BNR b kq - 0 7
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a5b3,a5c4,a5c6,a8a7,a8b8,b7b5,b7b6,c7c5,c7c6,d7d5,d7d6,e7e5,e7e6,e8f7,f6f5,g7g5,g7g6,g8e6,g8f7,g8h6,h7h5,h7h6,h8h7]|['a5b3', 'a5c4', 'a5c6', 'a8a7', 'a8b8', 'b7b5', 'b7b6', 'c7c5', 'c7c6', 'd7d5', 'd7d6', 'e7e5', 'e7e6', 'e8f7', 'f6f5', 'g7g5', 'g7g6', 'g8e6', 'g8f7', 'g8h6', 'h7h5', 'h7h6', 'h8h7']|['a5b3', 'a5c4', 'a5c6', 'a8a7', 'a8b8', 'b7b5', 'b7b6', 'c7c5', 'c7c6', 'd7d5', 'd7d6', 'e7e5', 'e7e6', 'e8f7', 'f6f5', 'g7g5', 'g7g6', 'g8h6', 'h7h5', 'h7h6']|False|
+Given the chess position in FEN notation: Nnb1k1r1/1ppp1ppp/p2npq1N/8/8/b6P/PPPPPPP1/R1BQKB1R w Q - 1 14
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a8b6,a8c7,h6f5,h6f7,h6g4,h6g8,b2a3,b2b3,b2b4,c2c3,c2c4,d2d3,d2d4,e2e3,e2e4,f2f3,f2f4,g2g3,g2g4,h3h4,a1b1,h1g1,h1h2]|['a1b1', 'a8b6', 'a8c7', 'b2a3', 'b2b3', 'b2b4', 'c2c3', 'c2c4', 'd2d3', 'd2d4', 'e2e3', 'e2e4', 'f2f3', 'f2f4', 'g2g3', 'g2g4', 'h1g1', 'h1h2', 'h3h4', 'h6f5', 'h6f7', 'h6g4', 'h6g8']|['a1b1', 'a8b6', 'a8c7', 'b2a3', 'b2b3', 'b2b4', 'c2c3', 'c2c4', 'd2d3', 'd2d4', 'e2e3', 'e2e4', 'f2f3', 'f2f4', 'g2g3', 'g2g4', 'h1g1', 'h1h2', 'h3h4', 'h6f5', 'h6f7', 'h6g4', 'h6g8']|True|
+Given the chess position in FEN notation: rn2kb1r/2pqpp1p/p2p4/Pp1N2p1/2P4P/2n3P1/1PQPPP2/R1B1KBNb w - - 2 18
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a1a2,a1a3,a1a4,a1b1,a1d1,b2b3,b2b4,b2c3,c1a3,c2a4,c2b1,c2b3,c2c3,c2d1,c2d3,c2e4,c2f5,c2g6,c2h7,c4b5,c4c5,d2c3,d2d3,d2d4,d5b4,d5b6,d5c3,d5c7,d5e3,d5e7,d5f4,d5f6,e2e3,e2e4,f1g2,f1h3,f2f3,f2f4,g1f3,g1h3,g3g4,h4g5,h4h5]|['a1a2', 'a1a3', 'a1a4', 'a1b1', 'a1d1', 'b2b3', 'b2b4', 'b2c3', 'c1a3', 'c2a4', 'c2b1', 'c2b3', 'c2c3', 'c2d1', 'c2d3', 'c2e4', 'c2f5', 'c2g6', 'c2h7', 'c4b5', 'c4c5', 'd2c3', 'd2d3', 'd2d4', 'd5b4', 'd5b6', 'd5c3', 'd5c7', 'd5e3', 'd5e7', 'd5f4', 'd5f6', 'e2e3', 'e2e4', 'f1g2', 'f1h3', 'f2f3', 'f2f4', 'g1f3', 'g1h3', 'g3g4', 'h4g5', 'h4h5']|['a1a2', 'a1a3', 'a1a4', 'a1b1', 'b2b3', 'b2b4', 'b2c3', 'c2a4', 'c2b1', 'c2b3', 'c2c3', 'c2d1', 'c2d3', 'c2e4', 'c2f5', 'c2g6', 'c2h7', 'c4b5', 'c4c5', 'd2c3', 'd2d3', 'd2d4', 'd5b4', 'd5b6', 'd5c3', 'd5c7', 'd5e3', 'd5e7', 'd5f4', 'd5f6', 'e2e3', 'e2e4', 'f1g2', 'f1h3', 'f2f3', 'f2f4', 'g1f3', 'g1h3', 'g3g4', 'h4g5', 'h4h5']|False|
+Given the chess position in FEN notation: rN1nkbr1/pp5p/3Bbpp1/1p2p3/6qP/1P3P2/P1PPnKP1/R3QB1R b q - 3 21
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [f8d6]|['f8d6']|['a7a5', 'a7a6', 'a8b8', 'b5b4', 'b7b6', 'd8c6', 'd8f7', 'e2c1', 'e2c3', 'e2d4', 'e2f4', 'e2g1', 'e2g3', 'e5e4', 'e6b3', 'e6c4', 'e6c8', 'e6d5', 'e6d7', 'e6f5', 'e6f7', 'e8f7', 'f6f5', 'f8d6', 'f8e7', 'f8g7', 'f8h6', 'g4a4', 'g4b4', 'g4c4', 'g4d4', 'g4e4', 'g4f3', 'g4f4', 'g4f5', 'g4g2', 'g4g3', 'g4g5', 'g4h3', 'g4h4', 'g4h5', 'g6g5', 'g8g7', 'g8h8', 'h7h5', 'h7h6']|False|
+Given the chess position in FEN notation: 1nbqnb2/Npppkp1p/4p1r1/pr6/3PPp2/1B3P2/PPP2KPP/R1BQ3R w - - 2 16
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a1b1,a2a3,a2a4,a7b5,a7c6,a7c8,b3a4,b3a5,b3c4,b3d5,b3e6,c1d2,c1e3,c1f4,c2c3,c2c4,d1d2,d1d3,d1e1,d1e2,d1e3,d1f1,d1g1,d4d5,e4e5,f2e1,f2e2,f2e3,f2f1,f2f3,f2g1,g2g3,g2g4,h1e1,h1f1,h1g1,h2h3,h2h4]|['a1b1', 'a2a3', 'a2a4', 'a7b5', 'a7c6', 'a7c8', 'b3a4', 'b3a5', 'b3c4', 'b3d5', 'b3e6', 'c1d2', 'c1e3', 'c1f4', 'c2c3', 'c2c4', 'd1d2', 'd1d3', 'd1e1', 'd1e2', 'd1e3', 'd1f1', 'd1g1', 'd4d5', 'e4e5', 'f2e1', 'f2e2', 'f2e3', 'f2f1', 'f2f3', 'f2g1', 'g2g3', 'g2g4', 'h1e1', 'h1f1', 'h1g1', 'h2h3', 'h2h4']|['a1b1', 'a2a3', 'a2a4', 'a7b5', 'a7c6', 'a7c8', 'b3a4', 'b3c4', 'b3d5', 'b3e6', 'c1d2', 'c1e3', 'c1f4', 'c2c3', 'c2c4', 'd1d2', 'd1d3', 'd1e1', 'd1e2', 'd1f1', 'd1g1', 'd4d5', 'e4e5', 'f2e1', 'f2e2', 'f2f1', 'f2g1', 'g2g3', 'g2g4', 'h1e1', 'h1f1', 'h1g1', 'h2h3', 'h2h4']|False|
+Given the chess position in FEN notation: rnb1kb2/pppp1p1p/2n1p3/4q3/1P2P3/2P4P/P1QP1PP1/RN2KBNR b KQq - 1 14
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a7a5,a7a6,b7b5,b7b6,b8a6,c6a5,c6b4,c6d4,c6d8,c6e7,d7d5,d7d6,e5a5,e5b5,e5c3,e5c5,e5d4,e5d5,e5d6,e5e4,e5f4,e5f5,e5f6,e5g3,e5g5,e5g7,e5h2,e5h5,e5h8,e8d8,e8e7,f7f5,f7f6,f8b4,f8c5,f8d6,f8e7,f8g7,f8h6,h7h5,h7h6]|['a7a5', 'a7a6', 'b7b5', 'b7b6', 'b8a6', 'c6a5', 'c6b4', 'c6d4', 'c6d8', 'c6e7', 'd7d5', 'd7d6', 'e5a5', 'e5b5', 'e5c3', 'e5c5', 'e5d4', 'e5d5', 'e5d6', 'e5e4', 'e5f4', 'e5f5', 'e5f6', 'e5g3', 'e5g5', 'e5g7', 'e5h2', 'e5h5', 'e5h8', 'e8d8', 'e8e7', 'f7f5', 'f7f6', 'f8b4', 'f8c5', 'f8d6', 'f8e7', 'f8g7', 'f8h6', 'h7h5', 'h7h6']|['a7a5', 'a7a6', 'b7b5', 'b7b6', 'b8a6', 'c6a5', 'c6b4', 'c6d4', 'c6d8', 'c6e7', 'd7d5', 'd7d6', 'e5a5', 'e5b5', 'e5c3', 'e5c5', 'e5d4', 'e5d5', 'e5d6', 'e5e4', 'e5f4', 'e5f5', 'e5f6', 'e5g3', 'e5g5', 'e5g7', 'e5h2', 'e5h5', 'e5h8', 'e8d8', 'e8e7', 'f7f5', 'f7f6', 'f8b4', 'f8c5', 'f8d6', 'f8e7', 'f8g7', 'f8h6', 'h7h5', 'h7h6']|True|
+Given the chess position in FEN notation: 2b1q2r/rppp1pkp/B2bp3/3nn1p1/P2N4/N3R1B1/2PP2PP/2QK2R1 b - - 6 26
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [g7f6,g7f8,g7g6,g7g8,g7h6,e8e7,e8f8,e8g8,h8g8,h8f8,d6c5,d6b4,d6a3,d6e7,d6f8,d5b6,d5b4,d5c3,d5e3,d5f4,d5f6,d5e7,e5c6,e5c4,e5d3,e5f3,e5g4,e5g6,b7a6,b7b6,b7b5,c7c6,c7c5,f7f6,f7f5,h7h6,h7h5,g5g4]|['b7a6', 'b7b5', 'b7b6', 'c7c5', 'c7c6', 'd5b4', 'd5b6', 'd5c3', 'd5e3', 'd5e7', 'd5f4', 'd5f6', 'd6a3', 'd6b4', 'd6c5', 'd6e7', 'd6f8', 'e5c4', 'e5c6', 'e5d3', 'e5f3', 'e5g4', 'e5g6', 'e8e7', 'e8f8', 'e8g8', 'f7f5', 'f7f6', 'g5g4', 'g7f6', 'g7f8', 'g7g6', 'g7g8', 'g7h6', 'h7h5', 'h7h6', 'h8f8', 'h8g8']|['a7a6', 'a7a8', 'b7a6', 'b7b5', 'b7b6', 'c7c5', 'c7c6', 'd5b4', 'd5b6', 'd5c3', 'd5e3', 'd5e7', 'd5f4', 'd5f6', 'd6a3', 'd6b4', 'd6c5', 'd6e7', 'd6f8', 'e5c4', 'e5c6', 'e5d3', 'e5f3', 'e5g4', 'e5g6', 'e8d8', 'e8e7', 'e8f8', 'e8g8', 'f7f5', 'f7f6', 'g5g4', 'g7f6', 'g7f8', 'g7g6', 'g7g8', 'g7h6', 'h7h5', 'h7h6', 'h8f8', 'h8g8']|False|
+Given the chess position in FEN notation: 2r1kb2/1Np1Nppr/3p4/7p/P4P2/1pq2BPP/1PnPPR2/1RBQK3 w - - 0 30
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [e1f1,d1c2]|['d1c2', 'e1f1']|['d1c2', 'e1f1']|True|
+Given the chess position in FEN notation: r1bk1br1/pp2p1p1/8/2p2p1p/P1n5/1P1BP2N/1B1P3P/1R2K2R w K - 2 23
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a4a5,b1a1,b1c1,b1d1,b2a1,b2c3,b2d4,b2e5,b2f6,b2g7,b3b4,b3c4,d3c2,d3c4,d3e2,d3e4,d3f1,d3f5,e1d1,e1e2,e1f1,e1f2,e1g1,e3e4,h1f1,h1g1,h2h4,h3f2,h3f4,h3g1,h3g5]|['a4a5', 'b1a1', 'b1c1', 'b1d1', 'b2a1', 'b2c3', 'b2d4', 'b2e5', 'b2f6', 'b2g7', 'b3b4', 'b3c4', 'd3c2', 'd3c4', 'd3e2', 'd3e4', 'd3f1', 'd3f5', 'e1d1', 'e1e2', 'e1f1', 'e1f2', 'e1g1', 'e3e4', 'h1f1', 'h1g1', 'h2h4', 'h3f2', 'h3f4', 'h3g1', 'h3g5']|['a4a5', 'b1a1', 'b1c1', 'b1d1', 'b2a1', 'b2a3', 'b2c1', 'b2c3', 'b2d4', 'b2e5', 'b2f6', 'b2g7', 'b3b4', 'b3c4', 'd3c2', 'd3c4', 'd3e2', 'd3e4', 'd3f1', 'd3f5', 'e1d1', 'e1e2', 'e1f1', 'e1f2', 'e1g1', 'e3e4', 'h1f1', 'h1g1', 'h3f2', 'h3f4', 'h3g1', 'h3g5']|False|
+Given the chess position in FEN notation: N1b1k3/pppp1q2/6pn/5nN1/3PPB2/5pPr/PPP1BP1P/1R1Q1K1R b - - 2 23
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [e8d8,e8e7,e8f8,f7f8,f7f6,f7f4,f7e7,f7g7,f7h7,f7e6,f7d5,f7c4,f7b3,f7a2,f7g8,f7h8,h6g8,h6g4,f5e7,f5g7,f5d6,f5d4,f5h4,f5g3,f5e3,a7a6,a7a5,b7b6,b7b5,c7c6,c7c5,d7d6,d7d5,f3e2,h3h4,h3h5,h3h7,h3h8,h3g3,h3e3,h3d3,h3c3,h3b3,h3a3]|['a7a5', 'a7a6', 'b7b5', 'b7b6', 'c7c5', 'c7c6', 'd7d5', 'd7d6', 'e8d8', 'e8e7', 'e8f8', 'f3e2', 'f5d4', 'f5d6', 'f5e3', 'f5e7', 'f5g3', 'f5g7', 'f5h4', 'f7a2', 'f7b3', 'f7c4', 'f7d5', 'f7e6', 'f7e7', 'f7f4', 'f7f6', 'f7f8', 'f7g7', 'f7g8', 'f7h7', 'f7h8', 'h3a3', 'h3b3', 'h3c3', 'h3d3', 'h3e3', 'h3g3', 'h3h4', 'h3h5', 'h3h7', 'h3h8', 'h6g4', 'h6g8']|['a7a5', 'a7a6', 'b7b5', 'b7b6', 'c7c5', 'c7c6', 'd7d5', 'd7d6', 'e8d8', 'e8e7', 'e8f8', 'f3e2', 'f5d4', 'f5d6', 'f5e3', 'f5e7', 'f5g3', 'f5g7', 'f5h4', 'f7a2', 'f7b3', 'f7c4', 'f7d5', 'f7e6', 'f7e7', 'f7f6', 'f7f8', 'f7g7', 'f7g8', 'f7h7', 'h3g3', 'h3h2', 'h3h4', 'h3h5', 'h6g4', 'h6g8']|False|
+Given the chess position in FEN notation: rn5b/1pp1pp2/p3k1p1/3p4/6Rr/6P1/1P1PPKR1/2B2B2 w - - 6 31
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [Kf2e1,Kf2e3,Kf2f3,Kf2g1,Rg4a4,Rg4b4,Rg4c4,Rg4d4,Rg4e4,Rg4f4,Rg4g5,Rg4g6,Rg4h4,Rg2g1,Rg2h2,b2b3,b2b4,d2d3,d2d4,e2e3,e2e4,g3h4]|['b2b3', 'b2b4', 'd2d3', 'd2d4', 'e2e3', 'e2e4', 'g3h4']|['b2b3', 'b2b4', 'd2d3', 'd2d4', 'e2e3', 'e2e4', 'f2e1', 'f2e3', 'f2f3', 'f2g1', 'g2g1', 'g2h2', 'g3h4', 'g4a4', 'g4b4', 'g4c4', 'g4d4', 'g4e4', 'g4f4', 'g4g5', 'g4g6', 'g4h4']|False|
+Given the chess position in FEN notation: 1rbqk2N/ppppn2p/2n1p3/8/4P3/1P1P2b1/P1PKP1PP/2RQ1B1R w - - 1 17
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a2a3,a2a4,b3b4,c1a1,c1b1,c2c3,c2c4,d1e1,d2c1,d2c2,d2c3,d2d1,d2d3,d2e2,d2e3,d3d4,e2e3,e4e5,h1e1,h1g1,h2h3,h2h4,h8f7,h8g6]|['a2a3', 'a2a4', 'b3b4', 'c1a1', 'c1b1', 'c2c3', 'c2c4', 'd1e1', 'd2c1', 'd2c2', 'd2c3', 'd2d1', 'd2d3', 'd2e2', 'd2e3', 'd3d4', 'e2e3', 'e4e5', 'h1e1', 'h1g1', 'h2h3', 'h2h4', 'h8f7', 'h8g6']|['a2a3', 'a2a4', 'b3b4', 'c1a1', 'c1b1', 'c2c3', 'c2c4', 'd1e1', 'd2c3', 'd2e3', 'd3d4', 'e2e3', 'e4e5', 'h1g1', 'h2g3', 'h2h3', 'h2h4', 'h8f7', 'h8g6']|False|
+Given the chess position in FEN notation: rnb2b2/pp1pkppr/4n2p/8/4N2P/1P6/P2P1P2/R1BK1Bq1 b - - 0 26
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [e7d8,e7e8,e7f8,h7h8,b8a6,b8c6,e6d4,e6c5,e6c7,e6d8,e6g5,e6f4,g1g2,g1g3,g1g4,g1g5,g1g6,g1h2,g1h3,g1f1,g1f2,a7a6,a7a5,b7b6,b7b5,d7d6,d7d5,f7f6,f7f5,g7g6,g7g5,h6h5]|['a7a5', 'a7a6', 'b7b5', 'b7b6', 'b8a6', 'b8c6', 'd7d5', 'd7d6', 'e6c5', 'e6c7', 'e6d4', 'e6d8', 'e6f4', 'e6g5', 'e7d8', 'e7e8', 'e7f8', 'f7f5', 'f7f6', 'g1f1', 'g1f2', 'g1g2', 'g1g3', 'g1g4', 'g1g5', 'g1g6', 'g1h2', 'g1h3', 'g7g5', 'g7g6', 'h6h5', 'h7h8']|['a7a5', 'a7a6', 'b7b5', 'b7b6', 'b8a6', 'b8c6', 'd7d5', 'd7d6', 'e6c5', 'e6c7', 'e6d4', 'e6d8', 'e6f4', 'e6g5', 'e7d8', 'e7e8', 'f7f5', 'f7f6', 'g1f1', 'g1f2', 'g1g2', 'g1g3', 'g1g4', 'g1g5', 'g1g6', 'g1h1', 'g1h2', 'g7g5', 'g7g6', 'h6h5', 'h7h8']|False|
+Given the chess position in FEN notation: 1nb3r1/rp1p1p1p/p1p2k1b/4pp2/1P4nP/8/PNPPP1P1/1RBQKBR1 b - - 7 19
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a6a5,a7a8,b7b5,b7b6,c6c5,d7d6,e5e4,f5f4,f6e6,f6e7,f6g6,f6g7,g4e3,g4f2,g4h2,g4h5,g8d8,g8e8,g8f8,g8g5,g8g6,g8g7,h6e3,h6f4,h6f8,h6g5,h6g7]|['a6a5', 'a7a8', 'b7b5', 'b7b6', 'c6c5', 'd7d6', 'e5e4', 'f5f4', 'f6e6', 'f6e7', 'f6g6', 'f6g7', 'g4e3', 'g4f2', 'g4h2', 'g4h5', 'g8d8', 'g8e8', 'g8f8', 'g8g5', 'g8g6', 'g8g7', 'h6e3', 'h6f4', 'h6f8', 'h6g5', 'h6g7']|['a6a5', 'a7a8', 'b7b5', 'b7b6', 'c6c5', 'd7d5', 'd7d6', 'e5e4', 'f5f4', 'f6e6', 'f6e7', 'f6g6', 'f6g7', 'g4e3', 'g4f2', 'g4h2', 'g8d8', 'g8e8', 'g8f8', 'g8g5', 'g8g6', 'g8g7', 'g8h8', 'h6d2', 'h6e3', 'h6f4', 'h6f8', 'h6g5', 'h6g7']|False|
+Given the chess position in FEN notation: 3qkb1r/r1pbpnp1/p7/1p1P4/1P1n4/B4Q2/P3P2P/RN3K2 b - - 3 26
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a6a5,a7a8,a7b7,c7c5,c7c6,d4b3,d4c2,d4c6,d4e2,d4e6,d4f3,d4f5,d7c6,d7e6,d7f5,d7g4,d7h3,d8a8,d8b8,d8c8,e7e5,e7e6,f7d6,f7e5,f7g5,f7h6,g7g5,g7g6,h8g8,h8h3,h8h4,h8h5,h8h6,h8h7]|['a6a5', 'a7a8', 'a7b7', 'c7c5', 'c7c6', 'd4b3', 'd4c2', 'd4c6', 'd4e2', 'd4e6', 'd4f3', 'd4f5', 'd7c6', 'd7e6', 'd7f5', 'd7g4', 'd7h3', 'd8a8', 'd8b8', 'd8c8', 'e7e5', 'e7e6', 'f7d6', 'f7e5', 'f7g5', 'f7h6', 'g7g5', 'g7g6', 'h8g8', 'h8h3', 'h8h4', 'h8h5', 'h8h6', 'h8h7']|['a6a5', 'a7a8', 'a7b7', 'c7c5', 'c7c6', 'd4b3', 'd4c2', 'd4c6', 'd4e2', 'd4e6', 'd4f3', 'd4f5', 'd7c6', 'd7c8', 'd7e6', 'd7f5', 'd7g4', 'd7h3', 'd8a8', 'd8b8', 'd8c8', 'e7e5', 'e7e6', 'f7d6', 'f7e5', 'f7g5', 'f7h6', 'g7g5', 'g7g6', 'h8g8', 'h8h2', 'h8h3', 'h8h4', 'h8h5', 'h8h6', 'h8h7']|False|
+Given the chess position in FEN notation: r1bqkbnr/pp1p1pp1/n3p3/7p/2p1N1P1/7B/PPPPPP1P/1RBQK1NR w Kkq - 2 6
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a2a3,a2a4,b1a1,b2b3,b2b4,c2c3,d2d3,d2d4,e1f1,e2e3,e2e4,e4c3,e4c5,e4d6,e4f6,e4g3,e4g5,f2f3,f2f4,g1f3,g4g5,g4h5,h2h4,h3f1,h3g2]|['a2a3', 'a2a4', 'b1a1', 'b2b3', 'b2b4', 'c2c3', 'd2d3', 'd2d4', 'e1f1', 'e2e3', 'e2e4', 'e4c3', 'e4c5', 'e4d6', 'e4f6', 'e4g3', 'e4g5', 'f2f3', 'f2f4', 'g1f3', 'g4g5', 'g4h5', 'h2h4', 'h3f1', 'h3g2']|['a2a3', 'a2a4', 'b1a1', 'b2b3', 'b2b4', 'c2c3', 'd2d3', 'd2d4', 'e1f1', 'e2e3', 'e4c3', 'e4c5', 'e4d6', 'e4f6', 'e4g3', 'e4g5', 'f2f3', 'f2f4', 'g1f3', 'g4g5', 'g4h5', 'h3f1', 'h3g2']|False|
+Given the chess position in FEN notation: r1qnk1n1/2p2pbr/7p/pp1pp1p1/8/NP3B1P/PRPPPP2/2BQK1R1 b q - 1 16
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a5a4,a8a6,a8a7,a8b8,b5b4,c7c5,c7c6,c8a6,c8b7,c8b8,c8d7,c8e6,c8f5,c8g4,c8h3,d5d4,d8b7,d8c6,d8e6,e5e4,e8d7,e8e7,e8f8,f7f5,f7f6,g5g4,g7a3,g7b4,g7c5,g7d6,g7e7,g7f6,g7f8,g7h8,g8e7,g8f6,h6h5,h7h8]|['a5a4', 'a8a6', 'a8a7', 'a8b8', 'b5b4', 'c7c5', 'c7c6', 'c8a6', 'c8b7', 'c8b8', 'c8d7', 'c8e6', 'c8f5', 'c8g4', 'c8h3', 'd5d4', 'd8b7', 'd8c6', 'd8e6', 'e5e4', 'e8d7', 'e8e7', 'e8f8', 'f7f5', 'f7f6', 'g5g4', 'g7a3', 'g7b4', 'g7c5', 'g7d6', 'g7e7', 'g7f6', 'g7f8', 'g7h8', 'g8e7', 'g8f6', 'h6h5', 'h7h8']|['a5a4', 'a8a6', 'a8a7', 'a8b8', 'b5b4', 'c7c5', 'c7c6', 'c8a6', 'c8b7', 'c8b8', 'c8d7', 'c8e6', 'c8f5', 'c8g4', 'c8h3', 'd5d4', 'd8b7', 'd8c6', 'd8e6', 'e5e4', 'e8d7', 'e8e7', 'e8f8', 'f7f5', 'f7f6', 'g5g4', 'g7f6', 'g7f8', 'g7h8', 'g8e7', 'g8f6', 'h6h5', 'h7h8']|False|
+Given the chess position in FEN notation: 3qkb2/pr1pppp1/b7/2PK2Qp/5B2/1rP2P2/PP2P1PP/4RBNR b - - 6 26
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a6b5,a6c4,a6d3,a6e2,b3a3,b3b4,b3b5,b3b6,b3c3,b7b4,b7b5,b7b6,b7b8,b7c7,d7d6,d8a5,d8a8,d8b6,d8b8,d8c7,d8c8,d8g8,d8h8,e7e5,e7e6,f7f5,f7f6,g7g6,h5h3,h5h4]|['a6b5', 'a6c4', 'a6d3', 'a6e2', 'b3a3', 'b3b4', 'b3b5', 'b3b6', 'b3c3', 'b7b4', 'b7b5', 'b7b6', 'b7b8', 'b7c7', 'd7d6', 'd8a5', 'd8a8', 'd8b6', 'd8b8', 'd8c7', 'd8c8', 'd8g8', 'd8h8', 'e7e5', 'e7e6', 'f7f5', 'f7f6', 'g7g6', 'h5h3', 'h5h4']|['a6b5', 'a6c4', 'a6d3', 'a6e2', 'b3a3', 'b3b2', 'b3b4', 'b3b5', 'b3b6', 'b3c3', 'b7b4', 'b7b5', 'b7b6', 'b7b8', 'b7c7', 'd7d6', 'd8a5', 'd8a8', 'd8b6', 'd8b8', 'd8c7', 'd8c8', 'e7e5', 'e7e6', 'f7f5', 'f7f6', 'g7g6', 'h5h4']|False|
+Given the chess position in FEN notation: r1bnkbr1/p1p1p1pp/1p3p2/3pB1q1/1PB1P1n1/N4N2/P1PP1PPP/1R1KQ2R w - - 4 20
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a2a3,a2a4,b1a1,b1b2,b1b3,b1c1,c2c3,c4a6,c4b3,c4b5,c4d3,c4d5,c4e2,c4f1,d2d3,d2d4,e1c1,e1c3,e1e2,e1e3,e1f1,e1f2,e1g1,e1g3,e1h4,e4d5,e5a1,e5b2,e5c3,e5c7,e5d4,e5d6,e5f4,e5f6,e5g3,f2f4,f3d2,f3d4,f3g1,f3g5,f3h4,g2g3,h1f1,h1g1,h2h3,h2h4,a3b5,a3c2,d1c1]|['a2a3', 'a2a4', 'a3b5', 'a3c2', 'b1a1', 'b1b2', 'b1b3', 'b1c1', 'c2c3', 'c4a6', 'c4b3', 'c4b5', 'c4d3', 'c4d5', 'c4e2', 'c4f1', 'd1c1', 'd2d3', 'd2d4', 'e1c1', 'e1c3', 'e1e2', 'e1e3', 'e1f1', 'e1f2', 'e1g1', 'e1g3', 'e1h4', 'e4d5', 'e5a1', 'e5b2', 'e5c3', 'e5c7', 'e5d4', 'e5d6', 'e5f4', 'e5f6', 'e5g3', 'f2f4', 'f3d2', 'f3d4', 'f3g1', 'f3g5', 'f3h4', 'g2g3', 'h1f1', 'h1g1', 'h2h3', 'h2h4']|['a3b5', 'b1a1', 'b1b2', 'b1b3', 'b1c1', 'b4b5', 'c2c3', 'c4a6', 'c4b3', 'c4b5', 'c4d3', 'c4d5', 'c4e2', 'c4f1', 'd1c1', 'd1e2', 'd2d3', 'd2d4', 'e1e2', 'e1e3', 'e1f1', 'e1g1', 'e4d5', 'e5a1', 'e5b2', 'e5c3', 'e5c7', 'e5d4', 'e5d6', 'e5f4', 'e5f6', 'e5g3', 'f3d4', 'f3g1', 'f3g5', 'f3h4', 'g2g3', 'h1f1', 'h1g1', 'h2h3', 'h2h4']|False|
+Given the chess position in FEN notation: 1r1qkbnr/ppp1pppp/2np4/7b/1PP1P3/5N2/P2PBPPP/RNBQK2R b KQk - 2 6
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a7a5,a7a6,b7b5,b7b6,b8a8,b8c8,c6a5,c6b4,c6d4,c6e5,d6d5,d8c8,d8d7,e7e5,e7e6,e8d7,f7f5,f7f6,g7g5,g7g6,g8f6,g8h6,h5f3,h5g4,h5g6,h7h6]|['a7a5', 'a7a6', 'b7b5', 'b7b6', 'b8a8', 'b8c8', 'c6a5', 'c6b4', 'c6d4', 'c6e5', 'd6d5', 'd8c8', 'd8d7', 'e7e5', 'e7e6', 'e8d7', 'f7f5', 'f7f6', 'g7g5', 'g7g6', 'g8f6', 'g8h6', 'h5f3', 'h5g4', 'h5g6', 'h7h6']|['a7a5', 'a7a6', 'b7b5', 'b7b6', 'b8a8', 'b8c8', 'c6a5', 'c6b4', 'c6d4', 'c6e5', 'd6d5', 'd8c8', 'd8d7', 'e7e5', 'e7e6', 'e8d7', 'f7f5', 'f7f6', 'g7g5', 'g7g6', 'g8f6', 'g8h6', 'h5f3', 'h5g4', 'h5g6', 'h7h6']|True|
+Given the chess position in FEN notation: rq2k1r1/ppp1p1b1/B2p1p2/1N5p/3nnQ2/2P4b/PP3PP1/R1B1K1NR b q - 1 18
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [b7a6,b7b6,b8c8,b8d8,c7c5,c7c6,d4b3,d4b5,d4c2,d4c6,d4e2,d4e6,d4f3,d4f5,d6d5,e4c3,e4c5,e4d2,e4f2,e4g3,e4g5,e7e5,e7e6,e8d7,e8d8,e8f7,e8f8,f6f5,g7h6,g7h8,g8f8,g8h8,h3c8,h3d7,h3e6,h3f5,h3g2,h3g4,h5h4]|['b7a6', 'b7b6', 'b8c8', 'b8d8', 'c7c5', 'c7c6', 'd4b3', 'd4b5', 'd4c2', 'd4c6', 'd4e2', 'd4e6', 'd4f3', 'd4f5', 'd6d5', 'e4c3', 'e4c5', 'e4d2', 'e4f2', 'e4g3', 'e4g5', 'e7e5', 'e7e6', 'e8d7', 'e8d8', 'e8f7', 'e8f8', 'f6f5', 'g7h6', 'g7h8', 'g8f8', 'g8h8', 'h3c8', 'h3d7', 'h3e6', 'h3f5', 'h3g2', 'h3g4', 'h5h4']|['b7a6', 'b7b6', 'b8c8', 'b8d8', 'c7c5', 'c7c6', 'd4b3', 'd4b5', 'd4c2', 'd4c6', 'd4e2', 'd4e6', 'd4f3', 'd4f5', 'd6d5', 'e4c3', 'e4c5', 'e4d2', 'e4f2', 'e4g3', 'e4g5', 'e7e5', 'e7e6', 'e8d7', 'e8d8', 'e8f7', 'e8f8', 'f6f5', 'g7f8', 'g7h6', 'g7h8', 'g8f8', 'g8h8', 'h3c8', 'h3d7', 'h3e6', 'h3f5', 'h3g2', 'h3g4', 'h5h4']|False|
+Given the chess position in FEN notation: 1nb3Qr/1ppp2pp/1r2p2k/R5b1/8/3BP1PP/1BPP3R/4K3 b - - 8 26
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [h7h6,g7g6,g7g5,e6e5,d7d6,d7d5,c7c6,b6a6,b6b3,b6b4,b6b5,b6c6,b6d6,g5d8,g5e7,g5f4,g5f6,g5h4,b8a6,b8c6]|['b6a6', 'b6b3', 'b6b4', 'b6b5', 'b6c6', 'b6d6', 'b8a6', 'b8c6', 'c7c6', 'd7d5', 'd7d6', 'e6e5', 'g5d8', 'g5e7', 'g5f4', 'g5f6', 'g5h4', 'g7g5', 'g7g6', 'h7h6']|['b6a6', 'b6b2', 'b6b3', 'b6b4', 'b6b5', 'b6c6', 'b6d6', 'b8a6', 'b8c6', 'c7c5', 'c7c6', 'd7d5', 'd7d6', 'e6e5', 'g5d8', 'g5e3', 'g5e7', 'g5f4', 'g5f6', 'g5h4', 'g7g6', 'h6h5', 'h8g8']|False|
+Given the chess position in FEN notation: 2kr1bnr/5pp1/3p1q2/ppp1n2p/P2P1P2/2K3RN/1PP1P1PP/2BQ1B1R w - - 0 19
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a4b5,b2b3,b2b4,c1d2,c1e3,c3b3,c3b4,c3d2,d1d2,d1d3,d1e1,d4c5,d4d5,d4e5,e2e3,e2e4,f4e5,f4f5,g3d3,g3e3,g3f3,g3g4,g3g5,g3g6,g3g7,h1g1,h3f2,h3g1,h3g5]|['a4b5', 'b2b3', 'b2b4', 'c1d2', 'c1e3', 'c3b3', 'c3b4', 'c3d2', 'd1d2', 'd1d3', 'd1e1', 'd4c5', 'd4d5', 'd4e5', 'e2e3', 'e2e4', 'f4e5', 'f4f5', 'g3d3', 'g3e3', 'g3f3', 'g3g4', 'g3g5', 'g3g6', 'g3g7', 'h1g1', 'h3f2', 'h3g1', 'h3g5']|['a4b5', 'b2b3', 'b2b4', 'c1d2', 'c1e3', 'c3b3', 'c3d2', 'd1d2', 'd1d3', 'd1e1', 'd4c5', 'd4d5', 'd4e5', 'e2e3', 'e2e4', 'f4e5', 'f4f5', 'g3d3', 'g3e3', 'g3f3', 'g3g4', 'g3g5', 'g3g6', 'g3g7', 'h1g1', 'h3f2', 'h3g1', 'h3g5']|False|
+Given the chess position in FEN notation: rnbk1bnr/ppqppppp/8/2Pp4/8/7Q/PP1PPPPP/RNB1KBR1 w Q - 2 11
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [h3a3,h3b3,h3c3,h3d3,h3e3,h3f3,h3g3,h3h4,h3h5,h3h6,h3h7,h3h8,h3g4,h3f5,h3e6,h3d7,h3c8,b1a3,b1c3,g1h1,e1d1,e1d2,e1e2,e1f2,a2a3,a2a4,b2b3,b2b4,c5c6,d2d3,d2d4,e2e3,e2e4,f2f3,f2f4,g2g3,g2g4]|['a2a3', 'a2a4', 'b1a3', 'b1c3', 'b2b3', 'b2b4', 'c5c6', 'd2d3', 'd2d4', 'e1d1', 'e1d2', 'e1e2', 'e1f2', 'e2e3', 'e2e4', 'f2f3', 'f2f4', 'g1h1', 'g2g3', 'g2g4', 'h3a3', 'h3b3', 'h3c3', 'h3c8', 'h3d3', 'h3d7', 'h3e3', 'h3e6', 'h3f3', 'h3f5', 'h3g3', 'h3g4', 'h3h4', 'h3h5', 'h3h6', 'h3h7', 'h3h8']|['a2a3', 'a2a4', 'b1a3', 'b1c3', 'b2b3', 'b2b4', 'c5c6', 'd2d3', 'd2d4', 'e1d1', 'e2e3', 'e2e4', 'f2f3', 'f2f4', 'g1h1', 'g2g3', 'g2g4', 'h3a3', 'h3b3', 'h3c3', 'h3d3', 'h3d7', 'h3e3', 'h3e6', 'h3f3', 'h3f5', 'h3g3', 'h3g4', 'h3h4', 'h3h5', 'h3h6', 'h3h7']|False|
+Given the chess position in FEN notation: 1r2k2B/1p1bp3/p1pp3p/2n2p2/4N2P/PqQ5/3PPPP1/RN2KB1R b - - 1 20
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [e8d8,e8f8,b3a2,b3a4,b3a5,b3b2,b3b4,b3b5,b3b6,b3c2,b3c3,b3c4,b3d1,b3d5,b3e6,b3f7,b3g8,b8a8,b8c8,b8d8,d7c8,d7e6,c5a4,c5d3,c5e4,c5e6,a6a5,b7b5,b7b6,d6d5,e7e5,e7e6,f5e4,f5f4,h6h5]|['a6a5', 'b3a2', 'b3a4', 'b3a5', 'b3b2', 'b3b4', 'b3b5', 'b3b6', 'b3c2', 'b3c3', 'b3c4', 'b3d1', 'b3d5', 'b3e6', 'b3f7', 'b3g8', 'b7b5', 'b7b6', 'b8a8', 'b8c8', 'b8d8', 'c5a4', 'c5d3', 'c5e4', 'c5e6', 'd6d5', 'd7c8', 'd7e6', 'e7e5', 'e7e6', 'e8d8', 'e8f8', 'f5e4', 'f5f4', 'h6h5']|['a6a5', 'b3a2', 'b3a3', 'b3a4', 'b3b1', 'b3b2', 'b3b4', 'b3b5', 'b3b6', 'b3c2', 'b3c3', 'b3c4', 'b3d1', 'b3d5', 'b3e6', 'b3f7', 'b3g8', 'b7b5', 'b7b6', 'b8a8', 'b8c8', 'b8d8', 'c5a4', 'c5d3', 'c5e4', 'c5e6', 'd6d5', 'd7c8', 'd7e6', 'e7e5', 'e7e6', 'e8d8', 'e8f7', 'e8f8', 'f5e4', 'f5f4', 'h6h5']|False|
+Given the chess position in FEN notation: N1b1qb2/pp1k1p2/2np2r1/4pKP1/8/1P2P3/P2P3P/2B1NB1R b - - 0 27
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [c6a5,c6b4,c6b8,c6d4,c6e5,c6e7,d6d5,e5e4,f7f6,f7f5,g6g5,g6e6,g6f6,g6g7,g6h6,e8d8,e8e7,e7e6,f8e7,f8g7,f8h6,d7c7,d7e7,d7d8]|['c6a5', 'c6b4', 'c6b8', 'c6d4', 'c6e5', 'c6e7', 'd6d5', 'd7c7', 'd7d8', 'd7e7', 'e5e4', 'e7e6', 'e8d8', 'e8e7', 'f7f5', 'f7f6', 'f8e7', 'f8g7', 'f8h6', 'g6e6', 'g6f6', 'g6g5', 'g6g7', 'g6h6']|['a7a5', 'a7a6', 'b7b5', 'b7b6', 'c6a5', 'c6b4', 'c6b8', 'c6d4', 'c6d8', 'c6e7', 'd6d5', 'd7d8', 'd7e7', 'e5e4', 'e8d8', 'e8e6', 'e8e7', 'f7f6', 'f8e7', 'f8g7', 'f8h6', 'g6e6', 'g6f6', 'g6g5', 'g6g7', 'g6g8', 'g6h6']|False|
+Given the chess position in FEN notation: 1r1qkbr1/ppp1pppp/3p3n/8/3P4/2K4b/RPPQPPPP/1N3B1R w - - 1 14
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [c3b2,c3b3,c3b4,c3c2,c3d2,c3d3,c3d4,a2a3,a2a4,a2a5,a2a6,a2a7,b1a3,h1g1,d2e3,d2f4,d2g5,d2h6,d2e1,d2c1,b2b3,b2b4,d4d5,e2e3,e2e4,f2f3,f2f4,g2g3,g2g4,g2h3]|['a2a3', 'a2a4', 'a2a5', 'a2a6', 'a2a7', 'b1a3', 'b2b3', 'b2b4', 'c3b2', 'c3b3', 'c3b4', 'c3c2', 'c3d2', 'c3d3', 'c3d4', 'd2c1', 'd2e1', 'd2e3', 'd2f4', 'd2g5', 'd2h6', 'd4d5', 'e2e3', 'e2e4', 'f2f3', 'f2f4', 'g2g3', 'g2g4', 'g2h3', 'h1g1']|['a2a1', 'a2a3', 'a2a4', 'a2a5', 'a2a6', 'a2a7', 'b1a3', 'b2b3', 'b2b4', 'c3b3', 'c3b4', 'c3c4', 'c3d3', 'd2c1', 'd2d1', 'd2d3', 'd2e1', 'd2e3', 'd2f4', 'd2g5', 'd2h6', 'd4d5', 'e2e3', 'e2e4', 'f2f3', 'f2f4', 'g2g3', 'g2g4', 'g2h3', 'h1g1']|False|
+Given the chess position in FEN notation: r1bqkbnr/3pppp1/ppp4p/3Q4/5N1P/3nP3/PPP1NPP1/R1BK1B1R b k - 1 12
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a6a5,a8a7,a8b8,b6b5,c6c5,c6d5,c8b7,d3b2,d3b4,d3c1,d3c5,d3e1,d3e5,d3f2,d7d6,d8c7,e7e5,e7e6,f7f5,f7f6,g7g5,g7g6,g8f6,h6h5,h8h7]|['a6a5', 'a8a7', 'a8b8', 'b6b5', 'c6c5', 'c6d5', 'c8b7', 'd3b2', 'd3b4', 'd3c1', 'd3c5', 'd3e1', 'd3e5', 'd3f2', 'd7d6', 'd8c7', 'e7e5', 'e7e6', 'f7f5', 'f7f6', 'g7g5', 'g7g6', 'g8f6', 'h6h5', 'h8h7']|['a6a5', 'a8a7', 'a8b8', 'b6b5', 'c6c5', 'c6d5', 'c8b7', 'd3b2', 'd3b4', 'd3c1', 'd3c5', 'd3e1', 'd3e5', 'd3f2', 'd3f4', 'd7d6', 'd8c7', 'e7e5', 'e7e6', 'f7f5', 'f7f6', 'g7g5', 'g7g6', 'g8f6', 'h6h5', 'h8h7']|False|
+Given the chess position in FEN notation: r1bqkb1r/p1p1pppp/B2p4/1p6/PP2P1Q1/8/1BPP1PPP/RN1K2NR w q - 0 8
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a1a2,a1a3,a4a5,a4b5,a6b5,a6b7,a6c4,a6c8,a6d3,a6e2,a6f1,b1a3,b1c3,b2a3,b2c3,b2d4,b2e5,b2f6,b2g7,c2c3,c2c4,d1c1,d1c2,d1d2,d1e1,d1e2,d2d3,d2d4,e4e5,f2f3,f2f4,g1e2,g1f3,g1h3,g2g3,g4c8,g4d7,g4e2,g4e6,g4f3,g4f4,g4f5,g4g3,g4g5,g4g6,g4g7,g4g8,g4h3,g4h4,g4h5,g4h6,g4h7,h2h3,h2h4]|['a1a2', 'a1a3', 'a4a5', 'a4b5', 'a6b5', 'a6b7', 'a6c4', 'a6c8', 'a6d3', 'a6e2', 'a6f1', 'b1a3', 'b1c3', 'b2a3', 'b2c3', 'b2d4', 'b2e5', 'b2f6', 'b2g7', 'c2c3', 'c2c4', 'd1c1', 'd1c2', 'd1d2', 'd1e1', 'd1e2', 'd2d3', 'd2d4', 'e4e5', 'f2f3', 'f2f4', 'g1e2', 'g1f3', 'g1h3', 'g2g3', 'g4c8', 'g4d7', 'g4e2', 'g4e6', 'g4f3', 'g4f4', 'g4f5', 'g4g3', 'g4g5', 'g4g6', 'g4g7', 'g4g8', 'g4h3', 'g4h4', 'g4h5', 'g4h6', 'g4h7', 'h2h3', 'h2h4']|['a1a2', 'a1a3', 'a4a5', 'a4b5', 'a6b5', 'a6b7', 'a6c8', 'b1a3', 'b1c3', 'b2a3', 'b2c1', 'b2c3', 'b2d4', 'b2e5', 'b2f6', 'b2g7', 'c2c3', 'c2c4', 'd1c1', 'd1e1', 'd1e2', 'd2d3', 'd2d4', 'e4e5', 'f2f3', 'f2f4', 'g1e2', 'g1f3', 'g1h3', 'g2g3', 'g4c8', 'g4d7', 'g4e2', 'g4e6', 'g4f3', 'g4f4', 'g4f5', 'g4g3', 'g4g5', 'g4g6', 'g4g7', 'g4h3', 'g4h4', 'g4h5', 'h2h3', 'h2h4']|False|
+Given the chess position in FEN notation: r1b1kb1r/pp1pppp1/2p4p/2n1R3/5n2/4PK2/PPPP2P1/RNBB1QN1 b k - 3 16
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [e8d8,e7e6,c5e6,f4e6]|['c5e6', 'e7e6', 'e8d8', 'f4e6']|['a7a5', 'a7a6', 'a8b8', 'b7b5', 'b7b6', 'c5a4', 'c5a6', 'c5b3', 'c5d3', 'c5e4', 'c5e6', 'd7d5', 'd7d6', 'e7e6', 'e8d8', 'f4d3', 'f4d5', 'f4e2', 'f4e6', 'f4g2', 'f4g6', 'f4h3', 'f4h5', 'f7f5', 'f7f6', 'g7g5', 'g7g6', 'h6h5', 'h8g8', 'h8h7']|False|
+Given the chess position in FEN notation: N3k2r/p1pp1ppp/b1n1p3/1pPq2b1/6PP/5P1B/PP1PnN2/1RBQK2R w Kk - 1 18
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a2a3,a2a4,a8b6,a8c7,b1a1,b2b3,b2b4,d1a4,d1b3,d1c2,d1e2,d2d3,d2d4,e1e2,e1f1,f2d3,f2e4,f3e4,f3f4,g4g5,h1f1,h1g1,h1h2,h3f1,h3g2,h4g5,h4h5]|['a2a3', 'a2a4', 'a8b6', 'a8c7', 'b1a1', 'b2b3', 'b2b4', 'd1a4', 'd1b3', 'd1c2', 'd1e2', 'd2d3', 'd2d4', 'e1e2', 'e1f1', 'f2d3', 'f2e4', 'f3e4', 'f3f4', 'g4g5', 'h1f1', 'h1g1', 'h1h2', 'h3f1', 'h3g2', 'h4g5', 'h4h5']|['a2a3', 'a2a4', 'a8b6', 'a8c7', 'b1a1', 'b2b3', 'b2b4', 'd1a4', 'd1b3', 'd1c2', 'd1e2', 'd2d3', 'd2d4', 'e1e2', 'e1f1', 'f2d3', 'f2e4', 'f3f4', 'h1f1', 'h1g1', 'h1h2', 'h3f1', 'h3g2', 'h4g5', 'h4h5']|False|
+Given the chess position in FEN notation: r2q1b1r/pb1kp1pp/1p1p1p2/2p1n3/PP6/1QB1P3/2P1KPPP/RN3BNR w - - 2 15
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a4a5,b4b5,b4c5,f2f3,f2f4,g2g3,g2g4,h2h3,h2h4,b1a3,b1a2,b1d2,g1f3,g1h3,c3b2,c3d4,c3e5,c3d2,c3e1,a1a2,a1a3,b3a3,b3a2,b3b2,b3c4,b3d5,b3e6,e2d1,e2d2,e2e1]|['a1a2', 'a1a3', 'a4a5', 'b1a2', 'b1a3', 'b1d2', 'b3a2', 'b3a3', 'b3b2', 'b3c4', 'b3d5', 'b3e6', 'b4b5', 'b4c5', 'c3b2', 'c3d2', 'c3d4', 'c3e1', 'c3e5', 'e2d1', 'e2d2', 'e2e1', 'f2f3', 'f2f4', 'g1f3', 'g1h3', 'g2g3', 'g2g4', 'h2h3', 'h2h4']|['a1a2', 'a1a3', 'a4a5', 'b1a3', 'b1d2', 'b3a2', 'b3a3', 'b3b2', 'b3c4', 'b3d5', 'b3e6', 'b3f7', 'b3g8', 'b4b5', 'b4c5', 'c3b2', 'c3d2', 'c3d4', 'c3e1', 'c3e5', 'e2d1', 'e2d2', 'e2e1', 'e3e4', 'f2f3', 'f2f4', 'g1f3', 'g1h3', 'g2g3', 'g2g4', 'h2h3', 'h2h4']|False|
+Given the chess position in FEN notation: rnb1k3/pppp2r1/2q3Np/4ppb1/P2B1n2/3P4/2P1PP1P/R3QKNR b - - 1 23
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a7a5,a7a6,b7b5,b7b6,c6a4,c6a6,c6b5,c6b6,c6c3,c6c4,c6c5,c6d5,c6d6,c6e4,c6e6,c6f3,c6f6,c6g2,d7d5,d7d6,e5d4,e5e4,e8d8,e8f7,f4d5,f4e6,f4g2,f4h3,f4h5,g5d8,g5e7,g5f6,g5h4,g7e7,g7f7,g7g8,h6h5,b8a6]|['a7a5', 'a7a6', 'b7b5', 'b7b6', 'b8a6', 'c6a4', 'c6a6', 'c6b5', 'c6b6', 'c6c3', 'c6c4', 'c6c5', 'c6d5', 'c6d6', 'c6e4', 'c6e6', 'c6f3', 'c6f6', 'c6g2', 'd7d5', 'd7d6', 'e5d4', 'e5e4', 'e8d8', 'e8f7', 'f4d5', 'f4e6', 'f4g2', 'f4h3', 'f4h5', 'g5d8', 'g5e7', 'g5f6', 'g5h4', 'g7e7', 'g7f7', 'g7g8', 'h6h5']|['a7a5', 'a7a6', 'b7b5', 'b7b6', 'b8a6', 'c6a4', 'c6a6', 'c6b5', 'c6b6', 'c6c2', 'c6c3', 'c6c4', 'c6c5', 'c6d5', 'c6d6', 'c6e4', 'c6e6', 'c6f3', 'c6f6', 'c6g2', 'c6g6', 'c6h1', 'd7d5', 'd7d6', 'e5d4', 'e5e4', 'e8d8', 'e8f7', 'f4d3', 'f4d5', 'f4e2', 'f4e6', 'f4g2', 'f4g6', 'f4h3', 'f4h5', 'g5d8', 'g5e7', 'g5f6', 'g5h4', 'g7e7', 'g7f7', 'g7g6', 'g7g8', 'g7h7', 'h6h5']|False|
+Given the chess position in FEN notation: 2bqkb1r/r1ppp1pp/n6n/1p1N1p2/p7/2QP2N1/PPP1PPPP/R2K1B1R w - - 8 14
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [d2d4,d2e3,d2c3,d7d5,d7c5,a1a2,a1a3,a1b1,a1c1,h1h2,h1g1,f1g2,a2a3,a2b3,a2a4,b2b3,b2b4,b2c3,c2c3,c2c4,d2d3,d2e3,a1a4]|['a1a2', 'a1a3', 'a1a4', 'a1b1', 'a1c1', 'a2a3', 'a2a4', 'a2b3', 'b2b3', 'b2b4', 'b2c3', 'c2c3', 'c2c4', 'd2c3', 'd2d3', 'd2d4', 'd2e3', 'd2e3', 'd7c5', 'd7d5', 'f1g2', 'h1g1', 'h1h2']|['a1b1', 'a1c1', 'a2a3', 'b2b3', 'b2b4', 'c3a3', 'c3a5', 'c3b3', 'c3b4', 'c3c4', 'c3c5', 'c3c6', 'c3c7', 'c3d2', 'c3d4', 'c3e1', 'c3e5', 'c3f6', 'c3g7', 'd1c1', 'd1d2', 'd1e1', 'd3d4', 'd5b4', 'd5b6', 'd5c7', 'd5e3', 'd5e7', 'd5f4', 'd5f6', 'e2e3', 'e2e4', 'f2f3', 'f2f4', 'g3e4', 'g3f5', 'g3h5', 'h1g1', 'h2h3', 'h2h4']|False|
+Given the chess position in FEN notation: rnbqkbr1/pppppppp/8/3N4/5Pn1/P7/1PPPP1PP/R1BQKBNR b KQq - 2 6
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [d8d6,d8d5,g8h8,b8a6,b8c6,g4h6,g4f6,g4e5,g4e3,g4f2,g4h2,a7a6,a7a5,b7b6,b7b5,c7c6,c7c5,d7d6,e7e6,e7e5,f7f6,f7f5,g7g6,g7g5,h7h6,h7h5]|['a7a5', 'a7a6', 'b7b5', 'b7b6', 'b8a6', 'b8c6', 'c7c5', 'c7c6', 'd7d6', 'd8d5', 'd8d6', 'e7e5', 'e7e6', 'f7f5', 'f7f6', 'g4e3', 'g4e5', 'g4f2', 'g4f6', 'g4h2', 'g4h6', 'g7g5', 'g7g6', 'g8h8', 'h7h5', 'h7h6']|['a7a5', 'a7a6', 'b7b5', 'b7b6', 'b8a6', 'b8c6', 'c7c5', 'c7c6', 'd7d6', 'e7e5', 'e7e6', 'f7f5', 'f7f6', 'g4e3', 'g4e5', 'g4f2', 'g4f6', 'g4h2', 'g4h6', 'g7g5', 'g7g6', 'g8h8', 'h7h5', 'h7h6']|False|
+Given the chess position in FEN notation: 3qrb2/3p1p2/b1p2kp1/4p2Q/2r1P2p/N5P1/PP1P1PKP/1RB1R3 w - - 4 31
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [h5h6,h5h7,h5h8,h5h4,h5g5,h5f5,h5e5,h5g6,h5g4,h5f3,h5e2,h5d1,a3b5,a3c4,a3c2,b1a1,b1d1,e1e2,e1e3,e1d1,e1f1,e1g1,e1h1,b2b3,b2b4,d2d3,d2d4,f2f3,f2f4,g3g4,g3h4,h2h3,h2h4,Kf1,Kf3,Kg1,Kh1,Kh3]|['a3b5', 'a3c2', 'a3c4', 'b1a1', 'b1d1', 'b2b3', 'b2b4', 'd2d3', 'd2d4', 'e1d1', 'e1e2', 'e1e3', 'e1f1', 'e1g1', 'e1h1', 'f2f3', 'f2f4', 'g3g4', 'g3h4', 'h2h3', 'h2h4', 'h5d1', 'h5e2', 'h5e5', 'h5f3', 'h5f5', 'h5g4', 'h5g5', 'h5g6', 'h5h4', 'h5h6', 'h5h7', 'h5h8']|['a3b5', 'a3c2', 'a3c4', 'b1a1', 'b2b3', 'b2b4', 'd2d3', 'd2d4', 'e1d1', 'e1e2', 'e1e3', 'e1f1', 'e1g1', 'e1h1', 'f2f3', 'f2f4', 'g2f1', 'g2f3', 'g2g1', 'g2h1', 'g2h3', 'g3g4', 'g3h4', 'h2h3', 'h5d1', 'h5e2', 'h5e5', 'h5f3', 'h5f5', 'h5g4', 'h5g5', 'h5g6', 'h5h4', 'h5h6', 'h5h7', 'h5h8']|False|
+Given the chess position in FEN notation: r6r/pppkbppp/1n1Bpn2/3p4/8/N1R4N/P1PPKP1P/R2Q1B2 w - - 9 30
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a1b1,a1c1,a3b1,a3b5,a3c4,c2c3,c3b3,c3c4,c3c5,c3c6,c3c7,c3d3,c3e3,c3f3,c3g3,d1b1,d1c1,d1e1,d2d3,d6b4,d6c5,d6e5,d6f4,d6g3,e2d3,e2e1,e2e3,e2f3,f1g2,f2f3,h3f4,h3g1,h3g5]|['a1b1', 'a1c1', 'a3b1', 'a3b5', 'a3c4', 'c2c3', 'c3b3', 'c3c4', 'c3c5', 'c3c6', 'c3c7', 'c3d3', 'c3e3', 'c3f3', 'c3g3', 'd1b1', 'd1c1', 'd1e1', 'd2d3', 'd6b4', 'd6c5', 'd6e5', 'd6f4', 'd6g3', 'e2d3', 'e2e1', 'e2e3', 'e2f3', 'f1g2', 'f2f3', 'h3f4', 'h3g1', 'h3g5']|['a1b1', 'a1c1', 'a3b1', 'a3b5', 'a3c4', 'c3b3', 'c3c4', 'c3c5', 'c3c6', 'c3c7', 'c3d3', 'c3e3', 'c3f3', 'c3g3', 'd1b1', 'd1c1', 'd1e1', 'd2d3', 'd2d4', 'd6b4', 'd6c5', 'd6c7', 'd6e5', 'd6e7', 'd6f4', 'd6g3', 'e2d3', 'e2e1', 'e2e3', 'e2f3', 'f1g2', 'f2f3', 'f2f4', 'h3f4', 'h3g1', 'h3g5']|False|
+Given the chess position in FEN notation: r1b2b1r/pp2pNpp/4k2n/3p1p2/2p1P1P1/2Q5/P2P1PBP/R1q3RK b - - 5 27
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+||[]|['a7a5', 'a7a6', 'a8b8', 'b7b5', 'b7b6', 'c1a1', 'c1a3', 'c1b1', 'c1b2', 'c1c2', 'c1c3', 'c1d1', 'c1d2', 'c1e1', 'c1f1', 'c1g1', 'c8d7', 'd5d4', 'd5e4', 'e6d7', 'e6f7', 'f5e4', 'f5f4', 'f5g4', 'g7g5', 'g7g6', 'h6f7', 'h6g4', 'h6g8', 'h8g8']|False|
+Given the chess position in FEN notation: r3kb1r/pb1pp2p/6p1/1p1p4/5pP1/q2P1N1P/PPP2nB1/R1BQKR2 b k - 0 24
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+||[]|['a3a2', 'a3a4', 'a3a5', 'a3a6', 'a3b2', 'a3b3', 'a3b4', 'a3c3', 'a3c5', 'a3d3', 'a3d6', 'a7a5', 'a7a6', 'a8b8', 'a8c8', 'a8d8', 'b5b4', 'b7a6', 'b7c6', 'b7c8', 'd5d4', 'd7d6', 'e7e5', 'e7e6', 'e8d8', 'e8f7', 'f2d1', 'f2d3', 'f2e4', 'f2g4', 'f2h1', 'f2h3', 'f8g7', 'f8h6', 'g6g5', 'h7h5', 'h7h6', 'h8g8']|False|
+Given the chess position in FEN notation: 2b3r1/1pp1kppp/N7/4p3/3q4/1P1BP2N/P1P2PPP/1Rb1K1nR w K - 2 19
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [e1d1,e1f1,b1a1,b1b2,b1c1,h1g1,h1f1,a6b4,a6c5,a6c7,a6b8,h3g1,h3f4,h3g5,d3c4,d3b5,d3e4,d3f5,d3g6,d3h7,d3e2,d3f1,a2a3,a2a4,b3b4,c2c3,c2c4,e3e4,e3d4,f2f3,f2f4,g2g3,g2g4,h2h4]|['a2a3', 'a2a4', 'a6b4', 'a6b8', 'a6c5', 'a6c7', 'b1a1', 'b1b2', 'b1c1', 'b3b4', 'c2c3', 'c2c4', 'd3b5', 'd3c4', 'd3e2', 'd3e4', 'd3f1', 'd3f5', 'd3g6', 'd3h7', 'e1d1', 'e1f1', 'e3d4', 'e3e4', 'f2f3', 'f2f4', 'g2g3', 'g2g4', 'h1f1', 'h1g1', 'h2h4', 'h3f4', 'h3g1', 'h3g5']|['a2a3', 'a2a4', 'a6b4', 'a6b8', 'a6c5', 'a6c7', 'b1a1', 'b1b2', 'b1c1', 'b3b4', 'c2c3', 'c2c4', 'd3b5', 'd3c4', 'd3e2', 'd3e4', 'd3f1', 'd3f5', 'd3g6', 'd3h7', 'e1d1', 'e1f1', 'e3d4', 'e3e4', 'f2f3', 'f2f4', 'g2g3', 'g2g4', 'h1g1', 'h3f4', 'h3g1', 'h3g5']|False|
+Given the chess position in FEN notation: 2b2b1r/1rppk1pp/p3p3/1p1BN1q1/8/3PP1R1/PPP2P1P/R1B1K3 w - - 1 22
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a1b1,a2a3,a2a4,b2b3,b2b4,c1d2,c2c3,c2c4,d3d4,d5b3,d5c4,d5e4,d5f3,d5g2,d5h1,e1d1,e1d2,e1e2,e1f1,e1f2,e3e4,e5c4,e5c6,e5d7,e5f3,e5f7,e5g4,e5g6,f2f3,f2f4,g3f3,g3g1,g3g2,g3g5,g3h3,h2h3,h2h4]|['a1b1', 'a2a3', 'a2a4', 'b2b3', 'b2b4', 'c1d2', 'c2c3', 'c2c4', 'd3d4', 'd5b3', 'd5c4', 'd5e4', 'd5f3', 'd5g2', 'd5h1', 'e1d1', 'e1d2', 'e1e2', 'e1f1', 'e1f2', 'e3e4', 'e5c4', 'e5c6', 'e5d7', 'e5f3', 'e5f7', 'e5g4', 'e5g6', 'f2f3', 'f2f4', 'g3f3', 'g3g1', 'g3g2', 'g3g5', 'g3h3', 'h2h3', 'h2h4']|['a1b1', 'a2a3', 'a2a4', 'b2b3', 'b2b4', 'c1d2', 'c2c3', 'c2c4', 'd3d4', 'd5b3', 'd5b7', 'd5c4', 'd5c6', 'd5e4', 'd5e6', 'd5f3', 'd5g2', 'd5h1', 'e1d1', 'e1d2', 'e1e2', 'e1f1', 'e3e4', 'e5c4', 'e5c6', 'e5d7', 'e5f3', 'e5f7', 'e5g4', 'e5g6', 'f2f3', 'f2f4', 'g3f3', 'g3g1', 'g3g2', 'g3g4', 'g3g5', 'g3h3', 'h2h3', 'h2h4']|False|
+Given the chess position in FEN notation: r2q1bN1/pppk1pp1/3p3r/5n1p/1Q3N2/P1P3P1/1P1PPP1P/1RB1KB1R b K - 4 14
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+||[]|['a7a5', 'a7a6', 'a8b8', 'a8c8', 'b7b5', 'b7b6', 'c7c5', 'c7c6', 'd6d5', 'd7c6', 'd7c8', 'd7e8', 'd8b8', 'd8c8', 'd8e7', 'd8e8', 'd8f6', 'd8g5', 'd8h4', 'f5d4', 'f5e3', 'f5e7', 'f5g3', 'f5h4', 'f7f6', 'f8e7', 'g7g5', 'g7g6', 'h5h4', 'h6e6', 'h6f6', 'h6g6', 'h6h7', 'h6h8']|False|
+Given the chess position in FEN notation: 6rk/p1Q1pq1p/1p1r2p1/1NP2bP1/4p2N/1B2n3/PP1PKP1P/1RB1R3 w - - 3 31
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [h4g6,b5d4,b5a7,b5c7,b5d6,c5c6,c5b6,c7b7,c7c8,c7d7,c7d6,c7b6,c7a5,c7e5,c7f4,c7g3,c7h2,c7b8,c7a7,c7e7,g5g6,e1c1,e1d1,e1f1,nb3d1,nb3c4,nb3a5,nb3e6,a2a3,a2a4,b2b3,b2b4,d2d3,d2d4,f2f3,f2f4,h2h3,h2h4,re1,c1d2,nb5,c1b2,nb5a3,c1a3,c1g5,b3c2,c1h6,re1e2]|['a2a3', 'a2a4', 'b2b3', 'b2b4', 'b3c2', 'b5a7', 'b5c7', 'b5d4', 'b5d6', 'c1a3', 'c1b2', 'c1d2', 'c1g5', 'c1h6', 'c5b6', 'c5c6', 'c7a5', 'c7a7', 'c7b6', 'c7b7', 'c7b8', 'c7c8', 'c7d6', 'c7d7', 'c7e5', 'c7e7', 'c7f4', 'c7g3', 'c7h2', 'd2d3', 'd2d4', 'e1c1', 'e1d1', 'e1f1', 'f2f3', 'f2f4', 'g5g6', 'h2h3', 'h2h4', 'h4g6']|['a2a3', 'a2a4', 'b1a1', 'b3a4', 'b3c2', 'b3c4', 'b3d1', 'b3d5', 'b3e6', 'b3f7', 'b5a3', 'b5a7', 'b5c3', 'b5d4', 'b5d6', 'c5b6', 'c5c6', 'c5d6', 'c7a7', 'c7b6', 'c7b7', 'c7b8', 'c7c6', 'c7c8', 'c7d6', 'c7d7', 'c7d8', 'c7e7', 'd2d3', 'd2d4', 'd2e3', 'e1d1', 'e1f1', 'e1g1', 'e1h1', 'e2e3', 'f2e3', 'f2f3', 'f2f4', 'h2h3', 'h4f3', 'h4f5', 'h4g2', 'h4g6']|False|
+Given the chess position in FEN notation: r1b1k1nr/pppp1ppp/n7/4p3/2P5/Q6N/PP1qPPPP/RNB1KB1R w KQkq - 0 8
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [b1d2,e1d2]|['b1d2', 'e1d2']|['b1d2', 'c1d2', 'e1d2']|False|
+Given the chess position in FEN notation: rn2k1r1/ppp2ppp/3bp3/3n4/P1b5/1R1P4/1Pq1PPPP/2B1KBNR b Kq - 4 26
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a7a5,a7a6,b7b5,b7b6,b8a6,b8c6,b8d7,c2b1,c2b2,c2b3,c2c1,c2c3,c2d1,c2d2,c2d3,c2e2,c4a2,c4a6,c4b3,c4b5,c4d3,c4e2,c4f1,c7c5,c7c6,d5b4,d5b6,d5c3,d5e3,d5f4,d5f6,d6a3,d6b4,d6c5,d6e5,d6e7,d6f4,d6f8,d6g3,d6h2,e6e5,e8d8,e8f8,f7f5,f7f6,g7g5,g7g6,g8f8,g8h8,h7h5,h7h6]|['a7a5', 'a7a6', 'b7b5', 'b7b6', 'b8a6', 'b8c6', 'b8d7', 'c2b1', 'c2b2', 'c2b3', 'c2c1', 'c2c3', 'c2d1', 'c2d2', 'c2d3', 'c2e2', 'c4a2', 'c4a6', 'c4b3', 'c4b5', 'c4d3', 'c4e2', 'c4f1', 'c7c5', 'c7c6', 'd5b4', 'd5b6', 'd5c3', 'd5e3', 'd5f4', 'd5f6', 'd6a3', 'd6b4', 'd6c5', 'd6e5', 'd6e7', 'd6f4', 'd6f8', 'd6g3', 'd6h2', 'e6e5', 'e8d8', 'e8f8', 'f7f5', 'f7f6', 'g7g5', 'g7g6', 'g8f8', 'g8h8', 'h7h5', 'h7h6']|['a7a5', 'a7a6', 'b7b5', 'b7b6', 'b8a6', 'b8c6', 'b8d7', 'c2b1', 'c2b2', 'c2b3', 'c2c1', 'c2c3', 'c2d1', 'c2d2', 'c2d3', 'c2e2', 'c4a6', 'c4b3', 'c4b5', 'c4d3', 'c7c5', 'c7c6', 'd5b4', 'd5b6', 'd5c3', 'd5e3', 'd5e7', 'd5f4', 'd5f6', 'd6a3', 'd6b4', 'd6c5', 'd6e5', 'd6e7', 'd6f4', 'd6f8', 'd6g3', 'd6h2', 'e6e5', 'e8d7', 'e8d8', 'e8e7', 'e8f8', 'f7f5', 'f7f6', 'g7g5', 'g7g6', 'g8f8', 'g8h8', 'h7h5', 'h7h6']|False|
+Given the chess position in FEN notation: 1r3bnr/2ppkpp1/b1N1p2p/p6q/8/3P2Q1/PPPP1PPP/RNB1K2R b Q - 5 20
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [d7c6,e7e8,e7f6]|['d7c6', 'e7e8', 'e7f6']|['d7c6', 'e7e8', 'e7f6']|True|
+Given the chess position in FEN notation: r1bqkb1r/pp1ppppp/2p5/8/1n4n1/7N/PBPPPP1P/RN1QKB1R w KQkq - 0 6
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a2a3,a2a4,b1a3,b1c3,b2a3,b2a4,b2a5,b2a6,b2a7,b2c3,b2d4,b2e5,b2f6,b2g7,c2c3,c2c4,d1c1,d2d3,d2d4,e2e3,e2e4,f2f3,f2f4,h1g1,h2h4,h3f4,h3g1,h3g5]|['a2a3', 'a2a4', 'b1a3', 'b1c3', 'b2a3', 'b2a4', 'b2a5', 'b2a6', 'b2a7', 'b2c3', 'b2d4', 'b2e5', 'b2f6', 'b2g7', 'c2c3', 'c2c4', 'd1c1', 'd2d3', 'd2d4', 'e2e3', 'e2e4', 'f2f3', 'f2f4', 'h1g1', 'h2h4', 'h3f4', 'h3g1', 'h3g5']|['a2a3', 'a2a4', 'b1a3', 'b1c3', 'b2a3', 'b2c1', 'b2c3', 'b2d4', 'b2e5', 'b2f6', 'b2g7', 'c2c3', 'c2c4', 'd1c1', 'd2d3', 'd2d4', 'e2e3', 'e2e4', 'f1g2', 'f2f3', 'f2f4', 'h1g1', 'h3f4', 'h3g1', 'h3g5']|False|
+Given the chess position in FEN notation: r1bk4/1pbp1pp1/p3p3/7q/1P1P4/1B2KP1n/P1P4r/R1B3R1 w - - 2 31
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [e3d3,e3e4,a1b1,g1g2,g1g3,g1g4,g1g5,g1g6,g1g7,g1h1,g1f1,g1e1,g1d1,b3a4,b3c4,b3d5,b3e6,c1a3,c1b2,c1d2,b4b5,d4d5,a2a3,a2a4,c2c3,c2c4]|['a1b1', 'a2a3', 'a2a4', 'b3a4', 'b3c4', 'b3d5', 'b3e6', 'b4b5', 'c1a3', 'c1b2', 'c1d2', 'c2c3', 'c2c4', 'd4d5', 'e3d3', 'e3e4', 'g1d1', 'g1e1', 'g1f1', 'g1g2', 'g1g3', 'g1g4', 'g1g5', 'g1g6', 'g1g7', 'g1h1']|['a1b1', 'a2a3', 'a2a4', 'b3a4', 'b3c4', 'b3d5', 'b3e6', 'b4b5', 'c1a3', 'c1b2', 'c1d2', 'c2c3', 'c2c4', 'd4d5', 'e3d3', 'e3e4', 'f3f4', 'g1d1', 'g1e1', 'g1f1', 'g1g2', 'g1g3', 'g1g4', 'g1g5', 'g1g6', 'g1g7', 'g1h1']|False|
+Given the chess position in FEN notation: 1rb1kbnr/pp1pn1pp/2p5/4p3/4P3/N4P2/PPPPB1PP/R1B3KR b k - 0 16
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [e8d8,e8f7,g8f6,g8h6,e7g6,e7f5,e7d5,a7a6,a7a5,b7b6,b7b5,d7d6,d7d5,g7g6,g7g5,h7h6,h7h5,c6c5]|['a7a5', 'a7a6', 'b7b5', 'b7b6', 'c6c5', 'd7d5', 'd7d6', 'e7d5', 'e7f5', 'e7g6', 'e8d8', 'e8f7', 'g7g5', 'g7g6', 'g8f6', 'g8h6', 'h7h5', 'h7h6']|['a7a5', 'a7a6', 'b7b5', 'b7b6', 'b8a8', 'c6c5', 'd7d5', 'd7d6', 'e7d5', 'e7f5', 'e7g6', 'e8d8', 'e8f7', 'g7g5', 'g7g6', 'g8f6', 'g8h6', 'h7h5', 'h7h6']|False|
+Given the chess position in FEN notation: rq2k2r/p1pppp1p/bp3n1b/4n1N1/P6P/R3P3/1PPP1PP1/1NBQKBR1 w kq - 3 9
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [e1f2,d1e2,d1f3,d1g4,d1h5,a3a1,a3a2,a3b3,a3c3,a3d3,g1h1,f1a6,b1c3,g5h7,g5f7,g5e6,g5e4,g5f3,g5h3,a4a5,b2b3,b2b4,c2c3,c2c4,d2d3,d2d4,e3e4,f2f3,f2f4,g2g3,g2g4,h4h5]|['a3a1', 'a3a2', 'a3b3', 'a3c3', 'a3d3', 'a4a5', 'b1c3', 'b2b3', 'b2b4', 'c2c3', 'c2c4', 'd1e2', 'd1f3', 'd1g4', 'd1h5', 'd2d3', 'd2d4', 'e1f2', 'e3e4', 'f1a6', 'f2f3', 'f2f4', 'g1h1', 'g2g3', 'g2g4', 'g5e4', 'g5e6', 'g5f3', 'g5f7', 'g5h3', 'g5h7', 'h4h5']|['a3a1', 'a3a2', 'a3b3', 'a3c3', 'a3d3', 'a4a5', 'b1c3', 'b2b3', 'b2b4', 'c2c3', 'c2c4', 'd1e2', 'd1f3', 'd1g4', 'd1h5', 'd2d3', 'd2d4', 'e3e4', 'f1a6', 'f1b5', 'f1c4', 'f1d3', 'f1e2', 'f2f3', 'f2f4', 'g1h1', 'g2g3', 'g2g4', 'g5e4', 'g5e6', 'g5f3', 'g5f7', 'g5h3', 'g5h7', 'h4h5']|False|
+Given the chess position in FEN notation: 1r1qkbnr/2ppppp1/2b4p/1pN5/1p1PPP2/2P1nNPP/P2Q1KB1/1RB4R w k - 2 22
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a2a3,a2a4,b1a1,b1b2,b1b3,b1b4,c1a3,c1b2,c3b4,c3c4,c5a4,c5a6,c5b3,c5b7,c5d3,c5d7,c5e6,d2b2,d2c2,d2d1,d2d3,d2e1,d2e2,d2e3,d4d5,e4e5,f2e1,f2e2,f2f3,f2g1,f2g3,f3e1,f3e5,f3g1,f3g5,f3h2,f3h4,f4f5,g2f1,g2f3,g3g4,h1d1,h1e1,h1f1,h1g1,h1h2,h3h4]|['a2a3', 'a2a4', 'b1a1', 'b1b2', 'b1b3', 'b1b4', 'c1a3', 'c1b2', 'c3b4', 'c3c4', 'c5a4', 'c5a6', 'c5b3', 'c5b7', 'c5d3', 'c5d7', 'c5e6', 'd2b2', 'd2c2', 'd2d1', 'd2d3', 'd2e1', 'd2e2', 'd2e3', 'd4d5', 'e4e5', 'f2e1', 'f2e2', 'f2f3', 'f2g1', 'f2g3', 'f3e1', 'f3e5', 'f3g1', 'f3g5', 'f3h2', 'f3h4', 'f4f5', 'g2f1', 'g2f3', 'g3g4', 'h1d1', 'h1e1', 'h1f1', 'h1g1', 'h1h2', 'h3h4']|['a2a3', 'a2a4', 'b1a1', 'b1b2', 'b1b3', 'b1b4', 'c1a3', 'c1b2', 'c3b4', 'c3c4', 'c5a4', 'c5a6', 'c5b3', 'c5b7', 'c5d3', 'c5d7', 'c5e6', 'd2b2', 'd2c2', 'd2d1', 'd2d3', 'd2e1', 'd2e2', 'd2e3', 'd4d5', 'e4e5', 'f2e1', 'f2e2', 'f2e3', 'f2g1', 'f3e1', 'f3e5', 'f3g1', 'f3g5', 'f3h2', 'f3h4', 'f4f5', 'g2f1', 'g3g4', 'h1d1', 'h1e1', 'h1f1', 'h1g1', 'h1h2', 'h3h4']|False|
+Given the chess position in FEN notation: 1r1qkbr1/2pppp1p/1Rb5/2N3p1/2P5/1P3N1P/3nPPP1/1QBK1B1R w - - 0 28
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+||[]|['b1a1', 'b1a2', 'b1b2', 'b1c2', 'b1d3', 'b1e4', 'b1f5', 'b1g6', 'b1h7', 'b3b4', 'b6a6', 'b6b4', 'b6b5', 'b6b7', 'b6b8', 'b6c6', 'c1a3', 'c1b2', 'c1d2', 'c5a4', 'c5a6', 'c5b7', 'c5d3', 'c5d7', 'c5e4', 'c5e6', 'd1c2', 'd1d2', 'd1e1', 'e2e3', 'e2e4', 'f3d2', 'f3d4', 'f3e1', 'f3e5', 'f3g1', 'f3g5', 'f3h2', 'f3h4', 'g2g3', 'g2g4', 'h1g1', 'h1h2', 'h3h4']|False|
+Given the chess position in FEN notation: 3qkbr1/2ppp1pp/b7/n2Q4/B4p2/2N2N2/PPPP1PPP/R1B2RK1 w - - 5 18
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a1b1,b2b3,b2b4,c3b1,c3b5,c3d1,c3e2,c3e4,c4b3,c4c5,d2d3,d2d4,d5a5,d5b5,d5c5,d5c6,d5d6,d5d7,d5d8,d5e4,d5e5,d5e6,d5f5,d5f7,d5g5,d5g8,d5h5,e2e3,e2e4,e4d5,e4f5,f1d1,f1e1,f3d4,f3e1,f3e5,f3g5,f3h4,f3h2,g1h1,g2g3,g2g4,h2h3,h2h4]|['a1b1', 'b2b3', 'b2b4', 'c3b1', 'c3b5', 'c3d1', 'c3e2', 'c3e4', 'c4b3', 'c4c5', 'd2d3', 'd2d4', 'd5a5', 'd5b5', 'd5c5', 'd5c6', 'd5d6', 'd5d7', 'd5d8', 'd5e4', 'd5e5', 'd5e6', 'd5f5', 'd5f7', 'd5g5', 'd5g8', 'd5h5', 'e2e3', 'e2e4', 'e4d5', 'e4f5', 'f1d1', 'f1e1', 'f3d4', 'f3e1', 'f3e5', 'f3g5', 'f3h2', 'f3h4', 'g1h1', 'g2g3', 'g2g4', 'h2h3', 'h2h4']|['a1b1', 'a2a3', 'a4b3', 'a4b5', 'a4c6', 'a4d7', 'b2b3', 'b2b4', 'c3b1', 'c3b5', 'c3d1', 'c3e2', 'c3e4', 'd2d3', 'd2d4', 'd5a5', 'd5a8', 'd5b3', 'd5b5', 'd5b7', 'd5c4', 'd5c5', 'd5c6', 'd5d3', 'd5d4', 'd5d6', 'd5d7', 'd5e4', 'd5e5', 'd5e6', 'd5f5', 'd5f7', 'd5g5', 'd5g8', 'd5h5', 'f1d1', 'f1e1', 'f3d4', 'f3e1', 'f3e5', 'f3g5', 'f3h4', 'g1h1', 'g2g3', 'g2g4', 'h2h3', 'h2h4']|False|
+Given the chess position in FEN notation: r1b1kb1r/pp1ppppp/n2q1n2/2p5/3P1B2/2N3P1/PPPQPP1P/1R1K1BNR b kq - 0 9
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a6b4,a6b8,a6c7,b7b5,b7b6,c5c4,c5d4,d6b6,d6b8,d6c6,d6c7,d6d4,d6d5,d6e5,d6e6,d6f4,e7e5,e7e6,e8d8,f6d5,f6e4,f6g4,f6g8,f6h5,g7g5,g7g6,h7h5,h7h6,h8g8]|['a6b4', 'a6b8', 'a6c7', 'b7b5', 'b7b6', 'c5c4', 'c5d4', 'd6b6', 'd6b8', 'd6c6', 'd6c7', 'd6d4', 'd6d5', 'd6e5', 'd6e6', 'd6f4', 'e7e5', 'e7e6', 'e8d8', 'f6d5', 'f6e4', 'f6g4', 'f6g8', 'f6h5', 'g7g5', 'g7g6', 'h7h5', 'h7h6', 'h8g8']|['a6b4', 'a6b8', 'a6c7', 'a8b8', 'b7b5', 'b7b6', 'c5c4', 'c5d4', 'd6b6', 'd6b8', 'd6c6', 'd6c7', 'd6d4', 'd6d5', 'd6e5', 'd6e6', 'd6f4', 'e7e5', 'e7e6', 'e8d8', 'f6d5', 'f6e4', 'f6g4', 'f6g8', 'f6h5', 'g7g5', 'g7g6', 'h7h5', 'h7h6', 'h8g8']|False|
+Given the chess position in FEN notation: 1rk2b1r/ppp1ppp1/2n3B1/1N1p1b2/PP3B2/8/2PPKP1P/2R4R b - - 4 28
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a7a5,a7a6,b7b6,b8a8,c6a5,c6b4,c6d4,c6d8,c6e5,c8d8,d5d4,e7e5,e7e6,f5c2,f5d3,f5d7,f5e4,f5e6,f5g4,f5g6,f5h3,f7f6,g7g6,h8g8,h8h3,h8h4,h8h5,h8h6,h8h7]|['a7a5', 'a7a6', 'b7b6', 'b8a8', 'c6a5', 'c6b4', 'c6d4', 'c6d8', 'c6e5', 'c8d8', 'd5d4', 'e7e5', 'e7e6', 'f5c2', 'f5d3', 'f5d7', 'f5e4', 'f5e6', 'f5g4', 'f5g6', 'f5h3', 'f7f6', 'g7g6', 'h8g8', 'h8h3', 'h8h4', 'h8h5', 'h8h6', 'h8h7']|['a7a5', 'a7a6', 'b7b6', 'b8a8', 'c6a5', 'c6b4', 'c6d4', 'c6d8', 'c6e5', 'c8d7', 'c8d8', 'd5d4', 'e7e5', 'e7e6', 'f5c2', 'f5d3', 'f5d7', 'f5e4', 'f5e6', 'f5g4', 'f5g6', 'f5h3', 'f7f6', 'f7g6', 'h8g8', 'h8h2', 'h8h3', 'h8h4', 'h8h5', 'h8h6', 'h8h7']|False|
+Given the chess position in FEN notation: 5br1/1ppk2pp/4pn2/p1B2P2/b6K/1P4N1/P1n1PNPP/2R2BR1 w - - 3 30
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a2a3,b3a4,b3b4,c1a1,c1b1,c1c2,c1c3,c1c4,c1d1,c1e1,c5a3,c5b4,c5d4,c5d6,c5e3,c5e7,c5f8,e2e3,e2e4,f2d1,f2d3,f2e4,f2g4,f2h1,f2h3,f5f6,g1h1,g2g4,g3e4,g3h1,g3h5,h2h3,h4g3,h4g5,h4h3]|['a2a3', 'b3a4', 'b3b4', 'c1a1', 'c1b1', 'c1c2', 'c1c3', 'c1c4', 'c1d1', 'c1e1', 'c5a3', 'c5b4', 'c5d4', 'c5d6', 'c5e3', 'c5e7', 'c5f8', 'e2e3', 'e2e4', 'f2d1', 'f2d3', 'f2e4', 'f2g4', 'f2h1', 'f2h3', 'f5f6', 'g1h1', 'g2g4', 'g3e4', 'g3h1', 'g3h5', 'h2h3', 'h4g3', 'h4g5', 'h4h3']|['a2a3', 'b3a4', 'b3b4', 'c1a1', 'c1b1', 'c1c2', 'c1d1', 'c1e1', 'c5a3', 'c5a7', 'c5b4', 'c5b6', 'c5d4', 'c5d6', 'c5e3', 'c5e7', 'c5f8', 'e2e3', 'e2e4', 'f2d1', 'f2d3', 'f2e4', 'f2g4', 'f2h1', 'f2h3', 'f5e6', 'g1h1', 'g3e4', 'g3h1', 'g3h5', 'h2h3', 'h4g5', 'h4h3']|False|
+Given the chess position in FEN notation: 1rb2k1r/pppp1ppp/4pq1n/8/N3P3/3n1NPR/PPPPBb2/R1BQ1K2 w - - 4 15
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [e2f2]|['e2f2']|['a1b1', 'a2a3', 'a4b6', 'a4c3', 'a4c5', 'b2b3', 'b2b4', 'c2c3', 'c2c4', 'c2d3', 'd1e1', 'e2d3', 'e4e5', 'f1g2', 'f3d4', 'f3e1', 'f3e5', 'f3g1', 'f3g5', 'f3h2', 'f3h4', 'g3g4', 'h3h1', 'h3h2', 'h3h4', 'h3h5', 'h3h6']|False|
+Given the chess position in FEN notation: rn1k1br1/p1N1pp2/b2p3p/1pp3P1/Q1P5/N6P/PPKPPP2/R1B2B1R b - - 0 26
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [b8c6,b8d7,f8g7,g8h8,g8g7,g8g6,e7e6,e7e5,f7f6,f7f5,b5b4,b5a4,b5c4,h6h5,h6g5,a6b7,a6c8,d8c8,d8d7]|['a6b7', 'a6c8', 'b5a4', 'b5b4', 'b5c4', 'b8c6', 'b8d7', 'd8c8', 'd8d7', 'e7e5', 'e7e6', 'f7f5', 'f7f6', 'f8g7', 'g8g6', 'g8g7', 'g8h8', 'h6g5', 'h6h5']|['a6b7', 'a6c8', 'b5a4', 'b5b4', 'b5c4', 'b8c6', 'b8d7', 'd6d5', 'd8c7', 'd8c8', 'd8d7', 'e7e5', 'e7e6', 'f7f5', 'f7f6', 'f8g7', 'g8g5', 'g8g6', 'g8g7', 'g8h8', 'h6g5', 'h6h5']|False|
+Given the chess position in FEN notation: r3qN2/p1pppkp1/bn6/1pP2B2/4PP1p/B4K1Q/P2P1R1P/RN6 b - - 4 28
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [e8h5,e8g6,e8f8,e8d8,e8c8,e8b8,e8a8,e8d7,e8e6,e8f6,a8c8,a8b8,a8d8,a8e8,f7g8,f7g7,f7g6,f7e8,f7e7,f7e6,f7f8,b6a4,b6c4,b6d5,b6d7,b6c8,a6c4,a6b7,a6c8,a6b5,g7g6,g7g5,c7c6,d7d6,e7e6,b5b4,h4h3]|['a6b5', 'a6b7', 'a6c4', 'a6c8', 'a8b8', 'a8c8', 'a8d8', 'a8e8', 'b5b4', 'b6a4', 'b6c4', 'b6c8', 'b6d5', 'b6d7', 'c7c6', 'd7d6', 'e7e6', 'e8a8', 'e8b8', 'e8c8', 'e8d7', 'e8d8', 'e8e6', 'e8f6', 'e8f8', 'e8g6', 'e8h5', 'f7e6', 'f7e7', 'f7e8', 'f7f8', 'f7g6', 'f7g7', 'f7g8', 'g7g5', 'g7g6', 'h4h3']|['a6b7', 'a6c8', 'a8b8', 'a8c8', 'a8d8', 'b5b4', 'b6a4', 'b6c4', 'b6c8', 'b6d5', 'c7c6', 'd7d5', 'd7d6', 'e7e5', 'e7e6', 'e8b8', 'e8c8', 'e8d8', 'e8f8', 'f7f6', 'f7f8', 'f7g8', 'g7g5', 'g7g6']|False|
+Given the chess position in FEN notation: 2bq1knr/2N1p1Bp/rpn4b/p1pp1pP1/1P6/3P2P1/P1P1PP2/1R1QKBNR b K - 2 15
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [f8e7,f8f7,f8g8]|['f8e7', 'f8f7', 'f8g8']|['f8f7', 'f8g7', 'h6g7']|False|
+Given the chess position in FEN notation: 1r1k1b1r/pppb3n/7p/5p2/6PP/3PPP2/PP3K2/R4BNR w - - 2 31
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a1b1,a1c1,a1d1,a1e1,a2a3,a2a4,b2b3,b2b4,d3d4,e3e4,f1e2,f1g2,f1h3,f3f4,g1e2,g1h3,g4g5,h1h2,h1h3,h4h5,Ke2,Kg2,Kg3]|['a1b1', 'a1c1', 'a1d1', 'a1e1', 'a2a3', 'a2a4', 'b2b3', 'b2b4', 'd3d4', 'e3e4', 'f1e2', 'f1g2', 'f1h3', 'f3f4', 'g1e2', 'g1h3', 'g4g5', 'h1h2', 'h1h3', 'h4h5']|['a1b1', 'a1c1', 'a1d1', 'a1e1', 'a2a3', 'a2a4', 'b2b3', 'b2b4', 'd3d4', 'e3e4', 'f1e2', 'f1g2', 'f1h3', 'f2e1', 'f2e2', 'f2g2', 'f2g3', 'f3f4', 'g1e2', 'g1h3', 'g4f5', 'g4g5', 'h1h2', 'h1h3', 'h4h5']|False|
+Given the chess position in FEN notation: r1bk2r1/pppp1p1p/6p1/n2N4/3b3P/8/P1PnPPPR/1R1K1B2 w - - 2 27
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a2a3,a2a4,b1a1,b1b2,b1b3,b1b4,b1b5,b1b6,b1b7,c2c3,c2c4,d1c1,d1c2,d1e1,d5b4,d5b6,d5c3,d5c7,d5e3,d5e7,d5f4,d5f6,e2e3,e2e4,f2f3,f2f4,g2g3,g2g4,h2h1,h2h3,h4h5]|['a2a3', 'a2a4', 'b1a1', 'b1b2', 'b1b3', 'b1b4', 'b1b5', 'b1b6', 'b1b7', 'c2c3', 'c2c4', 'd1c1', 'd1c2', 'd1e1', 'd5b4', 'd5b6', 'd5c3', 'd5c7', 'd5e3', 'd5e7', 'd5f4', 'd5f6', 'e2e3', 'e2e4', 'f2f3', 'f2f4', 'g2g3', 'g2g4', 'h2h1', 'h2h3', 'h4h5']|['a2a3', 'a2a4', 'b1a1', 'b1b2', 'b1b3', 'b1b4', 'b1b5', 'b1b6', 'b1b7', 'b1c1', 'c2c3', 'c2c4', 'd1c1', 'd1d2', 'd1e1', 'd5b4', 'd5b6', 'd5c3', 'd5c7', 'd5e3', 'd5e7', 'd5f4', 'd5f6', 'e2e3', 'e2e4', 'f2f3', 'f2f4', 'g2g3', 'g2g4', 'h2h1', 'h2h3', 'h4h5']|False|
+Given the chess position in FEN notation: rnb1k1r1/ppp2ppp/2qp4/1Nb1p1N1/2P4n/PQ5P/1P1PPP1R/R1B1K2B b Q - 11 21
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [e8d8,e8d7,e8e7,e8f8,c6a6,c6b6,c6b5,c6d5,c6d7,c6e4,c6f3,c6g2,c6h1,g8h8,c8d7,c8e6,c8f5,c8g4,c8h3,c5b6,c5b4,c5a3,c5d4,c5e3,c5f2,b8a6,b8d7,h4f5,h4g6,h4g2,h4f3,h4e2,a7a6,a7a5,b7b6,d6d5,e5e4,f7f6,f7f5,g7g6,h7h6,h7h5]|['a7a5', 'a7a6', 'b7b6', 'b8a6', 'b8d7', 'c5a3', 'c5b4', 'c5b6', 'c5d4', 'c5e3', 'c5f2', 'c6a6', 'c6b5', 'c6b6', 'c6d5', 'c6d7', 'c6e4', 'c6f3', 'c6g2', 'c6h1', 'c8d7', 'c8e6', 'c8f5', 'c8g4', 'c8h3', 'd6d5', 'e5e4', 'e8d7', 'e8d8', 'e8e7', 'e8f8', 'f7f5', 'f7f6', 'g7g6', 'g8h8', 'h4e2', 'h4f3', 'h4f5', 'h4g2', 'h4g6', 'h7h5', 'h7h6']|['a7a5', 'a7a6', 'b7b6', 'b8a6', 'b8d7', 'c5a3', 'c5b4', 'c5b6', 'c5d4', 'c5e3', 'c5f2', 'c6a6', 'c6b5', 'c6b6', 'c6d5', 'c6d7', 'c6e4', 'c6f3', 'c6g2', 'c6h1', 'c8d7', 'c8e6', 'c8f5', 'c8g4', 'c8h3', 'd6d5', 'e5e4', 'e8d7', 'e8d8', 'e8e7', 'e8f8', 'f7f5', 'f7f6', 'g7g6', 'g8f8', 'g8h8', 'h4f3', 'h4f5', 'h4g2', 'h4g6', 'h7h5', 'h7h6']|False|
+Given the chess position in FEN notation: 1n1qk1r1/2pp1p2/bp1bpp1p/2nN4/7P/7R/PBQPP1P1/R4BK1 w - - 3 26
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [g1f2,g1h1,b2c3,b2d4,b2e5,b2f6,c2c3,c2c4,c2c5,c2d3,c2e4,c2f5,c2g6,c2h7,c2b3,c2a4,c2d1,c2b1,a1b1,a1c1,a1d1,a1e1,a1h1,h3h2,h3h1,h3a3,h3b3,h3c3,h3d3,h3e3,h3f3,h3g3,d5c7,d5e7,d5b6,d5f6,d5b4,d5f4,d5c3,d5e3,a2a3,a2a4,d2d3,d2d4,e2e3,e2e4,g2g3,g2g4,h4h5]|['a1b1', 'a1c1', 'a1d1', 'a1e1', 'a1h1', 'a2a3', 'a2a4', 'b2c3', 'b2d4', 'b2e5', 'b2f6', 'c2a4', 'c2b1', 'c2b3', 'c2c3', 'c2c4', 'c2c5', 'c2d1', 'c2d3', 'c2e4', 'c2f5', 'c2g6', 'c2h7', 'd2d3', 'd2d4', 'd5b4', 'd5b6', 'd5c3', 'd5c7', 'd5e3', 'd5e7', 'd5f4', 'd5f6', 'e2e3', 'e2e4', 'g1f2', 'g1h1', 'g2g3', 'g2g4', 'h3a3', 'h3b3', 'h3c3', 'h3d3', 'h3e3', 'h3f3', 'h3g3', 'h3h1', 'h3h2', 'h4h5']|['a1b1', 'a1c1', 'a1d1', 'a1e1', 'a2a3', 'a2a4', 'b2a3', 'b2c1', 'b2c3', 'b2d4', 'b2e5', 'b2f6', 'c2a4', 'c2b1', 'c2b3', 'c2c1', 'c2c3', 'c2c4', 'c2c5', 'c2d1', 'c2d3', 'c2e4', 'c2f5', 'c2g6', 'c2h7', 'd2d3', 'd2d4', 'd5b4', 'd5b6', 'd5c3', 'd5c7', 'd5e3', 'd5e7', 'd5f4', 'd5f6', 'e2e3', 'e2e4', 'g1f2', 'g1h1', 'g2g3', 'g2g4', 'h3a3', 'h3b3', 'h3c3', 'h3d3', 'h3e3', 'h3f3', 'h3g3', 'h3h1', 'h3h2', 'h4h5']|False|
+Given the chess position in FEN notation: r1kq1br1/ppnnpppp/8/1NpQ4/b1P5/8/PP1PPPPP/R1B1KBNR w KQ - 1 13
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a2a3,a2a4,b2b3,b2b4,b5a3,b5a7,b5c3,b5c7,b5d4,b5d6,d2d3,d2d4,d5b7,d5c5,d5c6,d5d3,d5d4,d5d6,d5d7,d5e4,d5e5,d5e6,d5f3,d5f5,d5f7,d5g5,d5g8,d5h5,e2e3,e2e4,f1d3,f2f3,f2f4,g1f3,g1h3,g2g3,g2g4,h2h3,h2h4,a1b1]|['a1b1', 'a2a3', 'a2a4', 'b2b3', 'b2b4', 'b5a3', 'b5a7', 'b5c3', 'b5c7', 'b5d4', 'b5d6', 'd2d3', 'd2d4', 'd5b7', 'd5c5', 'd5c6', 'd5d3', 'd5d4', 'd5d6', 'd5d7', 'd5e4', 'd5e5', 'd5e6', 'd5f3', 'd5f5', 'd5f7', 'd5g5', 'd5g8', 'd5h5', 'e2e3', 'e2e4', 'f1d3', 'f2f3', 'f2f4', 'g1f3', 'g1h3', 'g2g3', 'g2g4', 'h2h3', 'h2h4']|['a1b1', 'a2a3', 'b2b3', 'b2b4', 'b5a3', 'b5a7', 'b5c3', 'b5c7', 'b5d4', 'b5d6', 'd2d3', 'd2d4', 'd5b7', 'd5c5', 'd5c6', 'd5d3', 'd5d4', 'd5d6', 'd5d7', 'd5e4', 'd5e5', 'd5e6', 'd5f3', 'd5f5', 'd5f7', 'd5g5', 'd5h5', 'e2e3', 'e2e4', 'f2f3', 'f2f4', 'g1f3', 'g1h3', 'g2g3', 'g2g4', 'h2h3', 'h2h4']|False|
+Given the chess position in FEN notation: r1b5/1p2kprp/2p3pn/p2p4/4P2P/b1PK1P2/PP1P2Pq/1RB2BN1 w - - 0 27
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [b1a1,b2a3,b2b3,b2b4,c3c4,d2d4,d3c2,d3e2,d3e3,e4d5,e4e5,f1e2,f3f4,g1e2,g1h3,g2g3,g2g4,h4h5]|['b1a1', 'b2a3', 'b2b3', 'b2b4', 'c3c4', 'd2d4', 'd3c2', 'd3e2', 'd3e3', 'e4d5', 'e4e5', 'f1e2', 'f3f4', 'g1e2', 'g1h3', 'g2g3', 'g2g4', 'h4h5']|['b1a1', 'b2a3', 'b2b3', 'b2b4', 'c3c4', 'd3c2', 'd3d4', 'd3e2', 'd3e3', 'e4d5', 'e4e5', 'f1e2', 'f3f4', 'g1e2', 'g1h3', 'g2g3', 'g2g4', 'h4h5']|False|
+Given the chess position in FEN notation: 2bqkbnr/1ppppp2/r1n5/p5pp/P6P/1P2PP2/2PPN1P1/RNBQKB1R w KQ - 1 8
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+||[]|['a1a2', 'a1a3', 'b1a3', 'b1c3', 'b3b4', 'c1a3', 'c1b2', 'c2c3', 'c2c4', 'd2d3', 'd2d4', 'e1f2', 'e2c3', 'e2d4', 'e2f4', 'e2g1', 'e2g3', 'e3e4', 'f3f4', 'g2g3', 'g2g4', 'h1g1', 'h1h2', 'h1h3', 'h4g5']|False|
+Given the chess position in FEN notation: rnbqkb1r/pp2pp1p/2p4n/3p2p1/8/P2P4/1PPQPPPP/RNBK1BNR b kq - 0 8
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [e8d7,d8d7,d8d6,d8c7,d8b6,d8a5,h8g8,c8d7,c8e6,c8f5,c8g4,c8h3,f8g7,b8a6,b8d7,h6g4,h6f5,h6g8,a7a6,a7a5,b7b6,b7b5,c6c5,d5d4,e7e6,f7f6,g5g4]|['a7a5', 'a7a6', 'b7b5', 'b7b6', 'b8a6', 'b8d7', 'c6c5', 'c8d7', 'c8e6', 'c8f5', 'c8g4', 'c8h3', 'd5d4', 'd8a5', 'd8b6', 'd8c7', 'd8d6', 'd8d7', 'e7e6', 'e8d7', 'f7f6', 'f8g7', 'g5g4', 'h6f5', 'h6g4', 'h6g8', 'h8g8']|['a7a5', 'a7a6', 'b7b5', 'b7b6', 'b8a6', 'b8d7', 'c6c5', 'c8d7', 'c8e6', 'c8f5', 'c8g4', 'c8h3', 'd5d4', 'd8a5', 'd8b6', 'd8c7', 'd8d6', 'd8d7', 'e7e5', 'e7e6', 'e8d7', 'f7f5', 'f7f6', 'f8g7', 'g5g4', 'h6f5', 'h6g4', 'h6g8', 'h8g8']|False|
+Given the chess position in FEN notation: rn3k1r/1pq2p1p/p2p4/2p2nN1/b1PP4/P5PP/1B1KPP2/R2Q1B1R w - - 1 23
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+||[]|['a1a2', 'a1b1', 'a1c1', 'b2c1', 'b2c3', 'd1a4', 'd1b1', 'd1b3', 'd1c1', 'd1c2', 'd1e1', 'd2c1', 'd2c3', 'd2d3', 'd2e1', 'd4c5', 'd4d5', 'e2e3', 'e2e4', 'f1g2', 'f2f3', 'f2f4', 'g3g4', 'g5e4', 'g5e6', 'g5f3', 'g5f7', 'g5h7', 'h1g1', 'h1h2', 'h3h4']|False|
+Given the chess position in FEN notation: r1br3k/p2p1p1p/6pB/1p6/6R1/1QK3P1/2P1P3/5B2 b - - 1 26
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+||[]|['a7a5', 'a7a6', 'a8b8', 'b5b4', 'c8a6', 'c8b7', 'd7d5', 'd7d6', 'd8e8', 'd8f8', 'd8g8', 'f7f5', 'f7f6', 'g6g5', 'h8g8']|False|
+Given the chess position in FEN notation: rq2kbnr/pbppp1pp/5p2/np6/2P5/NQ5P/PBRPPPP1/4KBNR b Kkq - 10 12
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a6,b4,bxc4,c5,c6,d5,d6,e5,e6,g5,g6,h5,h6,Kd7,Kd8,Ke7,Kf7,Nc6,Nh6,Nxb3,Nxc4,Qc8,Qd8,Ba6,Bb4,Bc5,Bc6,Bd5,Bd6,Be4,Be7,Bxa3]|[]|['a5b3', 'a5c4', 'a5c6', 'a7a6', 'b5b4', 'b5c4', 'b7a6', 'b7c6', 'b7c8', 'b7d5', 'b7e4', 'b7f3', 'b7g2', 'b8c8', 'b8d8', 'c7c5', 'c7c6', 'd7d5', 'd7d6', 'e7e5', 'e7e6', 'e8d8', 'e8f7', 'f6f5', 'g7g5', 'g7g6', 'g8h6', 'h7h5', 'h7h6']|False|
+Given the chess position in FEN notation: r1rk4/p4p2/2b2Kp1/2p2N2/1n4P1/4P3/PPPP1PP1/R1B1NB1R w - - 1 26
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a1b1,a2a3,a2a4,b2b3,c2c3,c2c4,d2d3,d2d4,e1d3,e1f3,e3e4,f1a6,f1b5,f1c4,f1d3,f1e2,f2f3,f2f4,f5d4,f5d6,f5e7,f5g3,f5g7,f5h4,f5h6,f6e5,f6e6,f6g5,f6g7,g2g3,g4g5,h1g1,h1h2,h1h3,h1h4,h1h5,h1h6,h1h7,h1h8]|['a1b1', 'a2a3', 'a2a4', 'b2b3', 'c2c3', 'c2c4', 'd2d3', 'd2d4', 'e1d3', 'e1f3', 'e3e4', 'f1a6', 'f1b5', 'f1c4', 'f1d3', 'f1e2', 'f2f3', 'f2f4', 'f5d4', 'f5d6', 'f5e7', 'f5g3', 'f5g7', 'f5h4', 'f5h6', 'f6e5', 'f6e6', 'f6g5', 'f6g7', 'g2g3', 'g4g5', 'h1g1', 'h1h2', 'h1h3', 'h1h4', 'h1h5', 'h1h6', 'h1h7', 'h1h8']|['a1b1', 'a2a3', 'a2a4', 'b2b3', 'c2c3', 'c2c4', 'd2d3', 'd2d4', 'e1d3', 'e1f3', 'e3e4', 'f1a6', 'f1b5', 'f1c4', 'f1d3', 'f1e2', 'f2f3', 'f2f4', 'f5d4', 'f5d6', 'f5e7', 'f5g3', 'f5g7', 'f5h4', 'f5h6', 'f6e5', 'f6f7', 'f6g5', 'f6g7', 'g2g3', 'g4g5', 'h1g1', 'h1h2', 'h1h3', 'h1h4', 'h1h5', 'h1h6', 'h1h7', 'h1h8']|False|
+Given the chess position in FEN notation: rq3br1/Q1ppk2p/n2p1p1n/6p1/b7/BP5N/P1PPPPPP/1R2KBR1 b - - 0 15
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [e7e8,e7f7,e7e6,b8a7,b8b3,b8b4,b8b5,b8b6,b8b7,b8c8,b8d8,b8e8,a8a7,f8c8,f8d8,f8e8,f8f7,e8b5,e8c6,e8d7,e8f7,e8g6,e8h5,a4b3,a4b5,a4c6,a4d7,a6b4,a6c5,h6f5,h6f7,h6g4,c7c6,c7c5,d6d5,f6f5,g5g4]|['a4b3', 'a4b5', 'a4c6', 'a4d7', 'a6b4', 'a6c5', 'a8a7', 'b8a7', 'b8b3', 'b8b4', 'b8b5', 'b8b6', 'b8b7', 'b8c8', 'b8d8', 'b8e8', 'c7c5', 'c7c6', 'd6d5', 'e7e6', 'e7e8', 'e7f7', 'e8b5', 'e8c6', 'e8d7', 'e8f7', 'e8g6', 'e8h5', 'f6f5', 'f8c8', 'f8d8', 'f8e8', 'f8f7', 'g5g4', 'h6f5', 'h6f7', 'h6g4']|['a4b3', 'a4b5', 'a4c6', 'a6b4', 'a6c5', 'a8a7', 'b8a7', 'b8b3', 'b8b4', 'b8b5', 'b8b6', 'b8b7', 'b8c8', 'b8d8', 'b8e8', 'c7c5', 'c7c6', 'e7d8', 'e7e6', 'e7e8', 'e7f7', 'f6f5', 'f8g7', 'g5g4', 'g8g6', 'g8g7', 'g8h8', 'h6f5', 'h6f7', 'h6g4']|False|
+Given the chess position in FEN notation: rnb2k1r/p1pn1p1p/6p1/1p1Q4/P1P5/qP2P1K1/3PP1PP/1N3B1R b - - 0 17
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a3a1,a3a2,a3a4,a3b2,a3b3,a3b4,a3c1,a3c3,a3c5,a3d3,a3d6,a3e3,a3e7,a7a6,a8d8,a8e8,b5a4,b5b4,b5c4,b8a6,b8c6,c7c6,c8a6,c8b7,d7b6,d7c5,d7e5,d7f6,f7f6,f8g7,f8g8,h7h6,h8g8]|['a3a1', 'a3a2', 'a3a4', 'a3b2', 'a3b3', 'a3b4', 'a3c1', 'a3c3', 'a3c5', 'a3d3', 'a3d6', 'a3e3', 'a3e7', 'a7a6', 'a8d8', 'a8e8', 'b5a4', 'b5b4', 'b5c4', 'b8a6', 'b8c6', 'c7c6', 'c8a6', 'c8b7', 'd7b6', 'd7c5', 'd7e5', 'd7f6', 'f7f6', 'f8g7', 'f8g8', 'h7h6', 'h8g8']|['a3a1', 'a3a2', 'a3a4', 'a3b2', 'a3b3', 'a3b4', 'a3c1', 'a3c5', 'a3d6', 'a3e7', 'a7a5', 'a7a6', 'b5a4', 'b5b4', 'b5c4', 'b8a6', 'b8c6', 'c7c5', 'c7c6', 'c8a6', 'c8b7', 'd7b6', 'd7c5', 'd7e5', 'd7f6', 'f7f5', 'f7f6', 'f8e7', 'f8e8', 'f8g7', 'f8g8', 'g6g5', 'h7h5', 'h7h6', 'h8g8']|False|
+Given the chess position in FEN notation: rNbq3r/2p1N1b1/p2p1nk1/1p5p/7P/P7/1PPPPPPR/R1BQKB2 b Q - 0 21
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [g6f7,g6h6,g6h7,f6e7,d8e7]|['d8e7', 'f6e7', 'g6f7', 'g6h6', 'g6h7']|['d8e7', 'g6f7', 'g6h6', 'g6h7']|False|
+Given the chess position in FEN notation: r1b2k1r/pp1n1ppp/1q1p4/4p1b1/P2B1P2/1P4PN/2PPP1P1/1R1QKBR1 b - - 2 16
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a7a5,a7a6,a8b8,b6a4,b6a5,b6a6,b6b4,b6b5,b6c5,b6c6,b6c7,b6d4,b6d8,d6d5,d7b5,d7b8,d7c5,d7f5,e5d4,e5e4,e5f4,f7f5,f7f6,f8e7,f8e8,f8g8,g5d8,g5e7,g5f6,g5h4,g5h6,g7g6,h7h5,h7h6,h8g8]|['a7a5', 'a7a6', 'a8b8', 'b6a4', 'b6a5', 'b6a6', 'b6b4', 'b6b5', 'b6c5', 'b6c6', 'b6c7', 'b6d4', 'b6d8', 'd6d5', 'd7b5', 'd7b8', 'd7c5', 'd7f5', 'e5d4', 'e5e4', 'e5f4', 'f7f5', 'f7f6', 'f8e7', 'f8e8', 'f8g8', 'g5d8', 'g5e7', 'g5f6', 'g5h4', 'g5h6', 'g7g6', 'h7h5', 'h7h6', 'h8g8']|['a7a5', 'a7a6', 'a8b8', 'b6a5', 'b6a6', 'b6b3', 'b6b4', 'b6b5', 'b6c5', 'b6c6', 'b6c7', 'b6d4', 'b6d8', 'd6d5', 'd7b8', 'd7c5', 'd7f6', 'e5d4', 'e5e4', 'e5f4', 'f7f5', 'f7f6', 'f8e7', 'f8e8', 'f8g8', 'g5d8', 'g5e7', 'g5f4', 'g5f6', 'g5h4', 'g5h6', 'g7g6', 'h7h5', 'h7h6', 'h8g8']|False|
+Given the chess position in FEN notation: r3b2r/pp1nbppp/kNn1p3/4p3/PPqPB1P1/B2Q2K1/2P1PP1P/1R4R1 b - - 2 29
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [c4b5,c4d3,a8b8,a8c8,a8d8,h8g8,h8f8,h8d8,h8c8,h8b8,e7b4,c6b4]|['a8b8', 'a8c8', 'a8d8', 'c4b5', 'c4d3', 'c6b4', 'e7b4', 'h8b8', 'h8c8', 'h8d8', 'h8f8', 'h8g8']|['a6b6', 'a7b6', 'a8b8', 'a8c8', 'a8d8', 'c4b5', 'c4d3', 'c6a5', 'c6b4', 'c6b8', 'c6d4', 'c6d8', 'd7b6', 'd7b8', 'd7c5', 'd7f6', 'd7f8', 'e5d4', 'e7b4', 'e7c5', 'e7d6', 'e7d8', 'e7f6', 'e7f8', 'e7g5', 'e7h4', 'f7f5', 'f7f6', 'g7g5', 'g7g6', 'h7h5', 'h7h6', 'h8f8', 'h8g8']|False|
+Given the chess position in FEN notation: r1b2knr/1p3p1p/p3qp2/2p4N/3Q4/bP2P3/P2PB1PP/3RK1NR b - - 1 23
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [f8e8,f8e7,g8h6,g8e7,a8a7,a8b8,c8d7,a3b2,a3c1,e6d6,e6c6,e6b6,e6e7,e6e8,e6e5,e6e4,e6e3,e6e2,e6d7,e6d5,e6c4,e6b3,e6a2,e6f5,e6g4,e6h3,b7b6,b7b5,h7h6,a6a5,f6f5,c5c4,c5d4]|['a3b2', 'a3c1', 'a6a5', 'a8a7', 'a8b8', 'b7b5', 'b7b6', 'c5c4', 'c5d4', 'c8d7', 'e6a2', 'e6b3', 'e6b6', 'e6c4', 'e6c6', 'e6d5', 'e6d6', 'e6d7', 'e6e2', 'e6e3', 'e6e4', 'e6e5', 'e6e7', 'e6e8', 'e6f5', 'e6g4', 'e6h3', 'f6f5', 'f8e7', 'f8e8', 'g8e7', 'g8h6', 'h7h6']|['a3b2', 'a3b4', 'a3c1', 'a6a5', 'a8a7', 'a8b8', 'b7b5', 'b7b6', 'c5c4', 'c5d4', 'c8d7', 'e6b3', 'e6b6', 'e6c4', 'e6c6', 'e6d5', 'e6d6', 'e6d7', 'e6e3', 'e6e4', 'e6e5', 'e6e7', 'e6e8', 'e6f5', 'e6g4', 'e6h3', 'f6f5', 'f8e7', 'f8e8', 'g8e7', 'g8h6', 'h7h6']|False|
+Given the chess position in FEN notation: 2rqkbr1/n1pppppn/8/pp5p/N5P1/P4bRN/1PPPP2P/R1BQKB2 b - - 7 18
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+||[]|['a7c6', 'b5a4', 'b5b4', 'c7c5', 'c7c6', 'c8a8', 'c8b8', 'd7d5', 'd7d6', 'e7e5', 'e7e6', 'f3a8', 'f3b7', 'f3c6', 'f3d5', 'f3e2', 'f3e4', 'f3g2', 'f3g4', 'f3h1', 'f7f5', 'f7f6', 'g7g5', 'g7g6', 'g8h8', 'h5g4', 'h5h4', 'h7f6', 'h7g5']|False|
+Given the chess position in FEN notation: r4bnr/ppp1Nppp/2nk4/3p4/8/q4N2/1PPPPPPP/R1BQKB1R w K - 3 14
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+||[]|['a1a2', 'a1a3', 'a1b1', 'b2a3', 'b2b3', 'b2b4', 'c2c3', 'c2c4', 'd2d3', 'd2d4', 'e2e3', 'e2e4', 'e7c6', 'e7c8', 'e7d5', 'e7f5', 'e7g6', 'e7g8', 'f3d4', 'f3e5', 'f3g1', 'f3g5', 'f3h4', 'g2g3', 'g2g4', 'h1g1', 'h2h3', 'h2h4']|False|
+Given the chess position in FEN notation: r1b1kb1r/ppp2p1p/4p3/8/1n1qN3/1P2n2P/PBPPPPP1/R2QKB1R w KQkq - 0 12
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a1b1,a1c1,a2a3,a2a4,b2a3,b2c1,b2c3,b2d4,c2c3,c2c4,d1d2,d1d3,d1d4,d1e2,d1f3,d1g4,d1h5,d2d3,d2d4,d2e3,e1e2,e1f2,e4c3,e4c5,e4d2,e4d6,e4f2,e4f6,e4g3,e4g5,f1a6,f1b5,f1c4,f1d3,f1e2,f1g2,f2f3,f2f4,g2g3,g2g4,h1g1,h1h2,h3h4]|['a1b1', 'a1c1', 'a2a3', 'a2a4', 'b2a3', 'b2c1', 'b2c3', 'b2d4', 'c2c3', 'c2c4', 'd1d2', 'd1d3', 'd1d4', 'd1e2', 'd1f3', 'd1g4', 'd1h5', 'd2d3', 'd2d4', 'd2e3', 'e1e2', 'e1f2', 'e4c3', 'e4c5', 'e4d2', 'e4d6', 'e4f2', 'e4f6', 'e4g3', 'e4g5', 'f1a6', 'f1b5', 'f1c4', 'f1d3', 'f1e2', 'f1g2', 'f2f3', 'f2f4', 'g2g3', 'g2g4', 'h1g1', 'h1h2', 'h3h4']|['a1b1', 'a1c1', 'a2a3', 'a2a4', 'b2a3', 'b2c1', 'b2c3', 'b2d4', 'c2c3', 'c2c4', 'd1b1', 'd1c1', 'd2d3', 'd2e3', 'e4c3', 'e4c5', 'e4d6', 'e4f6', 'e4g3', 'e4g5', 'f2e3', 'f2f3', 'f2f4', 'g2g3', 'g2g4', 'h1g1', 'h1h2', 'h3h4']|False|
+Given the chess position in FEN notation: 3k3r/1p3p1p/r1p3pb/p2Ppb1n/3BN3/3PP3/QPR2PPP/1N1K1B1R b - - 8 25
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: a6a7,a6a8,a6b6,a5a4,b7b6,c6c5,c6d5,e5e4,e5d4,f5e4,f5g4,f5h3,f7f6,g6g5,h7h6,h5f4,h5g3,h5g7,h5f6,b6c5,b6a6,b6d6,b6e6,b6f6,b6g6,g8h8,g8f8,g8e8,g6h5,g6f5,g6e4,g6d3,g6c2,g6b1,f5g5,f5f6,f5h5,f5h7,f5f4,f5e6,f5d7,f5g6,f5e4|['a5a4', 'a6a7', 'a6a8', 'a6b6', 'b6a6', 'b6c5', 'b6d6', 'b6e6', 'b6f6', 'b6g6', 'b7b6', 'c6c5', 'c6d5', 'e5d4', 'e5e4', 'f5d7', 'f5e4', 'f5e4', 'f5e6', 'f5f4', 'f5f6', 'f5g4', 'f5g5', 'f5g6', 'f5h3', 'f5h5', 'f5h7', 'f7f6', 'g6b1', 'g6c2', 'g6d3', 'g6e4', 'g6f5', 'g6g5', 'g6h5', 'g8e8', 'g8f8', 'g8h8', 'h5f4', 'h5f6', 'h5g3', 'h5g7', 'h7h6']|['a5a4', 'a6a7', 'a6a8', 'a6b6', 'b7b5', 'b7b6', 'c6c5', 'c6d5', 'd8c7', 'd8c8', 'd8d7', 'd8e7', 'd8e8', 'e5d4', 'f5c8', 'f5d7', 'f5e4', 'f5e6', 'f5g4', 'f5h3', 'f7f6', 'g6g5', 'h5f4', 'h5f6', 'h5g3', 'h5g7', 'h6e3', 'h6f4', 'h6f8', 'h6g5', 'h6g7', 'h8e8', 'h8f8', 'h8g8']|False|
+Given the chess position in FEN notation: 2b1n1qr/pr1ppp1p/1p2k2b/6p1/1N6/1P3P2/PBPPKPP1/R2Q2R1 w - - 0 29
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a1a3,a1a4,a1a5,a1a6,a1a7,a1b1,a1c1,a2a3,a2a4,b2a3,b2c1,b2c3,b2d4,b2e5,b2f6,b2g7,b4a3,b4a5,b4a6,b4c6,b4d3,b4d5,c2c3,c2c4,d1b1,d1c1,d1e1,d1f1,d2d3,d2d4,e2d3,e2e1,e2e3,e2f1,f3f4,g1e1,g1f1,g1g3,g1g4,g1g5,g2g3,g2g4]|['a1a3', 'a1a4', 'a1a5', 'a1a6', 'a1a7', 'a1b1', 'a1c1', 'a2a3', 'a2a4', 'b2a3', 'b2c1', 'b2c3', 'b2d4', 'b2e5', 'b2f6', 'b2g7', 'b4a3', 'b4a5', 'b4a6', 'b4c6', 'b4d3', 'b4d5', 'c2c3', 'c2c4', 'd1b1', 'd1c1', 'd1e1', 'd1f1', 'd2d3', 'd2d4', 'e2d3', 'e2e1', 'e2e3', 'e2f1', 'f3f4', 'g1e1', 'g1f1', 'g1g3', 'g1g4', 'g1g5', 'g2g3', 'g2g4']|['a1b1', 'a1c1', 'a2a3', 'a2a4', 'b2a3', 'b2c1', 'b2c3', 'b2d4', 'b2e5', 'b2f6', 'b2g7', 'b2h8', 'b4a6', 'b4c6', 'b4d3', 'b4d5', 'c2c3', 'c2c4', 'd1b1', 'd1c1', 'd1e1', 'd1f1', 'd2d3', 'd2d4', 'e2d3', 'e2e1', 'e2e3', 'e2f1', 'f3f4', 'g1e1', 'g1f1', 'g1h1', 'g2g3', 'g2g4']|False|
+Given the chess position in FEN notation: r1bqkb2/p1pp1p1r/1p3p1p/2B1pB2/7n/4n3/P1PP1P1P/RN2K2R w q - 0 21
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [e1d2,e1e2,e1f2,h1g1,h1f1,b1a3,b1c3,c5b6,c5d6,c5e7,c5f8,c5b4,c5a3,c5d4,c5e3,f5e6,f5d7,f5g6,f5h7,f5e4,f5d3,f5g4,f5h3,a2a3,a2a4,c2c3,c2c4,d2d3,d2d4,d2e3,f2f3,f2f4,f2e3,h2h3,h2h4]|['a2a3', 'a2a4', 'b1a3', 'b1c3', 'c2c3', 'c2c4', 'c5a3', 'c5b4', 'c5b6', 'c5d4', 'c5d6', 'c5e3', 'c5e7', 'c5f8', 'd2d3', 'd2d4', 'd2e3', 'e1d2', 'e1e2', 'e1f2', 'f2e3', 'f2f3', 'f2f4', 'f5d3', 'f5d7', 'f5e4', 'f5e6', 'f5g4', 'f5g6', 'f5h3', 'f5h7', 'h1f1', 'h1g1', 'h2h3', 'h2h4']|['a2a3', 'a2a4', 'b1a3', 'b1c3', 'c2c3', 'c2c4', 'c5a3', 'c5b4', 'c5b6', 'c5d4', 'c5d6', 'c5e3', 'c5e7', 'c5f8', 'd2d3', 'd2d4', 'd2e3', 'e1e2', 'f2e3', 'f2f3', 'f2f4', 'f5d3', 'f5d7', 'f5e4', 'f5e6', 'f5g4', 'f5g6', 'f5h3', 'f5h7', 'h1f1', 'h1g1', 'h2h3']|False|
+Given the chess position in FEN notation: rnbk1br1/2qppppp/ppp5/8/2P1n3/4N2N/PP1PPPPP/R1BQKB1R w KQ - 2 13
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a1b1,a2a3,a2a4,b2b3,b2b4,c4c5,d1a4,d1b3,d1c2,d2d3,d2d4,e3c2,e3d5,e3f5,e3g4,f1d3,f2f3,f2f4,g2g3,g2g4,h1g1,h3f4,h3g1,h3g5]|['a1b1', 'a2a3', 'a2a4', 'b2b3', 'b2b4', 'c4c5', 'd1a4', 'd1b3', 'd1c2', 'd2d3', 'd2d4', 'e3c2', 'e3d5', 'e3f5', 'e3g4', 'f1d3', 'f2f3', 'f2f4', 'g2g3', 'g2g4', 'h1g1', 'h3f4', 'h3g1', 'h3g5']|['a1b1', 'a2a3', 'a2a4', 'b2b3', 'b2b4', 'c4c5', 'd1a4', 'd1b3', 'd1c2', 'd2d3', 'd2d4', 'e3c2', 'e3d5', 'e3f5', 'e3g4', 'f2f3', 'f2f4', 'g2g3', 'g2g4', 'h1g1', 'h3f4', 'h3g1', 'h3g5']|False|
+Given the chess position in FEN notation: rn1k4/p1ppbp1p/5B1n/1p2p3/4P2q/P1NN2K1/RPP1P1PP/3Q1B1R w - - 13 26
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [g3h4]|['g3h4']|['f6h4', 'g3f3', 'g3h4']|False|
+Given the chess position in FEN notation: N1b4r/pp1pkp2/2p2b1p/1n2p2P/8/3P3R/PPP1nKP1/R1Q2B2 b - - 2 25
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+||[]|['a7a5', 'a7a6', 'b5a3', 'b5c3', 'b5c7', 'b5d4', 'b5d6', 'b7b6', 'c6c5', 'd7d5', 'd7d6', 'e2c1', 'e2c3', 'e2d4', 'e2f4', 'e2g1', 'e2g3', 'e5e4', 'e7d6', 'e7d8', 'e7e6', 'e7e8', 'e7f8', 'f6g5', 'f6g7', 'f6h4', 'h8d8', 'h8e8', 'h8f8', 'h8g8', 'h8h7']|False|
+Given the chess position in FEN notation: 1rb4B/1ppqppbp/p2p2rn/3k2p1/5PP1/QP1PP2B/P6P/RN2K1NR w KQ - 1 18
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a3a4,a3a5,a3a6,a3b4,a3c5,a3d6,b1c3,b1d2,b3b4,d3d4,e1d1,e1d2,e1e2,e1f1,e1f2,e3e4,f4f5,f4g5,g1e2,g1f3,h2h4,h3f1,h3g2,h8g7]|['a3a4', 'a3a5', 'a3a6', 'a3b4', 'a3c5', 'a3d6', 'b1c3', 'b1d2', 'b3b4', 'd3d4', 'e1d1', 'e1d2', 'e1e2', 'e1f1', 'e1f2', 'e3e4', 'f4f5', 'f4g5', 'g1e2', 'g1f3', 'h2h4', 'h3f1', 'h3g2', 'h8g7']|['a3a4', 'a3a5', 'a3a6', 'a3b2', 'a3b4', 'a3c1', 'a3c5', 'a3d6', 'b1c3', 'b1d2', 'b3b4', 'd3d4', 'e1d1', 'e1d2', 'e1e2', 'e1f1', 'e1f2', 'e3e4', 'f4f5', 'f4g5', 'g1e2', 'g1f3', 'h3f1', 'h3g2', 'h8g7']|False|
+Given the chess position in FEN notation: r1b1kbnr/1pnp1ppp/8/p1p1p1q1/P1P5/2N2N1P/1P1PPPPR/1RBQKB2 b k - 3 11
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a8a6,a8a7,a8b8,b7b5,b7b6,c7a6,c7b5,c7d5,c7e6,d7d5,d7d6,e5e4,e8d8,e8e7,f7f5,f7f6,f8d6,f8e7,g5d8,g5e3,g5e7,g5f4,g5f5,g5f6,g5g4,g5g6,g5h4,g5h5,g5h6,g7g6,g8e7,g8f6,h7h5,h7h6]|['a8a6', 'a8a7', 'a8b8', 'b7b5', 'b7b6', 'c7a6', 'c7b5', 'c7d5', 'c7e6', 'd7d5', 'd7d6', 'e5e4', 'e8d8', 'e8e7', 'f7f5', 'f7f6', 'f8d6', 'f8e7', 'g5d8', 'g5e3', 'g5e7', 'g5f4', 'g5f5', 'g5f6', 'g5g4', 'g5g6', 'g5h4', 'g5h5', 'g5h6', 'g7g6', 'g8e7', 'g8f6', 'h7h5', 'h7h6']|['a8a6', 'a8a7', 'a8b8', 'b7b5', 'b7b6', 'c7a6', 'c7b5', 'c7d5', 'c7e6', 'd7d5', 'd7d6', 'e5e4', 'e8d8', 'e8e7', 'f7f5', 'f7f6', 'f8d6', 'f8e7', 'g5d2', 'g5d8', 'g5e3', 'g5e7', 'g5f4', 'g5f5', 'g5f6', 'g5g2', 'g5g3', 'g5g4', 'g5g6', 'g5h4', 'g5h5', 'g5h6', 'g7g6', 'g8e7', 'g8f6', 'g8h6', 'h7h5', 'h7h6']|False|
+Given the chess position in FEN notation: 1rbqk1r1/2p4p/pp1pppp1/1N2b3/5P2/1KP4N/PP1PP1PP/1RB1QBR1 w - - 0 21
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a2a3,a2a4,b3a3,b3a4,b3b4,b3c2,b3c4,b5a3,b5a7,b5c7,b5d4,b5d6,c3c4,d2d3,d2d4,e1d1,e1f2,e1g3,e1h4,e2e3,e2e4,f4e5,f4f5,g1h1,g2g3,g2g4,h3f2,h3g5]|['a2a3', 'a2a4', 'b3a3', 'b3a4', 'b3b4', 'b3c2', 'b3c4', 'b5a3', 'b5a7', 'b5c7', 'b5d4', 'b5d6', 'c3c4', 'd2d3', 'd2d4', 'e1d1', 'e1f2', 'e1g3', 'e1h4', 'e2e3', 'e2e4', 'f4e5', 'f4f5', 'g1h1', 'g2g3', 'g2g4', 'h3f2', 'h3g5']|['a2a3', 'a2a4', 'b1a1', 'b3a3', 'b3a4', 'b3b4', 'b3c2', 'b3c4', 'b5a3', 'b5a7', 'b5c7', 'b5d4', 'b5d6', 'c3c4', 'd2d3', 'd2d4', 'e1d1', 'e1f2', 'e1g3', 'e1h4', 'e2e3', 'e2e4', 'f4e5', 'f4f5', 'g1h1', 'g2g3', 'g2g4', 'h3f2', 'h3g5']|False|
+Given the chess position in FEN notation: 1n1qkb1r/1bpppp2/r4np1/pp2N2p/4P3/5P1N/PPPPQ1PP/1RB1KBR1 w k - 2 10
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+||[]|['a2a3', 'a2a4', 'b1a1', 'b2b3', 'b2b4', 'c2c3', 'c2c4', 'd2d3', 'd2d4', 'e1d1', 'e1f2', 'e2b5', 'e2c4', 'e2d1', 'e2d3', 'e2e3', 'e2f2', 'e5c4', 'e5c6', 'e5d3', 'e5d7', 'e5f7', 'e5g4', 'e5g6', 'f3f4', 'g1h1', 'g2g3', 'g2g4', 'h3f2', 'h3f4', 'h3g5']|False|
+Given the chess position in FEN notation: r1bqkb1r/p1pppppp/2n4n/1p6/8/2NP3N/PPP1PPPP/R1BQKBR1 b Qkq - 0 6
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a7a5,a7a6,a8b8,b5b4,c6a5,c6b4,c6b8,c6d4,c6e5,c8d7,c8e6,c8f5,c8g4,c8h3,d7d5,d7d6,d8d3,d8d4,d8d5,d8d6,d8d7,e7e5,e7e6,e8d7,f7f5,f7f6,g7g5,g7g6,h6f5,h6g4,h6g8,h8g8]|['a7a5', 'a7a6', 'a8b8', 'b5b4', 'c6a5', 'c6b4', 'c6b8', 'c6d4', 'c6e5', 'c8d7', 'c8e6', 'c8f5', 'c8g4', 'c8h3', 'd7d5', 'd7d6', 'd8d3', 'd8d4', 'd8d5', 'd8d6', 'd8d7', 'e7e5', 'e7e6', 'e8d7', 'f7f5', 'f7f6', 'g7g5', 'g7g6', 'h6f5', 'h6g4', 'h6g8', 'h8g8']|['a7a5', 'a7a6', 'a8b8', 'b5b4', 'c6a5', 'c6b4', 'c6b8', 'c6d4', 'c6e5', 'c8a6', 'c8b7', 'd7d5', 'd7d6', 'e7e5', 'e7e6', 'f7f5', 'f7f6', 'g7g5', 'g7g6', 'h6f5', 'h6g4', 'h6g8', 'h8g8']|False|
+Given the chess position in FEN notation: 2bqk2r/1pppp2p/7r/p4ppn/4Q2b/1PNB4/P2P2P1/2K4R w - - 2 25
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [c1b1,h1h2,h1h3,h1h4,h1g1,h1f1,h1e1,h1d1,e4e5,e4e6,e4e7,e4e3,e4e2,e4e1,e4d4,e4c4,e4b4,e4a4,e4f4,e4g4,e4h4,e4f5,e4g6,e4h7,e4d5,e4c6,e4b7,e4c2,e4b1,d3c4,d3b5,d3a6,d3c2,d3b1,c3a4,c3b5,c3d5,c3e2,c3d1,c3b1,a2a3,a2a4,b3b4,g2g3,g2g4]|['a2a3', 'a2a4', 'b3b4', 'c1b1', 'c3a4', 'c3b1', 'c3b5', 'c3d1', 'c3d5', 'c3e2', 'd3a6', 'd3b1', 'd3b5', 'd3c2', 'd3c4', 'e4a4', 'e4b1', 'e4b4', 'e4b7', 'e4c2', 'e4c4', 'e4c6', 'e4d4', 'e4d5', 'e4e1', 'e4e2', 'e4e3', 'e4e5', 'e4e6', 'e4e7', 'e4f4', 'e4f5', 'e4g4', 'e4g6', 'e4h4', 'e4h7', 'g2g3', 'g2g4', 'h1d1', 'h1e1', 'h1f1', 'h1g1', 'h1h2', 'h1h3', 'h1h4']|['a2a3', 'a2a4', 'b3b4', 'c1b1', 'c1b2', 'c1c2', 'c1d1', 'c3a4', 'c3b1', 'c3b5', 'c3d1', 'c3d5', 'c3e2', 'd3a6', 'd3b1', 'd3b5', 'd3c2', 'd3c4', 'd3e2', 'd3f1', 'e4a4', 'e4b4', 'e4b7', 'e4c4', 'e4c6', 'e4d4', 'e4d5', 'e4e1', 'e4e2', 'e4e3', 'e4e5', 'e4e6', 'e4e7', 'e4f3', 'e4f4', 'e4f5', 'e4g4', 'e4h4', 'g2g3', 'g2g4', 'h1d1', 'h1e1', 'h1f1', 'h1g1', 'h1h2', 'h1h3', 'h1h4']|False|
+Given the chess position in FEN notation: rnb2br1/ppp1kNpp/7B/4p3/3P3q/8/PPP1PPPP/RN1QKB1R w KQ - 3 10
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [h1h4,g2g3,e1d2]|['e1d2', 'g2g3', 'h1h4']|['a2a3', 'a2a4', 'b1a3', 'b1c3', 'b1d2', 'b2b3', 'b2b4', 'c2c3', 'c2c4', 'd1c1', 'd1d2', 'd1d3', 'd4d5', 'd4e5', 'e1d2', 'e2e3', 'e2e4', 'f7d6', 'f7d8', 'f7e5', 'f7g5', 'f7h8', 'g2g3', 'g2g4', 'h1g1', 'h2h3', 'h6c1', 'h6d2', 'h6e3', 'h6f4', 'h6g5', 'h6g7']|False|
+Given the chess position in FEN notation: 1rqk1b2/p1pp2p1/1p2p2n/5p1p/4PPPP/5B2/1PKPR3/1RB1Q3 b - - 1 26
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [d8e8,d8e7,c8a6,c8b7,b8a8,b8b7,f8e7,f8d6,f8c5,f8b4,f8a3,h6g8,h6f7,h6g4,a7a6,a7a5,c7c6,c7c5,d7d6,d7d5,g7g6,g7g5,b6b5,e6e5,f5f4,h5h4]|['a7a5', 'a7a6', 'b6b5', 'b8a8', 'b8b7', 'c7c5', 'c7c6', 'c8a6', 'c8b7', 'd7d5', 'd7d6', 'd8e7', 'd8e8', 'e6e5', 'f5f4', 'f8a3', 'f8b4', 'f8c5', 'f8d6', 'f8e7', 'g7g5', 'g7g6', 'h5h4', 'h6f7', 'h6g4', 'h6g8']|['a7a5', 'a7a6', 'b6b5', 'b8a8', 'b8b7', 'c7c5', 'c7c6', 'c8a6', 'c8b7', 'd7d5', 'd7d6', 'd8e7', 'd8e8', 'e6e5', 'f5e4', 'f5g4', 'f8a3', 'f8b4', 'f8c5', 'f8d6', 'f8e7', 'g7g5', 'g7g6', 'h5g4', 'h6f7', 'h6g4', 'h6g8']|False|
+Given the chess position in FEN notation: 5br1/p2k1pp1/b3p2p/1R5n/2P5/2KBPP2/3P2PP/6NR b - - 5 27
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a6b5,a6b7,a6c8,d7c7,d7c8,d7d6,e6e5,f7f6,f8a3,f8b4,f8c5,f8d6,f8e7,g7g6,g8a8,g8b8,g8c8,g8d8,g8e8,h5f4,h5f6,h5g3]|['a6b5', 'a6b7', 'a6c8', 'd7c7', 'd7c8', 'd7d6', 'e6e5', 'f7f6', 'f8a3', 'f8b4', 'f8c5', 'f8d6', 'f8e7', 'g7g6', 'g8a8', 'g8b8', 'g8c8', 'g8d8', 'g8e8', 'h5f4', 'h5f6', 'h5g3']|['a6b5', 'a6b7', 'a6c8', 'd7c6', 'd7c7', 'd7c8', 'd7d6', 'd7d8', 'd7e7', 'd7e8', 'e6e5', 'f7f5', 'f7f6', 'f8a3', 'f8b4', 'f8c5', 'f8d6', 'f8e7', 'g7g5', 'g7g6', 'g8h8', 'h5f4', 'h5f6', 'h5g3']|False|
+Given the chess position in FEN notation: rnbk1b1r/pp1ppp1p/2p4n/6N1/4BPP1/P3P3/RPPKR2P/1NBQ4 w - - 5 14
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a2a1,a3a4,b1c3,b2b3,b2b4,c2c3,c2c4,d1e1,d1f1,d1g1,d1h1,d2c1,d2c3,d2d1,d2d3,d2e1,d2e3,e2e1,e2e3,e2f2,e2g2,e4c6,e4d3,e4d5,e4f5,e4g6,e4h7,f4f5,g5e6,g5f3,g5f7,g5h3,g5h7,h2h3,h2h4]|['a2a1', 'a3a4', 'b1c3', 'b2b3', 'b2b4', 'c2c3', 'c2c4', 'd1e1', 'd1f1', 'd1g1', 'd1h1', 'd2c1', 'd2c3', 'd2d1', 'd2d3', 'd2e1', 'd2e3', 'e2e1', 'e2e3', 'e2f2', 'e2g2', 'e4c6', 'e4d3', 'e4d5', 'e4f5', 'e4g6', 'e4h7', 'f4f5', 'g5e6', 'g5f3', 'g5f7', 'g5h3', 'g5h7', 'h2h3', 'h2h4']|['a2a1', 'a3a4', 'b1c3', 'b2b3', 'b2b4', 'c2c3', 'c2c4', 'd1e1', 'd1f1', 'd1g1', 'd1h1', 'd2c3', 'd2d3', 'd2e1', 'e2e1', 'e2f2', 'e2g2', 'e4c6', 'e4d3', 'e4d5', 'e4f3', 'e4f5', 'e4g2', 'e4g6', 'e4h1', 'e4h7', 'f4f5', 'g5e6', 'g5f3', 'g5f7', 'g5h3', 'g5h7', 'h2h3', 'h2h4']|False|
+Given the chess position in FEN notation: 1nbqk2r/r1pp1ppp/4BQ1n/1p2p3/pb2P3/6P1/PPPP1P1P/RNB1K1NR b KQk - 1 8
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+||[]|['a4a3', 'a7a5', 'a7a6', 'a7a8', 'a7b7', 'b4a3', 'b4a5', 'b4c3', 'b4c5', 'b4d2', 'b4d6', 'b4e7', 'b4f8', 'b8a6', 'b8c6', 'c7c5', 'c7c6', 'c8a6', 'c8b7', 'd7d5', 'd7d6', 'd7e6', 'd8e7', 'd8f6', 'e8f8', 'e8g8', 'f7e6', 'g7f6', 'g7g5', 'g7g6', 'h6f5', 'h6g4', 'h6g8', 'h8f8', 'h8g8']|False|
+Given the chess position in FEN notation: 1nb1krnr/B1pqp3/3p1b2/pp1B1P1p/6P1/3P3P/P1P1QP1R/R1N1K1N1 b Qk - 3 20
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [e8d8,d7d8,d7c6,d7b5,d7e6,d7f5,h8h7,h8h6,c8a6,c8b7,f6g5,f6h4,f6e5,f6d4,f6c3,f6b2,f6a1,b8a6,b8c6,g8h6,a5a4,b5b4,c7c6,c7c5,d6d5,e7e6,e7e5,h5h4,h5g4]|['a5a4', 'b5b4', 'b8a6', 'b8c6', 'c7c5', 'c7c6', 'c8a6', 'c8b7', 'd6d5', 'd7b5', 'd7c6', 'd7d8', 'd7e6', 'd7f5', 'e7e5', 'e7e6', 'e8d8', 'f6a1', 'f6b2', 'f6c3', 'f6d4', 'f6e5', 'f6g5', 'f6h4', 'g8h6', 'h5g4', 'h5h4', 'h8h6', 'h8h7']|['a5a4', 'b5b4', 'b8a6', 'b8c6', 'c7c5', 'c7c6', 'c8a6', 'c8b7', 'd7c6', 'd7d8', 'd7e6', 'd7f5', 'e7e5', 'e7e6', 'e8d8', 'f6a1', 'f6b2', 'f6c3', 'f6d4', 'f6e5', 'f6g5', 'f6g7', 'f6h4', 'f8f7', 'g8h6', 'h5g4', 'h5h4', 'h8h6', 'h8h7']|False|
+Given the chess position in FEN notation: 1nq1k1r1/2p2pb1/3p4/1p2pRp1/8/2pN2pP/P1PPPP1R/2QK1BN1 w - - 0 27
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a2a3,a2a4,c1a1,c1a3,c1b1,c1b2,d1e1,d3b2,d3b4,d3c5,d3e1,d3e5,d3f4,e2e3,e2e4,f1g2,f2f3,f2f4,f2g3,f5e5,f5f3,f5f4,f5f6,f5f7,f5g5,f5h5,g1f3,h2g2,h2h1,h3h4]|['a2a3', 'a2a4', 'c1a1', 'c1a3', 'c1b1', 'c1b2', 'd1e1', 'd3b2', 'd3b4', 'd3c5', 'd3e1', 'd3e5', 'd3f4', 'e2e3', 'e2e4', 'f1g2', 'f2f3', 'f2f4', 'f2g3', 'f5e5', 'f5f3', 'f5f4', 'f5f6', 'f5f7', 'f5g5', 'f5h5', 'g1f3', 'h2g2', 'h2h1', 'h3h4']|['a2a3', 'a2a4', 'c1a1', 'c1a3', 'c1b1', 'c1b2', 'd1e1', 'd2c3', 'd3b2', 'd3b4', 'd3c5', 'd3e1', 'd3e5', 'd3f4', 'e2e3', 'e2e4', 'f1g2', 'f2f3', 'f2f4', 'f2g3', 'f5e5', 'f5f3', 'f5f4', 'f5f6', 'f5f7', 'f5g5', 'g1f3', 'h2g2', 'h2h1', 'h3h4']|False|
+Given the chess position in FEN notation: rnB1kb1r/p2qpppp/4b3/2pp4/N3n3/4P3/PPPPNPPP/R1BQK1R1 b Qkq - 4 10
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+||[]|['a7a5', 'a7a6', 'b8a6', 'b8c6', 'c5c4', 'd5d4', 'd7a4', 'd7b5', 'd7b7', 'd7c6', 'd7c7', 'd7c8', 'd7d6', 'd7d8', 'e4c3', 'e4d2', 'e4d6', 'e4f2', 'e4f6', 'e4g3', 'e4g5', 'e6f5', 'e6g4', 'e6h3', 'e8d8', 'f7f5', 'f7f6', 'g7g5', 'g7g6', 'h7h5', 'h7h6', 'h8g8']|False|
+Given the chess position in FEN notation: 4kb2/2p1pppr/3p1n2/3Nn2p/1p3B2/3PQP2/b3PKP1/R1r2BNR b - - 7 23
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a2b3,a2c4,a2d5,b4b3,c1a1,c1c2,c1c3,c1c4,c1c5,c1c6,c1f1,c7c5,c7c6,e7e6,e8d7,e8d8,f6d5,f6d7,f6e4,f6g4,f6g8,g7g5,g7g6,h5h4,h7h6,h7h8]|['a2b3', 'a2c4', 'a2d5', 'b4b3', 'c1a1', 'c1c2', 'c1c3', 'c1c4', 'c1c5', 'c1c6', 'c1f1', 'c7c5', 'c7c6', 'e7e6', 'e8d7', 'e8d8', 'f6d5', 'f6d7', 'f6e4', 'f6g4', 'f6g8', 'g7g5', 'g7g6', 'h5h4', 'h7h6', 'h7h8']|['a2b1', 'a2b3', 'a2c4', 'a2d5', 'b4b3', 'c1a1', 'c1b1', 'c1c2', 'c1c3', 'c1c4', 'c1c5', 'c1c6', 'c1d1', 'c1e1', 'c1f1', 'c7c5', 'c7c6', 'e5c4', 'e5c6', 'e5d3', 'e5d7', 'e5f3', 'e5g4', 'e5g6', 'e7e6', 'e8d7', 'e8d8', 'f6d5', 'f6d7', 'f6e4', 'f6g4', 'f6g8', 'g7g5', 'g7g6', 'h5h4', 'h7h6', 'h7h8']|False|
+Given the chess position in FEN notation: 1krqr3/p1p3pp/p3pp2/5N2/2P5/B2P4/PP1Knb1P/1RN2B1R b - - 1 30
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+||[]|['a6a5', 'b8a8', 'b8b7', 'c7c5', 'c7c6', 'd8d3', 'd8d4', 'd8d5', 'd8d6', 'd8d7', 'd8e7', 'e2c1', 'e2c3', 'e2d4', 'e2f4', 'e2g1', 'e2g3', 'e6e5', 'e6f5', 'e8e7', 'e8f8', 'e8g8', 'e8h8', 'f2b6', 'f2c5', 'f2d4', 'f2e1', 'f2e3', 'f2g1', 'f2g3', 'f2h4', 'g7g5', 'g7g6', 'h7h5', 'h7h6']|False|
+Given the chess position in FEN notation: 1rb1kb1r/1p1ppppp/8/p1pR4/P4BP1/3P1NPP/1PP1q1BR/1N2Q1K1 b k - 1 18
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [b7b5,b7b6,b8a8,c5c4,d7d6,e2c2,e2d1,e2d2,e2d3,e2e1,e2f1,e2f2,e2f3,e2g2,e7e5,e7e6,f7f5,f7f6,g7g5,g7g6,h7h5,h7h6,h8g8,e8d8]|['b7b5', 'b7b6', 'b8a8', 'c5c4', 'd7d6', 'e2c2', 'e2d1', 'e2d2', 'e2d3', 'e2e1', 'e2f1', 'e2f2', 'e2f3', 'e2g2', 'e7e5', 'e7e6', 'e8d8', 'f7f5', 'f7f6', 'g7g5', 'g7g6', 'h7h5', 'h7h6', 'h8g8']|['b7b5', 'b7b6', 'b8a8', 'c5c4', 'd7d6', 'e2c2', 'e2d1', 'e2d2', 'e2d3', 'e2e1', 'e2e3', 'e2e4', 'e2e5', 'e2e6', 'e2f1', 'e2f2', 'e2f3', 'e2g2', 'e7e5', 'e7e6', 'e8d8', 'f7f5', 'f7f6', 'g7g5', 'g7g6', 'h7h5', 'h7h6', 'h8g8']|False|
+Given the chess position in FEN notation: rk3br1/ppp2pp1/5N2/4p2p/1P2b2P/2P5/P2P1P2/R1B1K2R w - - 2 27
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a1b1,a2a3,a2a4,b4b5,c1a3,c1b2,c3c4,d2d3,d2d4,e1d1,e1e2,e1f1,f2f3,f2f4,f6d5,f6d7,f6e4,f6e8,f6g4,f6g8,f6h5,f6h7,h1f1,h1g1]|['a1b1', 'a2a3', 'a2a4', 'b4b5', 'c1a3', 'c1b2', 'c3c4', 'd2d3', 'd2d4', 'e1d1', 'e1e2', 'e1f1', 'f2f3', 'f2f4', 'f6d5', 'f6d7', 'f6e4', 'f6e8', 'f6g4', 'f6g8', 'f6h5', 'f6h7', 'h1f1', 'h1g1']|['a1b1', 'a2a3', 'a2a4', 'b4b5', 'c1a3', 'c1b2', 'c3c4', 'd2d3', 'd2d4', 'e1d1', 'e1e2', 'e1f1', 'f2f3', 'f2f4', 'f6d5', 'f6d7', 'f6e4', 'f6e8', 'f6g4', 'f6g8', 'f6h5', 'f6h7', 'h1f1', 'h1g1', 'h1h2', 'h1h3']|False|
+Given the chess position in FEN notation: r4k2/p1ppnr2/2b4n/1p2p3/4q2P/N2N3P/PPPP2P1/1RBK1B1R b - - 1 29
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a7a5,a7a6,a8b8,a8c8,a8d8,a8e8,b5b4,c6b7,c6d5,d7d5,d7d6,e4a4,e4b4,e4c4,e4d3,e4d4,e4d5,e4e1,e4e2,e4e3,e4f3,e4f4,e4f5,e4g2,e4g4,e4g6,e4h4,e4h7,e7c8,e7d5,e7f5,e7g6,e7g8,f7f1,f7f2,f7f3,f7f4,f7f5,f7f6,f7g7,f7h7,f8e8,f8g7,f8g8,h6f5,h6g4,h6g8]|['a7a5', 'a7a6', 'a8b8', 'a8c8', 'a8d8', 'a8e8', 'b5b4', 'c6b7', 'c6d5', 'd7d5', 'd7d6', 'e4a4', 'e4b4', 'e4c4', 'e4d3', 'e4d4', 'e4d5', 'e4e1', 'e4e2', 'e4e3', 'e4f3', 'e4f4', 'e4f5', 'e4g2', 'e4g4', 'e4g6', 'e4h4', 'e4h7', 'e7c8', 'e7d5', 'e7f5', 'e7g6', 'e7g8', 'f7f1', 'f7f2', 'f7f3', 'f7f4', 'f7f5', 'f7f6', 'f7g7', 'f7h7', 'f8e8', 'f8g7', 'f8g8', 'h6f5', 'h6g4', 'h6g8']|['a7a5', 'a7a6', 'a8b8', 'a8c8', 'a8d8', 'a8e8', 'b5b4', 'c6b7', 'c6d5', 'd7d5', 'd7d6', 'e4a4', 'e4b4', 'e4c4', 'e4d3', 'e4d4', 'e4d5', 'e4e1', 'e4e2', 'e4e3', 'e4f3', 'e4f4', 'e4f5', 'e4g2', 'e4g4', 'e4g6', 'e4h4', 'e4h7', 'e7c8', 'e7d5', 'e7f5', 'e7g6', 'e7g8', 'f7f1', 'f7f2', 'f7f3', 'f7f4', 'f7f5', 'f7f6', 'f7g7', 'f7h7', 'f8e8', 'f8g7', 'f8g8', 'h6f5', 'h6g4', 'h6g8']|True|
+Given the chess position in FEN notation: rnb1kbnr/pq2pp1p/2pp4/1p4p1/1Q1P3P/2N3P1/PPP1PP2/1RB1KBNR b Kkq - 5 11
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [e8d8,e8d7,b7a6,b7a5,b7a4,b7a3,b7a2,b7c6,b7b6,b7c7,b7d7,c8d7,c8e6,c8f5,c8g4,c8h3,f8g7,f8h6,b8a6,b8d7,g8h6,g8f6,a7a6,a7a5,c6c5,d6d5,e7e6,f7f6,g5g4,g5h4,h7h6,h7h5]|['a7a5', 'a7a6', 'b7a2', 'b7a3', 'b7a4', 'b7a5', 'b7a6', 'b7b6', 'b7c6', 'b7c7', 'b7d7', 'b8a6', 'b8d7', 'c6c5', 'c8d7', 'c8e6', 'c8f5', 'c8g4', 'c8h3', 'd6d5', 'e7e6', 'e8d7', 'e8d8', 'f7f6', 'f8g7', 'f8h6', 'g5g4', 'g5h4', 'g8f6', 'g8h6', 'h7h5', 'h7h6']|['a7a5', 'a7a6', 'b7a6', 'b7b6', 'b7c7', 'b7d7', 'b8a6', 'b8d7', 'c6c5', 'c8d7', 'c8e6', 'c8f5', 'c8g4', 'c8h3', 'd6d5', 'e7e5', 'e7e6', 'e8d7', 'e8d8', 'f7f5', 'f7f6', 'f8g7', 'f8h6', 'g5g4', 'g5h4', 'g8f6', 'g8h6', 'h7h5', 'h7h6']|False|
+Given the chess position in FEN notation: rn1q2nr/1bpkp3/pp1p1p1b/6Np/2P5/1Q4PP/PP1PPP2/RNB1K1R1 w - - 1 16
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [e1d1,e1f1,b3a3,b3a4,b3a5,b3a6,b3c3,b3d3,b3e3,b3f3,b3c2,b3d1,g1g2,g1f1,b1a3,b1c3,g5h7,g5f7,g5e6,g5e4,g5f3,a2a3,a2a4,c4c5,d2d3,d2d4,e2e3,e2e4,f2f3,f2f4,g3g4,h3h4,h3h5]|['a2a3', 'a2a4', 'b1a3', 'b1c3', 'b3a3', 'b3a4', 'b3a5', 'b3a6', 'b3c2', 'b3c3', 'b3d1', 'b3d3', 'b3e3', 'b3f3', 'c4c5', 'd2d3', 'd2d4', 'e1d1', 'e1f1', 'e2e3', 'e2e4', 'f2f3', 'f2f4', 'g1f1', 'g1g2', 'g3g4', 'g5e4', 'g5e6', 'g5f3', 'g5f7', 'g5h7', 'h3h4', 'h3h5']|['a2a3', 'a2a4', 'b1a3', 'b1c3', 'b3a3', 'b3a4', 'b3b4', 'b3b5', 'b3b6', 'b3c2', 'b3c3', 'b3d1', 'b3d3', 'b3e3', 'b3f3', 'c4c5', 'd2d3', 'd2d4', 'e1d1', 'e1f1', 'e2e3', 'e2e4', 'f2f3', 'f2f4', 'g1f1', 'g1g2', 'g1h1', 'g3g4', 'g5e4', 'g5e6', 'g5f3', 'g5f7', 'g5h7', 'h3h4']|False|
+Given the chess position in FEN notation: 2b1kb1r/3pp2n/6pp/1q6/p2PP1p1/1p3P1P/PPP1N1P1/2R2K1R w k - 0 25
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a2a3,a2b3,c1a1,c1b1,c1d1,c1e1,c2b3,c2c3,c2c4,d4d5,e4e5,f1e1,f1f2,f1g1,f1g2,f3f4,f3f5,f3g4,g2g3,h1g1,h1h2,h3g4,h3h4]|['a2a3', 'a2b3', 'c1a1', 'c1b1', 'c1d1', 'c1e1', 'c2b3', 'c2c3', 'c2c4', 'd4d5', 'e4e5', 'f1e1', 'f1f2', 'f1g1', 'f1g2', 'f3f4', 'f3f5', 'f3g4', 'g2g3', 'h1g1', 'h1h2', 'h3g4', 'h3h4']|['a2a3', 'a2b3', 'c1a1', 'c1b1', 'c1d1', 'c1e1', 'c2b3', 'c2c3', 'c2c4', 'd4d5', 'e4e5', 'f1e1', 'f1f2', 'f1g1', 'f3f4', 'f3g4', 'g2g3', 'h1g1', 'h1h2', 'h3g4', 'h3h4']|False|
+Given the chess position in FEN notation: rnqk1bnr/pp2p3/2pp4/1N1b1ppp/2P2P2/4KN2/PP1PPQPP/1RB2BR1 w - - 4 14
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a2a3,a2a4,b1a1,b2b3,b2b4,b5a3,b5a7,b5c3,b5c7,b5d4,b5d6,c4c5,c4d5,d2d3,d2d4,e3d3,e3d4,f2c2,f2e1,f2g3,f2h4,f3d4,f3e1,f3e5,f3g5,f3h4,f4g5,g1h1,g2g3,g2g4,h2h3,h2h4]|['a2a3', 'a2a4', 'b1a1', 'b2b3', 'b2b4', 'b5a3', 'b5a7', 'b5c3', 'b5c7', 'b5d4', 'b5d6', 'c4c5', 'c4d5', 'd2d3', 'd2d4', 'e3d3', 'e3d4', 'f2c2', 'f2e1', 'f2g3', 'f2h4', 'f3d4', 'f3e1', 'f3e5', 'f3g5', 'f3h4', 'f4g5', 'g1h1', 'g2g3', 'g2g4', 'h2h3', 'h2h4']|['a2a3', 'a2a4', 'b1a1', 'b2b3', 'b2b4', 'b5a3', 'b5a7', 'b5c3', 'b5c7', 'b5d4', 'b5d6', 'c4c5', 'c4d5', 'd2d3', 'd2d4', 'e3d3', 'e3d4', 'f2e1', 'f2g3', 'f2h4', 'f3d4', 'f3e1', 'f3e5', 'f3g5', 'f3h4', 'f4g5', 'g1h1', 'g2g3', 'g2g4', 'h2h3', 'h2h4']|False|
+Given the chess position in FEN notation: 1rb1kbr1/pppp1pp1/n4q2/1n2p1B1/7Q/5P2/PP2P1PP/RN2KB1R b KQ - 3 19
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [e8d8,e8d7,e8e7,e8f7,e8f8,b8a8,f8h8,g8h7,f6e6,f6d6,f6c6,f6b6,f6g6,f6h6,f6f5,f6f4,f6f3,f6e7,f6d8,f6g5,a6c5,a6b4,b5a3,b5c3,b5d4,b5d6,b7b6,c7c6,c7c5,d7d6,d7d5,e5e4,f7f5,g7g6]|['a6b4', 'a6c5', 'b5a3', 'b5c3', 'b5d4', 'b5d6', 'b7b6', 'b8a8', 'c7c5', 'c7c6', 'd7d5', 'd7d6', 'e5e4', 'e8d7', 'e8d8', 'e8e7', 'e8f7', 'e8f8', 'f6b6', 'f6c6', 'f6d6', 'f6d8', 'f6e6', 'f6e7', 'f6f3', 'f6f4', 'f6f5', 'f6g5', 'f6g6', 'f6h6', 'f7f5', 'f8h8', 'g7g6', 'g8h7']|['a6b4', 'a6c5', 'b5a3', 'b5c3', 'b5d4', 'b5d6', 'b7b6', 'b8a8', 'c7c5', 'c7c6', 'd7d5', 'd7d6', 'e5e4', 'e8d8', 'e8e7', 'f6b6', 'f6c6', 'f6d6', 'f6d8', 'f6e6', 'f6e7', 'f6f3', 'f6f4', 'f6f5', 'f6g5', 'f6g6', 'f6h6', 'f8a3', 'f8b4', 'f8c5', 'f8d6', 'f8e7', 'g7g6', 'g8h8']|False|
+Given the chess position in FEN notation: 1rbqk2r/ppp1pp1p/1b4p1/1N1B3Q/1P2nnP1/B1P5/P2PP2P/1R2K1NR w Kk - 1 23
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a3b2,a3c1,b1a1,b1b2,b1b3,b1c1,b1d1,b5a7,b5c7,b5d4,b5d6,d2d3,d2d4,d5b3,d5b7,d5c4,d5c6,d5e6,d5f7,e1d1,e1f1,g1e2,g1f3,g1h3,g2g3,g4g5,h1f1,h1h2,h1h3,h1h4,h5e5,h5f5,h5g5,h5g6,h5h2,h5h3,h5h4,h5h6]|['a3b2', 'a3c1', 'b1a1', 'b1b2', 'b1b3', 'b1c1', 'b1d1', 'b5a7', 'b5c7', 'b5d4', 'b5d6', 'd2d3', 'd2d4', 'd5b3', 'd5b7', 'd5c4', 'd5c6', 'd5e6', 'd5f7', 'e1d1', 'e1f1', 'g1e2', 'g1f3', 'g1h3', 'g2g3', 'g4g5', 'h1f1', 'h1h2', 'h1h3', 'h1h4', 'h5e5', 'h5f5', 'h5g5', 'h5g6', 'h5h2', 'h5h3', 'h5h4', 'h5h6']|['a3b2', 'a3c1', 'b1a1', 'b1b2', 'b1b3', 'b1c1', 'b1d1', 'b5a7', 'b5c7', 'b5d4', 'b5d6', 'c3c4', 'd2d3', 'd2d4', 'd5b3', 'd5b7', 'd5c4', 'd5c6', 'd5e4', 'd5e6', 'd5f7', 'e1d1', 'e1f1', 'e2e3', 'g1f3', 'g1h3', 'g4g5', 'h2h3', 'h2h4', 'h5e5', 'h5f5', 'h5g5', 'h5g6', 'h5h3', 'h5h4', 'h5h6', 'h5h7']|False|
+Given the chess position in FEN notation: r1bqkb1r/ppnppppp/5n2/1Np5/5P2/PP5P/3PPKPR/1RBQ1BN1 b kq - 9 9
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a7a6,a7a5,b7b6,d7d6,d7d5,e7e6,e7e5,g7g6,g7g5,h7h6,h7h5,c7a6,c7b5,c7d5,c7e6,c7b8,f6d5,f6e4,f6g4,f6h5,f6g8,d8b8,d8g8,a8b8,h8g8]|['a7a5', 'a7a6', 'a8b8', 'b7b6', 'c7a6', 'c7b5', 'c7b8', 'c7d5', 'c7e6', 'd7d5', 'd7d6', 'd8b8', 'd8g8', 'e7e5', 'e7e6', 'f6d5', 'f6e4', 'f6g4', 'f6g8', 'f6h5', 'g7g5', 'g7g6', 'h7h5', 'h7h6', 'h8g8']|['a7a5', 'a7a6', 'a8b8', 'b7b6', 'c5c4', 'c7a6', 'c7b5', 'c7d5', 'c7e6', 'd7d5', 'd7d6', 'e7e5', 'e7e6', 'f6d5', 'f6e4', 'f6g4', 'f6g8', 'f6h5', 'g7g5', 'g7g6', 'h7h5', 'h7h6', 'h8g8']|False|
+Given the chess position in FEN notation: r2qkb1r/pp2p1pp/2np1p2/2pb4/1P2n3/P1P2P1N/1B1PP1PP/RN1QKB1R w Kkq - 0 11
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a1a2,a3a4,b2c1,b4b5,b4c5,c3c4,d1a4,d1b3,d1c1,d1c2,d2d3,d2d4,e2e3,f3e4,f3f4,g2g3,g2g4,h1g1,h3f2,h3f4,h3g1,h3g5]|['a1a2', 'a3a4', 'b2c1', 'b4b5', 'b4c5', 'c3c4', 'd1a4', 'd1b3', 'd1c1', 'd1c2', 'd2d3', 'd2d4', 'e2e3', 'f3e4', 'f3f4', 'g2g3', 'g2g4', 'h1g1', 'h3f2', 'h3f4', 'h3g1', 'h3g5']|['a1a2', 'a3a4', 'b2c1', 'b4b5', 'b4c5', 'c3c4', 'd1a4', 'd1b3', 'd1c1', 'd1c2', 'd2d3', 'd2d4', 'e2e3', 'f3e4', 'f3f4', 'g2g3', 'g2g4', 'h1g1', 'h3f2', 'h3f4', 'h3g1', 'h3g5']|True|
+Given the chess position in FEN notation: 2rq3r/ppp1pp2/n1kN1bp1/1b2Q3/2P4P/6P1/PP1PPP1n/R1BK3R b - - 3 17
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a6b4,a6b8,a6c5,b5a2,b5a3,b5a4,b5c4,b7b6,c6b6,c6d7,c8a8,c8b8,d8d6,d8d7,d8e8,d8f8,d8g8,e7d6,e7e6,f6e5,f6g5,f6g7,f6h4,g6g5,h2f3,h2g4,h8e8,h8f8,h8g8,h8h4,h8h5,h8h6,h8h7]|['a6b4', 'a6b8', 'a6c5', 'b5a2', 'b5a3', 'b5a4', 'b5c4', 'b7b6', 'c6b6', 'c6d7', 'c8a8', 'c8b8', 'd8d6', 'd8d7', 'd8e8', 'd8f8', 'd8g8', 'e7d6', 'e7e6', 'f6e5', 'f6g5', 'f6g7', 'f6h4', 'g6g5', 'h2f3', 'h2g4', 'h8e8', 'h8f8', 'h8g8', 'h8h4', 'h8h5', 'h8h6', 'h8h7']|['a6b4', 'a6b8', 'a6c5', 'b5a4', 'b5c4', 'b7b6', 'c6b6', 'c6d7', 'c7d6', 'c8a8', 'c8b8', 'd8d6', 'd8d7', 'd8e8', 'd8f8', 'd8g8', 'e7d6', 'e7e6', 'f6e5', 'f6g5', 'f6g7', 'f6h4', 'g6g5', 'h2f1', 'h2f3', 'h2g4', 'h8e8', 'h8f8', 'h8g8', 'h8h4', 'h8h5', 'h8h6', 'h8h7']|False|
+Given the chess position in FEN notation: 1rbqkb1r/pp1p1p1p/3ppnp1/8/5Q2/N5P1/PP1PPP1P/R1B1KBR1 w Q - 0 13
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [e1d1,f4a4,f4b4,f4c4,f4d4,f4e4,f4f3,f4f5,f4f6,f4f7,f4g4,f4h4,f4e3,f4e5,f4d6,f4g5,f4h6,a1b1,g1g2,g1h1,f1g2,f1h3,a3b1,a3b5,a3c2,a3c4,b2b3,b2b4,d2d3,d2d4,e2e3,e2e4,f2f3,g3g4,h2h3,h2h4]|['a1b1', 'a3b1', 'a3b5', 'a3c2', 'a3c4', 'b2b3', 'b2b4', 'd2d3', 'd2d4', 'e1d1', 'e2e3', 'e2e4', 'f1g2', 'f1h3', 'f2f3', 'f4a4', 'f4b4', 'f4c4', 'f4d4', 'f4d6', 'f4e3', 'f4e4', 'f4e5', 'f4f3', 'f4f5', 'f4f6', 'f4f7', 'f4g4', 'f4g5', 'f4h4', 'f4h6', 'g1g2', 'g1h1', 'g3g4', 'h2h3', 'h2h4']|['a1b1', 'a3b1', 'a3b5', 'a3c2', 'a3c4', 'b2b3', 'b2b4', 'd2d3', 'd2d4', 'e1d1', 'e2e3', 'e2e4', 'f1g2', 'f1h3', 'f2f3', 'f4a4', 'f4b4', 'f4c4', 'f4d4', 'f4d6', 'f4e3', 'f4e4', 'f4e5', 'f4f3', 'f4f5', 'f4f6', 'f4g4', 'f4g5', 'f4h4', 'f4h6', 'g1g2', 'g1h1', 'g3g4', 'h2h3', 'h2h4']|False|
+Given the chess position in FEN notation: r1b1k1r1/pp1p1ppp/2nb4/1Q2p3/1P5N/4P3/P1qP1PPP/RNB1K1R1 w q - 0 21
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [b5a5,b5a6,b5a7,b5b6,b5b7,b5c2,b5c3,b5c4,b5c6,b5d3,b5d5,b5e5,h4f3,h4f5,h4g6,b1a3,b1c3,g1f1,c1a3,c1b2,a2a3,a2a4,e3e4,d2d3,d2d4,f2f3,f2f4,g2g3,g2g4,h2h3,e1e2,e1f1]|['a2a3', 'a2a4', 'b1a3', 'b1c3', 'b5a5', 'b5a6', 'b5a7', 'b5b6', 'b5b7', 'b5c2', 'b5c3', 'b5c4', 'b5c6', 'b5d3', 'b5d5', 'b5e5', 'c1a3', 'c1b2', 'd2d3', 'd2d4', 'e1e2', 'e1f1', 'e3e4', 'f2f3', 'f2f4', 'g1f1', 'g2g3', 'g2g4', 'h2h3', 'h4f3', 'h4f5', 'h4g6']|['a2a3', 'a2a4', 'b1a3', 'b1c3', 'b5a4', 'b5a5', 'b5a6', 'b5b6', 'b5b7', 'b5c4', 'b5c5', 'b5c6', 'b5d3', 'b5d5', 'b5e2', 'b5e5', 'b5f1', 'c1a3', 'c1b2', 'd2d3', 'd2d4', 'e1e2', 'e1f1', 'e3e4', 'f2f3', 'f2f4', 'g1f1', 'g1h1', 'g2g3', 'g2g4', 'h2h3', 'h4f3', 'h4f5', 'h4g6']|False|
+Given the chess position in FEN notation: 1rb2k2/p1ppqp2/n5p1/1p2p3/P2PnN2/3P4/R1Pb2PP/2BQ1RK1 w - - 0 25
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a4a5,a4b5,Bc1a3,Bc1b2,c2c3,c2c4,g2g3,g2g4,h2h3,h2h4,Kh1,Nf4d5,Nf4e2,Nf4e6,Nf4g6,Nf4h3,Nf4h5,Qd1e1,Qd1e2,Qd1f3,Qd1g4,Qd1h5,Ra2a1,Ra2a3,Ra2b2,Rf1f2,Rf1f3]|['a4a5', 'a4b5', 'c2c3', 'c2c4', 'g2g3', 'g2g4', 'h2h3', 'h2h4']|['a2a1', 'a2a3', 'a2b2', 'a4a5', 'a4b5', 'c1a3', 'c1b2', 'c1d2', 'c2c3', 'c2c4', 'd1d2', 'd1e1', 'd1e2', 'd1f3', 'd1g4', 'd1h5', 'd3e4', 'd4d5', 'd4e5', 'f1e1', 'f1f2', 'f1f3', 'f4d5', 'f4e2', 'f4e6', 'f4g6', 'f4h3', 'f4h5', 'g1h1', 'g2g3', 'g2g4', 'h2h3', 'h2h4']|False|
+Given the chess position in FEN notation: r2q1b1r/pbppkppp/7n/1B2p3/1n3PP1/N3P2P/PPPPN2R/1RBQK3 b - - 3 11
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a8a7,a8b8,a8c8,a8d8,b7a6,b7c6,b7d5,b7e4,b7f3,b7g2,b7h1,b4a2,b4c2,b4c6,b4d3,b4d5,d8c8,d8b8,d8e8,d8f8,d8g8,f8e8,f8g8,f8h8,h6f5,h6g4,h6g8,h7h5,h7h6,e5e4,e7e8,e7e6,e7d6,e7f6,g7g5,g7g6]|['a8a7', 'a8b8', 'a8c8', 'a8d8', 'b4a2', 'b4c2', 'b4c6', 'b4d3', 'b4d5', 'b7a6', 'b7c6', 'b7d5', 'b7e4', 'b7f3', 'b7g2', 'b7h1', 'd8b8', 'd8c8', 'd8e8', 'd8f8', 'd8g8', 'e5e4', 'e7d6', 'e7e6', 'e7e8', 'e7f6', 'f8e8', 'f8g8', 'f8h8', 'g7g5', 'g7g6', 'h6f5', 'h6g4', 'h6g8', 'h7h5', 'h7h6']|['a7a5', 'a7a6', 'a8b8', 'a8c8', 'b4a2', 'b4a6', 'b4c2', 'b4c6', 'b4d3', 'b4d5', 'b7a6', 'b7c6', 'b7c8', 'b7d5', 'b7e4', 'b7f3', 'b7g2', 'b7h1', 'c7c5', 'c7c6', 'd7d5', 'd7d6', 'd8b8', 'd8c8', 'd8e8', 'e5e4', 'e5f4', 'e7d6', 'e7e6', 'e7e8', 'e7f6', 'f7f5', 'f7f6', 'g7g5', 'g7g6', 'h6f5', 'h6g4', 'h6g8', 'h8g8']|False|
+Given the chess position in FEN notation: r2k2nr/p1qpp1b1/np1N4/2pPB1pp/3Q4/2K5/PPP1PPPP/RN3B1R w - - 0 15
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a2a3,a2a4,b1a3,b1d2,b2b3,b2b4,c3b3,c3c4,c3d2,c3d3,d4a4,d4b4,d4c4,d4c5,d4d2,d4d3,d4e3,d4e4,d4f4,d4g4,d4h4,d6b5,d6b7,d6c4,d6e4,d6f5,d6f7,e2e3,e2e4,e5f4,e5f6,e5g3,e5g7,f2f3,f2f4,g2g3,g2g4,h1g1,h2h3,h2h4]|['a2a3', 'a2a4', 'b1a3', 'b1d2', 'b2b3', 'b2b4', 'c3b3', 'c3c4', 'c3d2', 'c3d3', 'd4a4', 'd4b4', 'd4c4', 'd4c5', 'd4d2', 'd4d3', 'd4e3', 'd4e4', 'd4f4', 'd4g4', 'd4h4', 'd6b5', 'd6b7', 'd6c4', 'd6e4', 'd6f5', 'd6f7', 'e2e3', 'e2e4', 'e5f4', 'e5f6', 'e5g3', 'e5g7', 'f2f3', 'f2f4', 'g2g3', 'g2g4', 'h1g1', 'h2h3', 'h2h4']|['a2a3', 'a2a4', 'b1a3', 'b1d2', 'b2b3', 'b2b4', 'c3b3', 'c3c4', 'c3d2', 'c3d3', 'd4a4', 'd4b4', 'd4c4', 'd4c5', 'd4d1', 'd4d2', 'd4d3', 'd4e3', 'd4e4', 'd4f4', 'd4g4', 'd4h4', 'd6b5', 'd6b7', 'd6c4', 'd6c8', 'd6e4', 'd6e8', 'd6f5', 'd6f7', 'e2e3', 'e2e4', 'e5f4', 'e5f6', 'e5g3', 'e5g7', 'f2f3', 'f2f4', 'g2g3', 'g2g4', 'h1g1', 'h2h3', 'h2h4']|False|
+Given the chess position in FEN notation: 1rb2qr1/p1pp1ppp/3b2k1/1B4n1/4P2P/2P5/PB1PKPP1/RN4NR w - - 5 17
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a2a3,a2a4,b1a3,b2a3,b2c1,b5a3,b5a4,b5a6,b5c4,b5c6,b5d3,b5d7,c3c4,d2d3,d2d4,e2d1,e2d3,e2e1,e2f1,e4e5,f2f3,f2f4,g1f3,g1h3,g2g3,g2g4,h1h2,h1h3,h4g5,h4h5]|['a2a3', 'a2a4', 'b1a3', 'b2a3', 'b2c1', 'b5a3', 'b5a4', 'b5a6', 'b5c4', 'b5c6', 'b5d3', 'b5d7', 'c3c4', 'd2d3', 'd2d4', 'e2d1', 'e2d3', 'e2e1', 'e2f1', 'e4e5', 'f2f3', 'f2f4', 'g1f3', 'g1h3', 'g2g3', 'g2g4', 'h1h2', 'h1h3', 'h4g5', 'h4h5']|['a2a3', 'a2a4', 'b1a3', 'b2a3', 'b2c1', 'b5a4', 'b5a6', 'b5c4', 'b5c6', 'b5d3', 'b5d7', 'c3c4', 'd2d3', 'd2d4', 'e2d1', 'e2d3', 'e2e1', 'e2e3', 'e2f1', 'e4e5', 'f2f3', 'f2f4', 'g1f3', 'g1h3', 'g2g3', 'g2g4', 'h1h2', 'h1h3', 'h4g5', 'h4h5']|False|
+Given the chess position in FEN notation: r1b1kb1r/1pp3pp/p3p3/8/5N2/N3Pn2/P1PPKPP1/R1n4R w - - 0 17
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a3b1,a3b5,a3c4,a1b1,a1c1,c2c3,c2c4,c2d3,d2d3,d2d4,d2e3,e3e4,f2f3,f2f4,g2g3,g2g4,h1c1,h1g1,h1f1,h1e1,h1d1,h1h2,h1h3,h1h4,h1h5,h1h6,h1h7,f4d3,f4d5,f4e6,f4g6,f4g2,f4h3,f4h5,e2d1,e2f2,e2f1]|['a1b1', 'a1c1', 'a3b1', 'a3b5', 'a3c4', 'c2c3', 'c2c4', 'c2d3', 'd2d3', 'd2d4', 'd2e3', 'e2d1', 'e2f1', 'e2f2', 'e3e4', 'f2f3', 'f2f4', 'f4d3', 'f4d5', 'f4e6', 'f4g2', 'f4g6', 'f4h3', 'f4h5', 'g2g3', 'g2g4', 'h1c1', 'h1d1', 'h1e1', 'h1f1', 'h1g1', 'h1h2', 'h1h3', 'h1h4', 'h1h5', 'h1h6', 'h1h7']|['a1c1', 'e2d1', 'e2f1', 'e2f3', 'h1c1']|False|
+Given the chess position in FEN notation: 1nb1kbr1/1p1ppppp/2p5/N6q/5r2/3P4/PPP1PPPP/R2QKB1R w K - 0 19
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a1b1,a1c1,a2a3,a2a4,a5b3,a5b7,a5c4,a5c6,b2b3,b2b4,c2c3,c2c4,d1b1,d1c1,d1d2,d1e2,d1f3,d1g4,d1h5,d3d4,e2e3,e2e4,f1e2,f2f3,g2g3,g2g4,h1g1,h2h3,h2h4]|['a1b1', 'a1c1', 'a2a3', 'a2a4', 'a5b3', 'a5b7', 'a5c4', 'a5c6', 'b2b3', 'b2b4', 'c2c3', 'c2c4', 'd1b1', 'd1c1', 'd1d2', 'd1e2', 'd1f3', 'd1g4', 'd1h5', 'd3d4', 'e2e3', 'e2e4', 'f1e2', 'f2f3', 'g2g3', 'g2g4', 'h1g1', 'h2h3', 'h2h4']|['a1b1', 'a1c1', 'a2a3', 'a2a4', 'a5b3', 'a5b7', 'a5c4', 'a5c6', 'b2b3', 'b2b4', 'c2c3', 'c2c4', 'd1b1', 'd1c1', 'd1d2', 'd3d4', 'e1d2', 'e2e3', 'e2e4', 'f2f3', 'g2g3', 'g2g4', 'h1g1', 'h2h3', 'h2h4']|False|
+Given the chess position in FEN notation: 3rqb2/pN1pp1r1/5kp1/B1p2p1p/7P/3PPP2/nPP1B1P1/R2Q1K1R w - - 11 28
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a1a2,a1a3,a1a4,a1b1,a1c1,a5b4,a5b6,a5c3,a5c7,a5d2,a5d8,a5e1,b2b3,b2b4,b7a6,b7c5,b7d6,b7d8,c2c3,c2c4,d1b1,d1c1,d1d2,d1e1,d3d4,e3e4,f1e1,f1f2,f1g1,f3f4,g2g3,g2g4,h1g1,h1h2,h1h3]|['a1a2', 'a1a3', 'a1a4', 'a1b1', 'a1c1', 'a5b4', 'a5b6', 'a5c3', 'a5c7', 'a5d2', 'a5d8', 'a5e1', 'b2b3', 'b2b4', 'b7a6', 'b7c5', 'b7d6', 'b7d8', 'c2c3', 'c2c4', 'd1b1', 'd1c1', 'd1d2', 'd1e1', 'd3d4', 'e3e4', 'f1e1', 'f1f2', 'f1g1', 'f3f4', 'g2g3', 'g2g4', 'h1g1', 'h1h2', 'h1h3']|['a1a2', 'a1b1', 'a1c1', 'a5b4', 'a5b6', 'a5c3', 'a5c7', 'a5d2', 'a5d8', 'a5e1', 'b2b3', 'b2b4', 'b7c5', 'b7d6', 'b7d8', 'c2c3', 'c2c4', 'd1b1', 'd1c1', 'd1d2', 'd1e1', 'd3d4', 'e3e4', 'f1e1', 'f1f2', 'f1g1', 'f3f4', 'g2g3', 'g2g4', 'h1g1', 'h1h2', 'h1h3']|False|
+Given the chess position in FEN notation: r1b2br1/pppp1ppp/3k4/2np4/2P2Pn1/R2P2P1/1P2P2q/2BQKBR1 b - - 0 25
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [d6c6,d6c7,d6d7,d6e6,d6e7,h2a2,h2b2,h2c2,h2d2,h2e2,h2f2,h2g2,h2h3,h2h4,h2h5,h2h6,h2g1,h2g3,c5a6,c5d7,c5e6,c5e4,c5b3,c5a4,c5d3,g4h6,g4f6,g4e5,g4e3,g4f2,g4h3,g4f3,c8d7,c8e6,c8f5,f8e7,f8e5,a8b8,a7a6,a7a5,b7b6,b7b5,c7c6,f7f6,f7f5,g7g6,g7g5,h7h6,h7h5,d5d4,d5c4]|['a7a5', 'a7a6', 'a8b8', 'b7b5', 'b7b6', 'c5a4', 'c5a6', 'c5b3', 'c5d3', 'c5d7', 'c5e4', 'c5e6', 'c7c6', 'c8d7', 'c8e6', 'c8f5', 'd5c4', 'd5d4', 'd6c6', 'd6c7', 'd6d7', 'd6e6', 'd6e7', 'f7f5', 'f7f6', 'f8e5', 'f8e7', 'g4e3', 'g4e5', 'g4f2', 'g4f3', 'g4f6', 'g4h3', 'g4h6', 'g7g5', 'g7g6', 'h2a2', 'h2b2', 'h2c2', 'h2d2', 'h2e2', 'h2f2', 'h2g1', 'h2g2', 'h2g3', 'h2h3', 'h2h4', 'h2h5', 'h2h6', 'h7h5', 'h7h6']|['a7a5', 'a7a6', 'a8b8', 'b7b5', 'b7b6', 'c5a4', 'c5a6', 'c5b3', 'c5d3', 'c5e4', 'c5e6', 'c7c6', 'd5c4', 'd5d4', 'd6c6', 'd6e6', 'd6e7', 'f7f5', 'f7f6', 'f8e7', 'g4e3', 'g4e5', 'g4f2', 'g4f6', 'g4h6', 'g7g5', 'g7g6', 'g8h8', 'h2e2', 'h2f2', 'h2g1', 'h2g2', 'h2g3', 'h2h1', 'h2h3', 'h2h4', 'h2h5', 'h2h6', 'h7h5', 'h7h6']|False|
+Given the chess position in FEN notation: 1r2q1r1/pbp1kp1p/4p3/1n2N1p1/3B2P1/1P6/PRPPP2P/3QKB1R b - - 5 23
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a7a5,a7a6,b5a3,b5c3,b5d4,b5d6,c7c5,c7c6,e8d8,e8e7,e8f8,e8g8,e8h8,e8b8,e8c8,e8a8,f7f5,f7f6,g8f8,g8h8,g8e8,h7h5,h7h6,b8a8,b8c8,b8d8]|['a7a5', 'a7a6', 'b5a3', 'b5c3', 'b5d4', 'b5d6', 'b8a8', 'b8c8', 'b8d8', 'c7c5', 'c7c6', 'e8a8', 'e8b8', 'e8c8', 'e8d8', 'e8e7', 'e8f8', 'e8g8', 'e8h8', 'f7f5', 'f7f6', 'g8e8', 'g8f8', 'g8h8', 'h7h5', 'h7h6']|['a7a5', 'a7a6', 'b5a3', 'b5c3', 'b5d4', 'b5d6', 'b7a6', 'b7a8', 'b7c6', 'b7c8', 'b7d5', 'b7e4', 'b7f3', 'b7g2', 'b7h1', 'b8a8', 'b8c8', 'b8d8', 'c7c5', 'c7c6', 'e7d6', 'e7d8', 'e7f6', 'e7f8', 'e8c6', 'e8c8', 'e8d7', 'e8d8', 'e8f8', 'f7f5', 'f7f6', 'g8f8', 'g8g6', 'g8g7', 'g8h8', 'h7h5', 'h7h6']|False|
+Given the chess position in FEN notation: 2b2b1r/1ppk2p1/2Nr4/p2n3p/8/2n3P1/PP1P1P1P/R1B2KNR w - - 0 23
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a1b1,c6a5,c6a7,c6b4,c6b8,c6d4,c6d8,c6e5,c6e7,g1e2,g1f3,g1h3,f1e1,f1f2,f1g2]|['a1b1', 'c6a5', 'c6a7', 'c6b4', 'c6b8', 'c6d4', 'c6d8', 'c6e5', 'c6e7', 'f1e1', 'f1f2', 'f1g2', 'g1e2', 'g1f3', 'g1h3']|['a1b1', 'a2a3', 'a2a4', 'b2b3', 'b2b4', 'b2c3', 'c6a5', 'c6a7', 'c6b4', 'c6b8', 'c6d4', 'c6d8', 'c6e5', 'c6e7', 'd2c3', 'd2d3', 'd2d4', 'f1e1', 'f1g2', 'f2f3', 'f2f4', 'g1e2', 'g1f3', 'g1h3', 'g3g4', 'h2h3', 'h2h4']|False|
+Given the chess position in FEN notation: rNb1kbr1/1p1ppn1p/4N3/p5p1/1P6/7P/P1PPP1PR/R1BQKB2 b - - 4 15
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a8a7,a8a6,g8g7,g8g6,f8g7,f8h6,f7e5,f7d6,f7d8,f7h6,f7h8,b7b6,b7b5,d7d6,d7d5,h7h6,h7h5,a5a4,a5b4,g5g4]|['a5a4', 'a5b4', 'a8a6', 'a8a7', 'b7b5', 'b7b6', 'd7d5', 'd7d6', 'f7d6', 'f7d8', 'f7e5', 'f7h6', 'f7h8', 'f8g7', 'f8h6', 'g5g4', 'g8g6', 'g8g7', 'h7h5', 'h7h6']|['a5a4', 'a5b4', 'a8a6', 'a8a7', 'a8b8', 'b7b5', 'b7b6', 'd7d5', 'd7d6', 'd7e6', 'f7d6', 'f7d8', 'f7e5', 'f7h6', 'f7h8', 'f8g7', 'f8h6', 'g5g4', 'g8g6', 'g8g7', 'g8h8', 'h7h5', 'h7h6']|False|
+Given the chess position in FEN notation: 1rb2b1r/1p1kpppp/3N1B2/p1pp1nP1/1nP5/1P6/P2PPPRP/2K2B2 b - - 10 29
+List all legal moves in UCI format, comma-separated.
+Respond exactly with: 'Legal moves: [move1,move2,...]' and nothing else.
+|Legal moves: [a5a4,b7b5,b7b6,b8a8,b4a2,b4a6,b4c2,b4c6,b4d3,d5c4,d5d4,d7c6,d7c7,d7d6,d7d8,e7e6,f5d4,f5d6,f5e3,f5g3,f5h4,f5h6,f7f6,g7g5,g7g6,h7h5,h7h6,h8g8]|['a5a4', 'b4a2', 'b4a6', 'b4c2', 'b4c6', 'b4d3', 'b7b5', 'b7b6', 'b8a8', 'd5c4', 'd5d4', 'd7c6', 'd7c7', 'd7d6', 'd7d8', 'e7e6', 'f5d4', 'f5d6', 'f5e3', 'f5g3', 'f5h4', 'f5h6', 'f7f6', 'g7g5', 'g7g6', 'h7h5', 'h7h6', 'h8g8']|['a5a4', 'b4a2', 'b4a6', 'b4c2', 'b4c6', 'b4d3', 'b7b5', 'b7b6', 'b8a8', 'd5c4', 'd5d4', 'd7c6', 'd7c7', 'd7d6', 'd7d8', 'd7e6', 'e7d6', 'e7e5', 'e7e6', 'e7f6', 'f5d4', 'f5d6', 'f5e3', 'f5g3', 'f5h4', 'f5h6', 'g7f6', 'g7g6', 'h7h5', 'h7h6', 'h8g8']|False|

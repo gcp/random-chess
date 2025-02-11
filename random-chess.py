@@ -335,8 +335,8 @@ async def main_async(args):
 
     elapsed = (datetime.now() - start_time).total_seconds()
     print(f"\nProcessed {total} positions in {elapsed:.1f} seconds.")
-    print(f"Accuracy: {accuracy:.2%} ± {margin:.3%} (95% CI)")
-    print(f"Confidence interval: {low:.2%} - {high:.2%}")
+    print(f"Accuracy: {accuracy:.1%} ± {margin:.1%} (95% CI)")
+    print(f"Confidence interval: {low:.1%} - {high:.1%}")
 
 
 if __name__ == "__main__":

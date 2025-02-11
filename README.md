@@ -1,6 +1,6 @@
 # Random-Chess: An LLM benchmark
 
-Random-chess is a simple yet revealing benchmark, that requires an LLM to reason from its world knowledge of the chess rules and understanding of geometric relations betwee
+Random-chess is a simple yet revealing benchmark, that requires an LLM to reason from its world knowledge of the chess rules and understanding of geometric relations between
 the squares on a grid, in order to calculate the valid moves for a chess position. This includes reasoning about kings being in check, pins, castling, and so on.
 
 As the positions are randomly generated, memory based answers are not useful, and the training set cannot be picked up during training because it is generated on-the-fly.
@@ -8,7 +8,7 @@ As the positions are randomly generated, memory based answers are not useful, an
 ## Key Features
 
 - **Anti-Memorization Test**: Generates unique positions on-the-fly through random play.
-- **Tests Real Understanding and Reasoning**: Tests move generation in positions the LLM can never have seen before, requiring actual reasoning.
+- **Tests Real Understanding and Reasoning**: Tests move generation in positions the LLM can never have seen before, requiring actual reasoning or a deeper understanding of the board geometry in the model.
 - **Stochastic Benchmarking**: Prevents model gaming through unpredictable test sets (until someone embeds a chess engine in their API calls...), results are shown with confidence intervals.
 - **Progress Display**: Streaming mode for real-time thinking observation, comprehensive logging for analysis.
 
@@ -43,7 +43,7 @@ python eval.py \
   --model "chess-specialist" \
   --results-log results.tsv \
   --conversation-log conversations.tsv \
-  --concurrency 3 \
+  --concurrency 1 \
   --request-timeout 120 \
   --stream
 
@@ -55,12 +55,12 @@ export LLM_MODEL="model_name"
 
 ## Results
 
-| Model                   | #Pos |   Accuracy        |   95% CI          |
-|-------------------------|------|-------------------|-------------------|
-| o1-preview (2024-09-12) | 200  |  16.00% ± 5.073%  |  11.57% - 21.71%  |
-| o1-mini (2024-09-12)    | 200  |   3.50% ± 2.671%  |   1.71% -  7.05%  |
-| deepseek-v3             | 200  |   0.00% ± 0.942%  |   0.00% -  1.88%  |
-| gpt-4o (2024-08-06)     | 200  |   0.00% ± 0.942%  |   0.00% -  1.88%  |
+| Model                   | #Pos |   Accuracy     |   95% CI        |
+|-------------------------|------|----------------|-----------------|
+| o1-preview (2024-09-12) | 200  |  16.0% ± 5.1%  |  11.6% - 21.7%  |
+| o1-mini (2024-09-12)    | 200  |   3.5% ± 2.7%  |   1.7% -  7.1%  |
+| deepseek-v3             | 200  |   0.0% ± 0.9%  |   0.0% -  1.9%  |
+| gpt-4o (2024-08-06)     | 200  |   0.0% ± 0.9%  |   0.0% -  1.9%  |
 
 ## License
 

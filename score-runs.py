@@ -261,12 +261,17 @@ def plot_leaderboard(results, output_file="leaderboard.png"):
             width = rect.get_width()
             y_pos = rect.get_y() + rect.get_height() / 2
             # Determine offset based on data series
-            offset_x = 15 if "Macro-average F1" in str(rect.get_label()) else 5
-            offset_y = 15 if "Macro-average F1" in str(rect.get_label()) else 0
+            if "Macro-average F1" in str(rect.get_label()):  # F1 bars
+                offset_x = 15
+                offset_y = 3  # Shift F1 labels slightly up
+            else:  # Exact match bars
+                offset_x = 5
+                offset_y = -3  # Shift exact match labels slightly down
+
             ax.annotate(
                 f"{width:.1f}%",
                 xy=(width, y_pos),
-                xytext=(offset_x, offset_y),  # Now using dynamic offset
+                xytext=(offset_x, offset_y),
                 textcoords="offset points",
                 ha="left",
                 va="center",

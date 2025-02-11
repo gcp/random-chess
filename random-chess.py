@@ -276,7 +276,7 @@ async def main_async(args):
     # Initialize client
     client = AsyncOpenAI(base_url=base_url, api_key=api_key)
 
-     # Generate positions (configurable via --positions)
+    # Generate positions (configurable via --positions)
     positions = generate_positions(num_positions=args.positions)
 
     # Prepare logging queues & threads

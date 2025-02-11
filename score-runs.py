@@ -210,7 +210,9 @@ def plot_leaderboard(results, output_file="leaderboard.png"):
     sorted_results = sorted(results, key=lambda x: x["avg_f1"], reverse=True)
 
     # Prepare data for plotting
-    labels = [os.path.basename(r["file"]).replace('.results', '') for r in sorted_results]
+    labels = [
+        os.path.basename(r["file"]).replace(".results", "") for r in sorted_results
+    ]
     f1_scores = [r["avg_f1"] * 100 for r in sorted_results]
     ci_lower = [(r["avg_f1"] - r["ci_low"]) * 100 for r in sorted_results]
     ci_upper = [(r["ci_high"] - r["avg_f1"]) * 100 for r in sorted_results]
@@ -259,14 +261,15 @@ def plot_leaderboard(results, output_file="leaderboard.png"):
             width = rect.get_width()
             y_pos = rect.get_y() + rect.get_height() / 2
             # Determine offset based on data series
-            offset = 15 if "Macro-average F1" in str(rect.get_label()) else 5
+            offset_x = 15 if "Macro-average F1" in str(rect.get_label()) else 5
+            offset_y = 15 if "Macro-average F1" in str(rect.get_label()) else 0
             ax.annotate(
                 f"{width:.1f}%",
                 xy=(width, y_pos),
-                xytext=(offset, 0),  # Now using dynamic offset
+                xytext=(offset_x, offset_y),  # Now using dynamic offset
                 textcoords="offset points",
-                ha='left' if offset > 5 else 'left',  # Keep same ha but different spacing
-                va='center',
+                ha="left",
+                va="center",
                 fontsize=8,
             )
 

@@ -255,31 +255,25 @@ def plot_leaderboard(results, output_file="leaderboard.png"):
     # Invert y-axis so that the best scorer is at the top
     ax.invert_yaxis()
 
-    # Function to add labels to the right of each bar, avoiding overlap with error bars
-    def autolabel_horizontal(rects):
+    # Modified autolabel function with explicit offset control
+    def autolabel_horizontal(rects, x_offset, y_offset):
+        """Add labels to bars with specified offsets"""
         for rect in rects:
             width = rect.get_width()
             y_pos = rect.get_y() + rect.get_height() / 2
-            # Determine offset based on data series
-            if "Macro-average F1" in str(rect.get_label()):  # F1 bars
-                offset_x = 15
-                offset_y = 20  # Shift F1 labels slightly up
-            else:  # Exact match bars
-                offset_x = 5
-                offset_y = 0  # Shift exact match labels slightly down
-
             ax.annotate(
                 f"{width:.1f}%",
                 xy=(width, y_pos),
-                xytext=(offset_x, offset_y),
+                xytext=(x_offset, y_offset),
                 textcoords="offset points",
                 ha="left",
                 va="center",
                 fontsize=8,
             )
 
-    autolabel_horizontal(rects1)
-    autolabel_horizontal(rects2)
+    # Apply different offsets to each series
+    autolabel_horizontal(rects1, x_offset=15, y_offset=2)  # F1 bars
+    autolabel_horizontal(rects2, x_offset=5, y_offset=-2)  # Exact match bars
 
     plt.tight_layout()
     plt.savefig(output_file, dpi=300)

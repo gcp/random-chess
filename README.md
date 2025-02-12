@@ -99,13 +99,14 @@ python score-mate-runs.py --files results-mates/*.results
 
 ### Random-Chess-Mates
 
-| Rank | Name                     | #Total | MateAcc% | Halluc% |  F1(%) |
-|------|--------------------------|--------|----------|---------|--------|
-|  1   | o3-mini                  |  200   |    12.0% |   81.0% |  14.7% |
-|  2   | claude-3.5-sonnet        |  200   |     7.0% |   51.0% |  12.2% |
-|  3   | deepseek-r1              | 200    |     4.0% |   32.0% |   7.6% |
-|  4   | deepseek-v3              |  200   |     1.0% |   25.0% |   2.0% |
-|  5   | gpt-4o                   |  200   |     0.0% |   53.0% |   0.0% |
+| Rank | Name                     | #Pos  | MateAcc% | Halluc% |  F1(%) |
+|------|--------------------------|-------|----------|---------|--------|
+|  1   | o3-mini                  |  200  |    12.0% |   81.0% |  14.7% |
+|  2   | claude-3.5-sonnet        |  200  |     7.0% |   51.0% |  12.2% |
+|  3   | deepseek-r1              |  200  |     4.0% |   32.0% |   7.6% |
+|  4   | claude-3.5-haiku         |  200  |     3.0% |   30.0% |   5.8% |
+|  4   | deepseek-v3              |  200  |     1.0% |   25.0% |   2.0% |
+|  5   | gpt-4o                   |  200  |     0.0% |   53.0% |   0.0% |
 
 ![Graph of mates leaderboard](results-mates/leaderboard.png)
 

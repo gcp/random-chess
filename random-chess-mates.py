@@ -308,6 +308,7 @@ async def process_position(
         for attempt in range(MAX_RETRIES):
             try:
                 full_response = ""
+                stream_buffer = ""
 
                 if stream and attempt == 0:
                     print(f"\n\033[36mPosition\033[0m | FEN: {fen}")
@@ -322,19 +323,18 @@ async def process_position(
                 )
 
                 if stream:
-                    # Streaming mode
-                    stream_buffer = ""
+                    # Collect streaming chunks
                     async for chunk in response:
-                        content = getattr(chunk.choices[0].delta, "content", "")
+                        content = chunk.choices[0].delta.content or ""
                         full_response += content
                         stream_buffer += content
                         if len(stream_buffer) > 10 or "\n" in stream_buffer:
                             print(stream_buffer, end="", flush=True)
                             stream_buffer = ""
                     print(stream_buffer, end="", flush=True)
-                    print()
+                    print()  # final flush
                 else:
-                    # Non-stream
+                    # Non-streaming: read the entire response at once
                     full_response = response.choices[0].message.content
 
                 # Parse the answer

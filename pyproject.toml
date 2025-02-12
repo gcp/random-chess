@@ -4,4 +4,9 @@ version = "0.1.0"
 description = "LLM benchmark based on basic chess understanding"
 readme = "README.md"
 requires-python = ">=3.10"
-dependencies = ["chess>=1.11.1", "openai>=1.61.1", "matplotlib>=3.10.0"]
+dependencies = [
+ "chess>=1.11.1",
+ "openai>=1.61.1",
+ "matplotlib>=3.10.0",
+ "ruff>=0.9.6",
+]

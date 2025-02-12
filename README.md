@@ -103,8 +103,9 @@ python score-mate-runs.py --files results-mates/*.results
 |------|--------------------------|--------|----------|---------|--------|
 |  1   | o3-mini                  |  200   |    12.0% |   81.0% |  14.7% |
 |  2   | claude-3.5-sonnet        |  200   |     7.0% |   51.0% |  12.2% |
-|  3   | deepseek-v3              |  200   |     1.0% |   25.0% |   2.0% |
-|  4   | gpt-4o                   |  200   |     0.0% |   53.0% |   0.0% |
+|  3   | deepseek-r1              | 200    |     4.0% |   32.0% |   7.6% |
+|  4   | deepseek-v3              |  200   |     1.0% |   25.0% |   2.0% |
+|  5   | gpt-4o                   |  200   |     0.0% |   53.0% |   0.0% |
 
 ![Graph of mates leaderboard](results-mates/leaderboard.png)
 
@@ -118,7 +119,7 @@ Specific training on chess can obviously make [very high performance transformer
 
 There are some prior publications that show that `GPT-3.5-Turbo-Instruct`, running in completion mode, [exhibits better chess performance than many newer models](https://dynomight.net/chess/). As is obvious in the results, this does not replicate here. We suspect the main reason is that the task is very different, and intentionally so: although in the above page the models are asked to play moves in "random positions never seen before", they are still very close to positions from regular game play, so memory based answers from similar positions are much more effective. In the above test, they did not actually have to play legal moves: *"I manually generated the set of legal moves and then used grammars to constrain the models...if it still couldn’t come up with a legal move, I just chose one randomly."*
 
-Additionally, as the [author notes in a follow-up](https://dynomight.net/more-chess/), the GPT-3.5 model was trained on chess games in PGN notation, and the task was to complete a given PGN notation. This effect can be seen in our test: GPT-3.5 scores badly partly because it answers in short algebraic notation (which PGN uses), instead of the requested format. Essentially, GPT-3.5 is overfit to this task. In constrast, the model's performance on our test, requiring generalization to uncommon positions and being able to restate their knowledge in another format, much more closely follows their performance on other, general tasks.
+Additionally, as the [author notes in a follow-up](https://dynomight.net/more-chess/), the GPT-3.5 model was trained on chess games in PGN notation, and the task was to complete a given PGN notation. This effect can be seen in our test: GPT-3.5 scores badly partly because it answers in short algebraic notation (which PGN uses), instead of the requested format. Essentially, GPT-3.5 is overfit to this task. In contrast, the model's performance on our test, requiring generalization to uncommon positions and being able to restate their knowledge in another format, much more closely follows their performance on other, general tasks.
 
 ## License
 

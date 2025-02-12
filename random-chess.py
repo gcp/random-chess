@@ -136,6 +136,7 @@ async def process_position(
                     print(f"\n\033[36mPosition\033[0m | FEN: {fen}")
                     print("\033[33mLLM Thinking:\033[0m ", end="", flush=True)
 
+                # Call OpenAI with streaming or non-streaming
                 response = await client.chat.completions.create(
                     model=model,
                     messages=[{"role": "user", "content": prompt}],
@@ -152,6 +153,7 @@ async def process_position(
                         if len(stream_buffer) > 10 or "\n" in stream_buffer:
                             print(stream_buffer, end="", flush=True)
                             stream_buffer = ""
+                    print(stream_buffer, end="", flush=True)
                     print()  # final flush
                 else:
                     # Non-streaming: read the entire response at once

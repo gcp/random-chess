@@ -68,20 +68,27 @@ python score-runs.py --files results/*.results
 |    6 | gpt-4o (2024-08-06)      | 200  |  37.1% ±  2.3%   |   0.0% |
 |    7 | claude-3.5-haiku         | 200  |  27.8% ±  2.8%   |   0.0% |
 |    8 | gemini-flash-2.0         | 200  |  11.3% ±  3.4%   |   0.0% |
+|    9 | gpt-3.5-turbo-instruct   | 200  |   1.7% ±  0.5%   |   0.0% |
 
 ![Graph of leaderboard](results/leaderboard.png)
 
 ## Future
 
-Current LLMs can't reliably determine the legal moves in a chess position. This is a prerequisite for playing an actual game. If the state of the art advances enough that they are in the very high 90's, we can imagine extending the test, or eventually simply playing games.
+Current LLMs can not reliably determine the legal moves in a random chess position. If the state of the art advances enough that they are in the very high 90's exact matches, we can imagine extending the test with variations that require more reasoning.
 
 Specific training on chess can obviously make [very high performance transformers](https://lczero.org/dev/wiki/best-nets-for-lc0/) dedicated to chess. This test is aimed at seeing how general LLM can deal with the required reasoning.
+
+## Notes
+
+There are some prior publications that show that `GPT-3.5-Turbo-Instruct`, running in completion mode, [exhibits better chess performance than many newer models](https://dynomight.net/chess/). As is obvious in the results, this does not replicate here. We suspect the main reason is that the task is very different, and intentionally so: although in the above page the models are asked to play moves in "random positions never seen before", they are still very close to positions from regular game play, so memory based answers from similar positions are much more effective. In the above test, they did not actually have to play legal moves: *"I manually generated the set of legal moves and then used grammars to constrain the models...if it still couldn’t come up with a legal move, I just chose one randomly."*
+
+Additionally, as the [author notes in a follow-up](https://dynomight.net/more-chess/), the GPT-3.5 model was trained on chess games in PGN notation, and the task was to complete a given PGN notation. This effect can be seen in our test: GPT-3.5 scores badly partly because it answers in short algebraic notation (which PGN uses), instead of the requested format. Essentially, GPT-3.5 is overfit to this task. In constrast, the model's performance on our test, requiring generalization to uncommon positions and being able to restate their knowledge in another format, much more closely follows their performance on other, general tasks.
 
 ## License
 
 MIT License
 
-Copyright (c) 2025 Gian-Carlo Pascutto, Héðinn Steingrímsson
+Copyright (c) 2025 Héðinn Steingrímsson, Gian-Carlo Pascutto
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 

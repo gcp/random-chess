@@ -318,8 +318,8 @@ def main():
     print("\nScoring Summary (macro-average F1, tie-break by exact matches)")
     print("(95% CI computed by normal approximation)")
     print()
-    print("| Rank | File                     | #Pos |    F1(%)         | Exact% |")
-    print("|------|--------------------------|------|------------------|--------|")
+    print("| Rank | Name                           | #Pos |    F1(%)         | Exact% |")
+    print("|------|--------------------------------|------|------------------|--------|")
 
     for rank, r in enumerate(results, 1):
         file_name = os.path.basename(r["file"])
@@ -332,7 +332,7 @@ def main():
         f1_str = f"{avg_f1_pct:>5.1f}% ± {ci_plusminus:>4.1f}%"
         print(
             f"| {rank:>4} "
-            f"| {file_name:<24} "
+            f"| {file_name:<30} "
             f"| {r['positions']:<4} "
             f"| {f1_str:<16} "
             f"| {exact_pct:>5.1f}% |"

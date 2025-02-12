@@ -278,15 +278,15 @@ def main():
     print()
     print("Scoring Summary (Mate vs. Non-mate):")
     print()
-    print("| Rank | File                     | #Total | MateAcc% | Halluc% |  F1(%) |")
-    print("|------|--------------------------|--------|----------|---------|--------|")
+    print("| Rank | Name                     | #Pos | MateAcc% | Halluc% |  F1(%) |")
+    print("|------|--------------------------|------|----------|---------|--------|")
 
     for idx, r in enumerate(all_results, 1):
         name = os.path.basename(r["file"])
         print(
             f"| {idx:^4} "
             f"| {name:<24} "
-            f"| {r['mate_count'] + r['nonmate_count']:^6d} "
+            f"| {r['mate_count'] + r['nonmate_count']:^4d} "
             f"| {r['mate_acc'] * 100:7.1f}% "
             f"| {r['halluc_rate'] * 100:6.1f}% "
             f"| {r['f1_score'] * 100:5.1f}% |"

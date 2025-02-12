@@ -4,14 +4,21 @@ Random-chess is a simple yet revealing benchmark, that requires an LLM to reason
 
 As the positions are randomly generated, memory based answers are not useful, and the training set cannot be picked up during training because it is generated on-the-fly.
 
+There are currently 2 subtests:
+
+1. **random-chess**, which tests the ability to find *all* legal moves in a position
+2. **random-chess-mates**, which tests the ability to find *mate sequences*
+
 ## Key Features
 
-- **Anti-Memorization Test**: Generates unique positions on-the-fly through random play.
+- **Anti-Memorization Tests**: Generates unique positions on-the-fly through random play.
 - **Tests Real Understanding and Reasoning**: Tests move generation in positions the LLM can never have seen before, requiring actual reasoning *or* a deeper understanding of the board geometry *in* the model.
 - **Stochastic Benchmarking**: Prevents model gaming through unpredictable test sets (until someone embeds a chess engine in their API calls...), results are shown with confidence intervals.
 - **Progress Display**: Streaming mode for real-time thinking observation, comprehensive logging for analysis.
 
 ## How It Works
+
+### Random-Chess
 
 1. **Position Generation**:
    - Creates 200 unique positions via random play with some piece weighting to ensure diverse positions.
@@ -22,6 +29,18 @@ As the positions are randomly generated, memory based answers are not useful, an
    - Requires UCI-format move lists with a specific prefix for the answer.
    - F1 score for matching the legal move list, additionally computing the amount of exact answers.
 
+### Random-Chess-Mates
+
+1. **Position Generation**:
+    - Creates 100 unique positions through random play, where there is only a single move that gives mate-in-2.
+    - Creates 100 unique positions through random play, where there is *no* mate-in-2.
+    - Generates the legal moves through `python-chess`, checks suitability with Stockfish.
+
+2. **LLM Evaluation**:
+   - Presents FEN notation.
+   - Requires a structured answer, saying there is no mate, or what the mating move is.
+   - Calculates mate finding accuracy and the amount of mate hallucinations.
+
 ## Installation
 
 ```bash
@@ -30,13 +49,13 @@ pip install python-chess openai matplotlib
 ## Usage
 
 # Minimum required arguments
-python eval.py \
+python random-chess.py \
   --base-url "YOUR_API_URL" \
   --api-key "YOUR_API_KEY" \
   --model "MODEL_NAME"
 
 # Full-featured example
-python eval.py \
+python random-chess.py \
   --base-url "https://api.example.com/v1" \
   --api-key $LLM_API_KEY \
   --model "gpt-4o" \
@@ -51,30 +70,45 @@ export LLM_API_BASE_URL="your_api_url"
 export LLM_API_KEY="your_api_key"
 export LLM_MODEL="model_name"
 
-# Generating score report from logs
+# Generating score reports from logs
 python score-runs.py --files results/*.results
+python score-mate-runs.py --files results-mates/*.results
 
 ```
 
 ## Results
 
+### Random-Chess
+
 | Rank | File                     | #Pos |    F1(%)         | Exact% |
 |------|--------------------------|------|------------------|--------|
-|    1 | o1-preview (2024-09-12)  | 200  |  90.3% ±  2.5%   |  16.0% |
-|    2 | o1-mini (2024-09-12)     | 200  |  82.8% ±  2.6%   |   3.5% |
-|    3 | deepseek-r1              | 200  |  72.6% ±  5.0%   |   6.5% |
-|    4 | claude-3.5-sonnet        | 200  |  58.7% ±  1.9%   |   0.0% |
-|    5 | deepseek-v3              | 200  |  45.5% ±  2.1%   |   0.0% |
-|    6 | gpt-4o (2024-08-06)      | 200  |  37.1% ±  2.3%   |   0.0% |
-|    7 | claude-3.5-haiku         | 200  |  27.8% ±  2.8%   |   0.0% |
-|    8 | gemini-flash-2.0         | 200  |  11.3% ±  3.4%   |   0.0% |
-|    9 | gpt-3.5-turbo-instruct   | 200  |   1.7% ±  0.5%   |   0.0% |
+|    1 | o3-mini                  | 200  |  95.2% ±  1.8%   |  44.0% |
+|    2 | o1-preview (2024-09-12)  | 200  |  90.3% ±  2.5%   |  16.0% |
+|    3 | o1-mini (2024-09-12)     | 200  |  82.8% ±  2.6%   |   3.5% |
+|    4 | deepseek-r1              | 200  |  72.6% ±  5.0%   |   6.5% |
+|    5 | claude-3.5-sonnet        | 200  |  58.7% ±  1.9%   |   0.0% |
+|    6 | deepseek-v3              | 200  |  45.5% ±  2.1%   |   0.0% |
+|    7 | gpt-4o (2024-08-06)      | 200  |  37.1% ±  2.3%   |   0.0% |
+|    8 | claude-3.5-haiku         | 200  |  27.8% ±  2.8%   |   0.0% |
+|    9 | gemini-flash-2.0         | 200  |  11.3% ±  3.4%   |   0.0% |
+|   10 | gpt-3.5-turbo-instruct   | 200  |   1.7% ±  0.5%   |   0.0% |
 
 ![Graph of leaderboard](results/leaderboard.png)
 
+### Random-Chess-Mates
+
+| Rank | File                     | #Total | MateAcc% | Halluc% |  F1(%) |
+|------|--------------------------|--------|----------|---------|--------|
+|  1   | o3-mini                  |  200   |    12.0% |   81.0% |  14.7% |
+|  2   | claude-3.5-sonnet        |  200   |     7.0% |   51.0% |  12.2% |
+|  3   | deepseek-v3              |  200   |     1.0% |   25.0% |   2.0% |
+|  4   | gpt-4o                   |  200   |     0.0% |   53.0% |   0.0% |
+
+![Graph of mates leaderboard](results-mates/leaderboard.png)
+
 ## Future
 
-Current LLMs can not reliably determine the legal moves in a random chess position. If the state of the art advances enough that they are in the very high 90's exact matches, we can imagine extending the test with variations that require more reasoning.
+Current LLMs can not reliably determine the legal moves in a random chess position. If the state of the art advances enough that they are in the very high 90's exact matches, we can imagine extending the test with variations that require more reasoning. We added a first such test for mate-finding ability.
 
 Specific training on chess can obviously make [very high performance transformers](https://lczero.org/dev/wiki/best-nets-for-lc0/) dedicated to chess. This test is aimed at seeing how general LLM can deal with the required reasoning.
 

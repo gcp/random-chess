@@ -1,0 +1,201 @@
+FEN|IS_MATE_IN_2|BEST_MOVE|LLM_RESPONSE|CORRECT|ERROR
+r1bqkb2/1ppnpppr/7p/p2N3n/6P1/7P/PPPPPPBN/R1BQR1K1 b q - 0 10|False||Answer: Yes, d8h4|False|
+rnb1qb1r/pppp1n1p/8/2k1p1p1/2P3PP/3Q1P2/PP1PP3/RNB1KBNR w KQ - 2 13|True|d3d5|Answer: Yes, d3d5|True|
+6B1/1pnpk3/2rn3b/3P1P2/5q2/4P1pP/2P3P1/4K2R b - - 8 40|True|f4e3|Answer: Yes, f4f1|False|
+rq2kb1r/pBp1pnpp/1p3n2/3p4/2P2P2/4P2P/PP1P2P1/RNB1K1NR b KQk - 0 11|False||Answer: No|True|
+1rb1k2r/pp1p4/7n/5Pp1/2qNn3/1P2KN2/2P4B/8 b - - 0 40|True|h6g4|Answer: No|False|
+r2qkbnr/p1pbpppp/n7/1p1p2N1/P2P4/1PN5/R1P1PPPP/2BQKB1R w Kkq - 0 8|False||Answer: No|True|
+2k2br1/pbnrp1p1/2p5/5p2/P3nP1N/3P3p/RPP4R/2B1K1Q1 b - - 0 37|False||Answer: Yes, e4f2|False|
+rrb3k1/7p/p2pp2B/1B3pp1/1pP1P3/1n1n4/3N1PQ1/R4K2 w - - 0 39|True|g2g5|Answer: No|False|
+rq2kbn1/pbpppppr/n7/1p5p/2P4P/1P3NPR/P2PPP2/RNBQKB2 w Qq - 3 12|False||Answer: No|True|
+r1b3k1/pp1Q1ppp/7n/1qp1p3/rn2PN2/2N2Pb1/1PPP1RPP/R1B1K3 w Q - 0 17|True|d7d8|Answer: No|False|
+2bk4/3pp2p/6P1/1pp5/3Q1n2/p2PPr2/PbP3r1/4K1R1 b - - 2 37|True|g2g1|Answer: Yes, f3f1|False|
+2q1kb1r/2pNpp2/1r5p/pp6/2PN1np1/PQ1P2PP/1P1P2b1/R1B1KBR1 w k - 1 20|False||Answer: Yes, d7f8|False|
+r7/p4k1p/p3b3/1np1p3/5P2/3p1R2/PBP3PP/1R4K1 w - - 0 38|False||Answer: Yes, f3f7|False|
+1n5r/1pp2pp1/r2b1k1p/p3N2Q/2PqP2P/7R/PP1P2P1/RNB1K2n w Q - 3 16|True|h5f7|Answer: Yes, h5f5|False|
+2q1kbnr/rpp1pp1p/7B/p1np2P1/4b1N1/2PP4/PP2PPP1/RN2KB1R b KQk - 1 14|False||Answer: No|True|
+r1q2b1r/p1pkn1p1/3p4/1pn1pP1N/1P5p/Bb1P4/P1P1PP1P/RN1QK1R1 b - - 6 17|False||Answer: No|True|
+r1bqkbr1/p1nppp1p/6p1/1pp1N3/7P/P2P1N2/1PP1PP2/1RBQKB1R b Kq - 1 11|False||Answer: No|True|
+r1b1kb1r/2pp1ppp/p3p3/1p1P2q1/1n1Q2P1/P6P/1PP1P1P1/1RB1KBNR b Kk - 2 13|False||Answer: No|True|
+2k1rb1r/p3pppp/npp2n2/3p4/P2PP3/R1K1B3/1PP1bPPP/3R2N1 b - - 6 22|True|f6e4|Answer: No|False|
+2bqk1nr/1r2p3/p2p1p1b/n4Qpp/6PP/P3PB2/1P1P1P2/RNB1K1NR b KQk - 1 18|False||Answer: No|True|
+1rbqk1r1/b1Pp1p1p/p1n1p1p1/1N6/1P2P2P/2P1nR2/P4PPB/1R2KB2 w - - 5 22|True|b5d6|Answer: No|False|
+1r4r1/4pk1p/1p1p3b/pRp1n1p1/4PNb1/8/Pq1PBPP1/RNB2K2 b - - 5 27|True|b2c1|Answer: No|False|
+r3k2r/pbqpppbB/np5p/6p1/2p3P1/PP6/2PPPP1P/RNB1QnK1 b kq - 7 19|True|c7h2|Answer: No|False|
+rn2k2r/1ppb2pp/p4p2/8/P1P2Pn1/N5Pq/1P1PP3/R1BQK1NR b Kkq - 0 15|True|h3g3|Answer: No|False|
+2bqk3/rpp4r/6nb/P2ppppR/3Bn3/3PK3/PN2PP2/R2Q1BN1 b - - 2 25|True|g5g4|Answer: No|False|
+3r1bnr/ppp1p1p1/5pB1/2n1k2p/2bRP2N/7P/1P2NPP1/2B1K3 w - - 0 27|True|h4f3|Answer: No|False|
+1rb1k3/pp1pbn2/6p1/2p2pqr/1PB3R1/8/P1NP1P1P/R1B1K3 b Q - 2 32|False||Answer: No|True|
+2Q4N/p1p2pb1/4pk2/1r3Ppp/b3P2P/N2P4/1PP3R1/R1BK4 w - - 5 37|True|c8d8|Answer: No|False|
+r1bqkb1r/p1ppp2p/2n4n/1p3pp1/8/2N2NPP/PPPPPP2/1RBQKBR1 b kq - 2 6|False||Answer: No|True|
+1rbqkb1r/ppppp1pp/n7/2P2P2/6N1/P1n3PB/RP1PP2P/1NB1K2R b K - 2 14|False||Answer: No|True|
+2r5/rb1R2N1/npp5/2k5/8/2P2PP1/PB6/6KR w - - 11 37|True|h1h5|Answer: Yes, d7d5|False|
+2bN1bk1/1p1nn2p/3rq1p1/BPp2p2/8/P3PP2/4B1PP/2R1K1R1 b - - 3 34|False||Answer: No|True|
+rn2kb1r/3qpppp/3p3n/ppp5/1P2P3/2N2PPN/b1PPK2P/R1B1QB1R w kq - 1 13|False||Answer: No|True|
+Q1b1kb1r/8/5p1p/2PpNn2/3R3P/3r4/P3PPPR/2B1KB2 w k - 0 33|True|a8c8|Answer: Yes, d4d8|False|
+r3kN1r/4nppp/1q6/p1p5/PP2p3/7R/3PPPP1/RNBK1B2 b kq - 0 22|False||Answer: No|True|
+b1rk4/1R3p2/p1pp2r1/1p3BPR/1P1p4/3P4/Pb1P1KP1/2BQ2N1 w - - 0 38|True|h5h8|Answer: Yes, b7b8|False|
+1r3kr1/R4pbp/3n4/1bPpp3/4N2N/4PqP1/2P3P1/1Q2KB2 b - - 6 33|True|f3f1|Answer: No|False|
+1n3k1r/4b2p/N1p1p3/2rP2p1/3P1P2/q6b/1P4R1/2R1K3 b - - 2 38|True|a3e3|Answer: Yes, a3e3|True|
+5nr1/N2k1p1p/6p1/b7/1p2rP1P/P5PR/RBPP4/3K4 w - - 6 40|False||Answer: No|True|
+1r6/1p4kp/1N3p2/3QN2R/1r6/2K1n3/2P1PPBP/7R w - - 1 39|True|d5f7|Answer: Yes, d5e6|False|
+2b1k3/5pp1/pqn4r/3r1n1p/pPP1P1P1/P4P1P/1R1P4/2BQK3 b - - 0 22|True|b6g1|Answer: Yes, f5e3|False|
+2b2r2/p2p1qkp/8/3Npp2/3PBb1P/R4P2/2P5/5K2 b - - 4 37|False||Answer: No|True|
+rnb1kb1r/p1q2ppp/1pppp2n/1B6/4P2P/8/PPPP1PPR/RNBQK1N1 w Qkq - 2 7|False||Answer: No|True|
+2b1kbnr/1pqppppp/n7/8/p1PpP3/3PBPr1/PP2Q1PP/R3KBNR w Kk - 4 16|False||Answer: No|True|
+r1b3n1/pp1k2q1/n2p3r/2p1pp1p/2P3P1/bP3P2/2NPP2P/1RB1KBR1 w - - 0 28|False||Answer: Yes, b1b7|False|
+rnr5/p1ppkpp1/8/3bpn1p/1P1Bq1PN/4P2P/P2P1P2/RN1QKB2 w Q - 0 21|False||Answer: No|True|
+r1b1kbr1/4pppp/2pp4/pp2nP2/1N2n3/q5PP/1PPPP1B1/R1BQK1N1 b Q - 3 21|True|a3g3|Answer: Yes, a3a1|False|
+2krbbnr/p6N/4pp2/3p1P2/3q4/2nP2PB/2PKP2P/R6R b - - 4 26|True|c3e4|Answer: No|False|
+4k2N/p1b3p1/7B/3pp2p/P1pP1rbP/8/5P2/Q3KR2 b - - 1 37|True|c7a5|Answer: No|False|
+rn1k1b2/pp3pp1/2n5/2pp1bp1/P6r/2P2P2/1P1PB2P/R1BK1RN1 w - - 1 24|False||Answer: No|True|
+2b3n1/1p2k1b1/5p1p/1qp5/r1P1PppP/P7/1PRN2P1/1Q2K2R b - - 0 29|False||Answer: No|True|
+r1bk2nr/pp2bpp1/3p4/4p1BR/P1N5/6P1/R3PP2/4KBN1 w - - 0 18|False||Answer: No|True|
+rnbk2nr/1p1pp2p/1q6/2p2pb1/1p1PP3/2N2QP1/P1PB1P1P/2K1RBNR b - - 1 13|False||Answer: Yes, b6b2|False|
+1Nb1kbn1/rp1p2p1/4q3/p1P4p/Pn2p3/1P6/1BRPBPPP/1N2K1R1 w - - 4 23|False||Answer: No|True|
+4k3/r1p2r2/b2pqpp1/2p4p/PN4P1/1R3PPB/n2P1R2/3K4 b - - 1 30|True|e6b3|Answer: No|False|
+r5r1/1pN2pk1/p2pq3/4nn1b/1P6/2P4N/P5B1/1RB1K2Q b - - 4 39|True|e5d3|Answer: Yes, g8g1|False|
+1rb1k1nr/pp1p2pp/n1p1pN2/5p2/P7/Pq5P/2PPPPPR/1NBQKB2 b k - 4 13|False||Answer: No|True|
+1r4r1/1pkbp3/p1Pp1npb/2P2P2/4P2p/2P2P2/P1N3RP/R3K1NB w - - 1 34|False||Answer: Yes, g2g7|False|
+4k1rb/2p1pN2/rp2q3/p6p/2R3Q1/PbP4B/3B1P1P/5KR1 w - - 1 30|True|g4g8|Answer: Yes, g4g7|False|
+rnb1kb1r/1Qqppp2/p1p5/6pp/2P1n3/NP3N2/P2PPPPP/R1B1KB1R w KQkq - 0 9|False||Answer: No|True|
+r2qkbnr/p1ppp1pp/b4p2/1p3P2/P2n4/N1P5/RP1PP1PP/2BQKBNR b Kkq - 2 8|False||Answer: No|True|
+rnb1kb1r/p3pppp/3p4/1p6/1q1n4/B3PP1P/P1PP2PR/RN1QKBN1 w Qkq - 0 10|False||Answer: No|True|
+3r1b2/1p1kp3/3B2pr/8/4Pp1p/N1PB3P/4QPP1/1R2KbNR b K - 1 36|False||Answer: No|True|
+rqb1k2r/p1pn1pp1/4p2p/4P1b1/1p1p4/BP2N3/PRPPP1PP/2Q1KBR1 w kq - 4 20|False||Answer: No|True|
+3k2r1/R1prn1pp/1N2q3/1p2p3/3P4/3PKNP1/3B1PR1/3b1B2 b - - 14 36|True|e5d4|Answer: No|False|
+1q3b1r/2pp2pp/2bkp2n/P3p3/N1P2P2/4P1PN/3P3P/Q2R2K1 w - - 1 31|True|a1a3|Answer: No|False|
+2b5/3pbnp1/2p1k1P1/rp5p/3R3P/1P2K3/4P3/6Q1 w - - 0 40|False||Answer: Yes, g1g3|False|
+r3k3/p2b1nQ1/n1p1p3/1p6/5b2/1r6/P1PBPN2/3K2R1 b q - 7 34|True|b3b1|Answer: Yes, b3d3|False|
+r3k1r1/2R3p1/6Np/pb3p2/Q4P2/7P/4BnP1/4K2R w - - 2 41|True|a4b5|Answer: No|False|
+r1bq1rk1/1pppppbn/p7/4n1p1/8/4P2P/PPPP1PP1/1RBQK1NR w K - 0 9|False||Answer: No|True|
+7r/3p1kb1/1pN1pnpB/2p2p1p/6n1/3PP1q1/PPP2rPP/1R1QKBR1 b - - 3 28|True|f2e2|Answer: Yes, f2f1|False|
+r1q1k2r/p1pp1ppp/bpn2n1B/4N3/1b1P4/1K3P1N/PPP1P1PP/R2Q1B1R b kq - 0 10|False||Answer: No|True|
+2r1k3/1p2pp2/p1p4r/q6n/1n1PP1Q1/B4P2/P1P2KPP/4R1NR b - - 0 32|False||Answer: Yes, h5f4|False|
+r1b1k3/1ppq1p2/7n/p7/3P1prp/5P1N/PPPB2PP/RN2K2R w KQq - 0 21|False||Answer: No|True|
+1rb5/pp3r1p/4pkN1/P1p5/3P1P2/2P3PP/1P1nq3/R1B2RK1 b - - 3 35|True|e2f1|Answer: No|False|
+2bk2nr/Bppp2p1/p4q2/3p2P1/P1Pb1P2/7Q/3KP2P/RN4R1 b - - 2 23|False||Answer: No|True|
+3qkbnr/r1ppp1p1/p6p/5p2/p1B1bP2/4P2N/NPPP2PP/R1BQK2R w KQk - 4 14|True|d1h5|Answer: Yes, h3g5|False|
+r1bk1b2/1p1ppr2/p1n2Bpp/1N3p2/P1P5/5P1P/1P3PP1/3RKBNR w K - 1 24|False||Answer: Yes, d1d7|False|
+r1b1k2r/p1ppnppp/1p2pn2/3q1P2/1b4B1/P7/1PPPPR1P/R1BQK1N1 b Qkq - 2 15|False||Answer: Yes, d5b3|False|
+rn3br1/ppp1p1p1/5p2/6kp/1PP1Q1B1/4P1P1/P2PNP1P/1RB1K1NR w K - 0 23|True|e4f5|Answer: No|False|
+1bkr2r1/3n2pp/pQ3pb1/P2p4/1P3P2/N1Pn1N1P/3B2P1/R4K1R w - - 5 37|True|b6a6|Answer: No|False|
+r6r/p1p3n1/b2k1pN1/1pb1pPP1/1PPP4/3Q4/3KB2R/2R3N1 w - - 3 32|True|d4c5|Answer: Yes, d3d5|False|
+r1b3n1/p1ppn1b1/3kNB1q/1p3P2/1PP5/2N5/P2PP1rP/4KB1R w K - 0 22|True|c4c5|Answer: No|False|
+r3k1n1/pp2p1Q1/4b1pr/2ppbp2/6P1/1P2P1pB/PB1K3P/R6N w - - 4 32|False||Answer: No|True|
+3q1knr/B3p2p/p1pb4/3P4/N7/4P3/P1P3PP/R4BK1 b - - 2 37|False||Answer: No|True|
+2k4r/2p1bpqp/3r4/Bn1bp3/1N3P2/R2n4/P5PP/5KR1 b - - 0 33|False||Answer: No|True|
+rn2kbnr/pp2p1p1/7p/q1pp1b2/2NP1p1N/8/PPPQPPPP/R1B1KBR1 w Qkq - 5 9|False||Answer: No|True|
+Q1n4k/8/8/5p1p/pp6/2P1pBPP/1P2P2R/2NRK1N1 w - - 0 40|True|d1d7|Answer: Yes, h2h6|False|
+r1bqkbnr/1pp2ppp/2n5/p2pp3/PP3P1P/8/2PPP1PR/RNBQKBN1 w Qq - 1 11|False||Answer: No|True|
+2r1k3/p4p1r/2pp4/Q3pBp1/4n3/N4q2/3P1P1P/6K1 b - - 0 34|True|f3f2|Answer: Yes, e4f2|False|
+b3r2k/p3qppp/8/1p2p2P/6P1/PPP1nP2/4P3/1nR1K1R1 b - - 4 33|True|e7h4|Answer: No|False|
+r1bk2nr/pnp4p/3p1NQ1/1p2pp2/1b2Pq2/8/P1PP1PPP/BR1BK2R b K - 1 14|True|f4d2|Answer: No|False|
+rnb1kbnr/1pp1ppBp/p7/3q4/5NP1/1P1pP3/P1PP1P1P/RN1QKB1R w KQkq - 1 9|False||Answer: Yes, f4e6|False|
+2rqkb1r/p2ppNB1/n5p1/1Np2p2/1P4np/5b2/PQPPPP1P/R3KB1R w KQk - 8 15|False||Answer: No|True|
+rnb1r3/1Qppkpp1/p4N1R/4p1b1/2P5/PP3N2/1B1PPPP1/3RKB2 w - - 1 16|True|f6d5|Answer: Yes, nf6|False|
+2kr1bnr/pp3pp1/B1ppb3/4q2p/2Q2PP1/N3P3/PPPP3P/R1BK1R2 w - - 2 15|True|c4c6|Answer: No|False|
+6nr/1rp5/4pk1p/1p1p1Pp1/1b6/nR2P3/P3BP1P/3K2NR w - - 0 40|False||Answer: No|True|
+r1b1k2r/1p1p1ppp/p2pP3/6b1/1P1nn1PR/6qB/P1P1PP2/RN2K3 b Qkq - 2 16|True|g3f2|Answer: Yes, e4f2|False|
+B3k1nr/2pqp3/n2p2Rp/1r3p2/7b/2PPP3/PP2K2P/1RB5 w k - 10 31|False||Answer: Yes, b1b8|False|
+r1k3n1/3pr3/4pPPb/Q7/8/N2PB3/bRP1P3/5K2 w - - 3 41|True|a5a8|Answer: No|False|
+r1b1k1nr/3p1ppp/8/1pp2q2/Pb1p3P/4Pn1N/1P3PP1/1RBK2R1 b k - 1 23|True|f5d3|Answer: No|False|
+6k1/2N2p2/q5p1/p2N2bp/6RP/Prn1rP2/1Pb1P1P1/2R1KB2 b - - 1 40|True|e3e2|Answer: No|False|
+1nbqkbnr/2p1p2p/r4p2/pp1N2p1/3Q4/2P4P/PP1PPPPR/RNB1KB2 b Qk - 6 12|False||Answer: No|True|
+1rb3r1/3pbppp/4k2n/p1pnp3/2PPP2N/4Q3/P2BKPPP/1R3BNR w - - 1 24|True|e4d5|Answer: Yes, g4f6|False|
+4k2r/prpp3N/1p3Bp1/n6B/2b1p3/4PPP1/P2P3P/Qn1RK2R w K - 2 31|True|h5g6|Answer: Yes, h7f8|False|
+3k1r2/R3NBp1/2bpp3/2p5/Pp2P1Q1/8/1PPP1bKP/1RB3n1 w - - 4 39|True|e7c6|Answer: No|False|
+1r2k3/p1p2prp/np1pp2b/6p1/5Q1n/1P1PP3/P1PBNPP1/2KR1BR1 b - - 4 20|False||Answer: Yes, b8b1|False|
+r4bn1/pbppk3/3N2p1/1R3p1r/2P2Q2/NP2B2B/P4PPP/2K4R w - - 0 24|True|f4e5|Answer: No|False|
+3k2r1/pb1p1p2/1rp4p/1p2N1P1/P2PB3/1Pn5/2P2KPP/1RR5 b - - 1 38|False||Answer: No|True|
+r1b1kb2/p2p1p2/n4n2/5NPB/1pp1PP2/8/PPPBK3/1R1Q2qr b q - 1 28|True|h1h2|Answer: No|False|
+4kb1r/p1p4p/qr2p2n/1R1p2p1/b1PPn3/4B1P1/1P3PNP/3NK1R1 b k - 0 32|False||Answer: No|True|
+r1bk3r/pp1B4/5b2/2Pp3p/q7/PP2P2n/5P1P/4R2K b - - 2 35|True|a4e4|Answer: Yes, a4c2|False|
+rn3kr1/2N1pp1p/1p1p1Bbb/p7/3q2PQ/5P1P/1PP1Pn1R/4KBN1 w - - 1 29|True|h4h6|Answer: No|False|
+r1bqkb1r/1pp1p2p/p4ppn/3pn3/6PN/2N5/PPPPPP1P/1RBQKB1R w Kkq - 5 8|False||Answer: No|True|
+2brkb2/p1p3p1/5pp1/3B1PB1/7P/1n6/Pq2P3/3K4 b - - 2 38|True|b2b1|Answer: Yes, d8d1|False|
+1rbqkb2/pppppnpr/5p2/7p/P1P5/N4P1P/1P1PP1P1/R1BQKBNR w KQ - 1 12|False||Answer: No|True|
+r3k2r/1p1Nb1pp/3ppp2/p2R4/Pn2b1n1/8/2PPPPPP/Q1B1KB1R b K - 0 27|True|b4c2|Answer: Yes, b4c2|True|
+Nn1k4/3r3p/1p6/pQpr2pB/1R2P2P/N1B2Pp1/P1P1P1b1/5RK1 w - - 1 38|True|b5b6|Answer: No|False|
+r2qk3/pbppp3/np3n2/1B3p1p/8/6QR/P1P1N1P1/1RB1K1N1 w q - 4 20|True|g3g6|Answer: Yes, g3g7|False|
+4rbnr/p3k2p/b3pp2/3P2p1/2p3P1/P5RP/RPPP4/1NBQKB2 b - - 0 25|False||Answer: No|True|
+r3kbnr/p2qp1pp/n1pp1P2/8/1P6/N1P5/PR1PKPbP/2BQ2NR b kq - 0 11|True|d7e6|Answer: Yes, d7d3|False|
+r1b2r2/2ppBk1p/3Q4/ppP2p2/P7/4pPpP/1PP3P1/R3KBR1 w - - 0 28|True|d6f6|Answer: No|False|
+2k3r1/p1p3pQ/4p3/4PRP1/Bq6/1R2P2N/P1PB2r1/4K3 b - - 1 39|True|b4d2|Answer: Yes, b4b1|False|
+rn2k2r/3p1p1p/p3p1p1/1p5Q/3bq3/Nb1P3P/PP1K1PP1/1RB3NR b q - 1 29|True|e4f4|Answer: Yes, e4c2|False|
+3k4/1n6/p2pp3/5np1/P3P1P1/4N1bP/bq1P4/r3R1K1 b - - 1 40|True|f5e3|Answer: Yes, f5h4|False|
+rn1k1br1/1q2pppp/p7/P1p4P/1Bn3N1/3P3b/1PP2K2/6N1 b - - 5 39|True|b7g2|Answer: No|False|
+1rbn1knr/3pp2p/p4p2/1p6/2P2b1P/3P1PP1/qP2PQB1/2B1R1K1 w - - 7 28|False||Answer: No|True|
+1r1qk1rb/pp2pp2/3nb2p/2pp2N1/8/3PPQPP/nPP2P2/1RB1KBR1 w - - 4 25|False||Answer: Yes, f3f8|False|
+r1b1k1r1/p1np1pp1/1p1p3R/4P3/8/1N1q2P1/PP3PP1/K2R1B2 b - - 2 32|True|d3d1|Answer: No|False|
+2b1kbnr/r1pp2p1/ppn1p3/2B2p1p/2PP1P1P/N5q1/PP2P1P1/RQ2KBNR w KQ - 9 17|False||Answer: No|True|
+r1bqkbnr/p1pp3p/1pn2p2/1B2p1p1/4N3/1P2P1PN/P1PP1P1P/R1BQK2R w KQkq - 3 10|False||Answer: No|True|
+2bqkb1r/rppppppp/7n/8/5P1P/P3P3/1PQP2P1/RNB1KBNR b KQk - 0 7|False||Answer: No|True|
+r1b1k1r1/q2pppb1/pB4pn/7p/P7/2P2PPP/3KP3/RN2nBNR w - - 0 25|False||Answer: No|True|
+2B5/2p1nn2/bp1k1pp1/8/PP1q3P/3P1Pb1/2P1K3/R1B1R1Q1 b - - 6 40|False||Answer: No|True|
+3k1r2/4q1p1/1pp2p2/2np3Q/pB4PP/3P3B/PPP1PP2/3RK2R w - - 1 38|False||Answer: Yes, b4c5|False|
+r1b1kb1r/p1qnp2p/1p1p1n2/1P2PpN1/2p1RP1P/N7/P1PP2P1/2BQKB1R b Kkq - 4 20|False||Answer: No|True|
+Nnbk4/ppqp4/B4p2/4p2p/6pQ/7N/PP1r1PPP/1RB1K2R w - - 0 23|True|h4f6|Answer: Yes, h4g4|False|
+rnb2N2/pp2kpp1/2pq4/2B1p1R1/7p/1P5n/P1PP1rPP/RN5K b - - 5 27|True|f2f1|Answer: No|False|
+rnb1kbnr/pppp1ppp/2q1p3/5Q1B/8/8/PPPP1PPP/RNB1K1NR w KQkq - 4 8|True|f5f7|Answer: Yes, f5e6|False|
+5Br1/4pk1p/1p4p1/rN1p1p2/2pq2P1/7P/3QPRB1/4K2N b - - 0 34|True|a5a1|Answer: Yes, c4c1|False|
+r2qkb1r/pbpp1p2/1pn1nQ2/6pp/8/3P1PB1/PPPNP1PP/3RKBNR b Kkq - 5 11|False||Answer: No|True|
+4kb2/4n3/2R3p1/1q1p1p2/1B2p2r/5PPP/1P1N1P2/4K2R b - - 2 39|False||Answer: No|True|
+2bqkb1r/2p1p3/5Q1p/2Pp1pP1/8/2NP4/PPnBNRPP/R5K1 w - d6 0 25|True|f6g6|Answer: Yes, f6f7|False|
+r1bqk1nr/pp1p3p/n3pp1b/1Np3N1/2P1P3/1P1P4/P4PPP/R1BQKB1R w KQkq - 1 9|True|d1h5|Answer: No|False|
+r3k1nr/pbp1pp1p/3p1qpb/1p3P2/1PPP2n1/P7/RB2P1BP/3QK3 b kq - 2 25|True|f6h4|Answer: Yes, f6f1|False|
+1q2kb2/1p2p1r1/2p2p1p/3P2pR/4P1P1/1PP5/1P2N1PP/2K2BR1 w - - 1 38|False||Answer: Yes, h5h8|False|
+1n3br1/rppkp1p1/4N1bp/p2p1N2/1P3P2/Pn1QKB1P/2P5/1RB4R w - - 5 33|True|d3d5|Answer: No|False|
+2b1kbr1/1r1p1pp1/ppN4p/4p3/2N2Q2/2P5/PPnPPPq1/R1BK1BR1 w - - 0 19|True|f4e5|Answer: No|False|
+2bk1r2/1rpp4/p5p1/3qQp2/1np4P/1P2B2N/P3PKP1/RN3B1R w - - 3 36|True|e3g5|Answer: Yes, e5e8|False|
+rnb1k1nr/pppp1pp1/4p2p/4B3/1b6/2NP4/PPP1PPPq/R2QKBNR w KQkq - 0 7|False||Answer: No|True|
+3rkbnr/p1B1pppN/1p6/4n3/2P1N3/3P4/PP2bP1P/3RKB1R w Kk - 0 21|False||Answer: No|True|
+rn2kbnr/pbqp2pp/1p2p3/2p2pN1/1P3P2/2N5/PRPPP1PP/2BQKB1R b Kkq - 5 9|False||Answer: No|True|
+r3kb1r/1b1ppp2/p1p4p/4B3/1QP4P/q1P2P2/1P2P1Pn/3RKBNR b kq - 0 20|False||Answer: No|True|
+r3k2r/Npppbpp1/n3p2p/8/nP6/2q2P1P/2PPP1P1/R1BQKBNR b Kkq - 1 12|True|e7h4|Answer: Yes, c3c2|False|
+r1r3k1/p1N3qp/1p2p2b/2Pp4/n3PBp1/7P/2P2PR1/R3KbN1 b Q - 3 27|True|g7a1|Answer: No|False|
+3q2R1/1rppk3/1p2r3/bb5p/3n1Q1P/n1PPPPP1/3KB3/B7 w - - 7 38|True|g8g7|Answer: No|False|
+Q1r1n2r/2k5/1p1p1p2/pP5p/5N1P/P5P1/3N1P2/R5K1 w - - 2 40|True|a8a7|Answer: Yes, a8a7|True|
+2b1kbnN/r3p1pr/p4p2/1pppn3/3P1P1p/4P3/PPPQ2PP/R4RK1 b - - 5 26|False||Answer: No|True|
+4kbr1/n1Qppppp/rp6/pN2Nb2/6n1/2P4P/PP3PP1/1RB1KB1R w K - 7 22|True|c7b8|Answer: Yes, c7d8|False|
+rn1k1r2/4b3/p2p4/1pp3pN/1P6/B2pP2b/2PP1PPR/4K1N1 b - - 3 31|False||Answer: No|True|
+r1q2b2/ppp1pppr/2Npk3/1NQ3Pp/b3nB2/3P1P2/PPP4P/R3KBR1 w Q - 3 19|True|f1h3|Answer: No|False|
+r1b1kb1r/pp3ppp/2pppn2/2n5/P1q2P1P/1P2P2N/3PB1P1/RNBQK1R1 b Qkq - 2 11|False||Answer: No|True|
+1rb1kbr1/pp1p2Bp/7N/2p4n/2P2PP1/5R2/Pq1n4/3NK3 b - - 1 28|True|d2f3|Answer: Yes, b2d4|False|
+2b2q1r/4p2p/1pp2nkb/p5p1/P4pP1/2nN4/1PPPPP1P/R1BQK2R w - - 10 30|False||Answer: No|True|
+2b1kb1r/pr4n1/2p5/1p1p1P1p/3P1PpB/2PP2QP/PP1N2B1/1R2K1NR w K - 0 33|False||Answer: Yes, f3f7|False|
+r1b1k2r/pppp2bp/B4p2/4p1p1/4P2R/q1PPBPP1/2P5/RNQ1KnN1 w kq - 2 21|False||Answer: No|True|
+3r1kr1/ppb3pn/1PQ1ppq1/3p4/3P1p2/N3PP1P/PB6/2RK1b2 b - - 4 34|True|g6d3|Answer: No|False|
+1r2k1n1/ppb3p1/2p2p2/4p1q1/1P2bPp1/B1NP4/PRP4r/3Q1RK1 b - - 3 30|True|h2g2|Answer: No|False|
+r3k1n1/3n1pr1/pR3R1p/2NppNp1/Q4bP1/2P5/P3PP2/4KB2 w q - 4 39|True|a4d7|Answer: Yes, a4e4|False|
+r5n1/1p3kr1/1Qp1q1p1/p1PppbBB/P6P/3P3R/1P3P2/1R2K3 b - - 0 36|False||Answer: No|True|
+rn3k2/p4p2/8/1Rp1qP1p/P1P3pP/3P1nP1/2B3K1/2R5 b - - 0 39|True|e5e2|Answer: Yes, e5e2|True|
+rn1rq3/1b1k2pN/P2bpp2/B2Q1P2/PN2P3/RP1p4/6P1/4KBRn w - - 1 32|True|d5b7|Answer: Yes, d5d8|False|
+rnq1kbnr/ppp1p1p1/3p1p1p/8/5P1P/3PR3/bPP1P1P1/RNBQKBN1 b Qkq - 3 7|False||Answer: No|True|
+rn6/p1ppq3/1p3kP1/8/1P1p1bp1/N7/PB1P3P/Rn1B1K1b b - - 1 34|True|b1d2|Answer: Yes, e7e1|False|
+rnbqk2r/p1pppp2/5npp/1B1NQ3/5b2/PP2P3/2PP1PPP/R1B1K1NR b KQkq - 2 8|False||Answer: No|True|
+4kbn1/5r2/4pp1p/2p4P/prP3n1/pN1RPP2/P2Q4/2K2B1R w - - 4 38|True|d3d8|Answer: No|False|
+1rb1k2r/1pp2n2/p3P3/3PN2p/P1P2P2/q5P1/1P2B3/nN2K3 w - - 12 38|False||Answer: No|True|
+r3n3/p2k1npr/2p1p3/3p2p1/6P1/Q6P/P2P1P1R/R1B1K3 b - - 5 34|False||Answer: No|True|
+rn6/pbp2k1p/Q7/4p3/1p1P1N1P/4PPKR/P5P1/1RB2B2 b - - 2 39|False||Answer: Yes, b7e4|False|
+r1q1k1r1/2p2pp1/2bbp3/1p5P/Pn1PpP2/P1N1B1RN/Q3R2P/4KB2 b - - 1 26|False||Answer: No|True|
+1q2kbn1/1rp1pppr/8/p2B3p/PR1Q4/4PPN1/1PP3PP/2B1K2R b K - 0 20|False||Answer: No|True|
+4k2r/rp1b1p1p/8/p2p4/2QbqNP1/1P5B/2P4P/2K4R w - - 0 35|False||Answer: Yes, c4c8|False|
+1Bb1k3/1p1ppn2/2p1P1pr/2qB3p/1P3p1P/6r1/R2P1PP1/2Q1KN2 w - - 0 36|False||Answer: Yes, c1c8|False|
+r1b2b2/1p2knp1/p3pp2/P1pp1Q2/2N5/R1P2P1P/1B1KP2n/1q3B2 w - - 4 41|False||Answer: No|True|
+Q1b1k1nr/p1p1ppBp/3p1b2/1p6/1PqPP1p1/P7/2P2PPP/Rn2KBNR b KQk - 1 19|True|c4c3|Answer: Yes, c4c2|False|
+rn2kN1r/1bqpppb1/5n2/1pp1P2p/p6P/5p2/PPPP1PP1/RNB1KR2 b Qq - 1 17|True|c7e5|Answer: No|False|
+1n2k2b/1b6/2p1r3/1p5p/PP1PN3/4P1p1/2P1P3/3RKB2 w - - 4 41|False||Answer: No|True|
+r3k2r/pbBppp1N/5npb/1p6/1P6/P6P/2P1PPR1/RN1QKB2 w Qkq - 1 14|False||Answer: No|True|
+b3kb1r/R2pp1qp/1r2BnN1/1pp1pnpQ/8/1P4PP/2PP1P2/3K3R w k - 7 30|True|a7a8|Answer: Yes, h5e5|False|
+r1b1k1r1/1p1p3p/p7/2BN2p1/2P1p3/6PN/PQ1nK3/R4BR1 w q - 1 36|True|b2f6|Answer: No|False|
+1n1qkb1r/1pp1pp2/r2p3B/p3n3/P1b1P3/2PP1N2/1PN2PPQ/R3KB1R b K - 4 16|False||Answer: Yes, a6a1|False|
+4kbn1/2p1ppp1/rp2N2Q/p2p3p/7P/R5P1/P1PPB3/BN2KR1q w - - 5 34|True|e2b5|Answer: No|False|
+1r3b1r/ppp2pp1/n5k1/Pn2q1Np/1P2P1b1/3P3P/2PK2P1/R4BNR b - - 0 32|False||Answer: Yes, e5c3|False|
+4kbnr/rbppn1p1/1p1p1p2/p5Pp/PP6/3P1P1P/2P5/R1BQKBNR w KQk - 0 14|False||Answer: No|True|
+5kn1/2N1pr2/1p4pb/2pQnp2/8/r1PbPP2/PP4PP/R1BB2K1 w - - 2 29|True|c7e6|Answer: No|False|
+7r/5kpp/p7/3ppb2/PB2P1nb/1Q2P3/2P1NP2/RN2K3 w - - 4 36|False||Answer: Yes, b3f7|False|
+4k3/r2p2pp/b1pb4/pN2pR2/n1BN4/B6P/PPK3P1/6R1 w - - 2 35|True|a3d6|Answer: Yes, b5d6|False|
+3qkNnr/4p1b1/1p1p1p1p/P5p1/P1pN4/2P3P1/3PbP1P/BQ1RKB1R w k - 0 33|True|b1g6|Answer: Yes, d1d8|False|
+rnbqkbn1/pp2pppr/8/1Npp3Q/8/2P1P2N/PP1P1PPP/R1B1KB1R w KQq - 0 7|False||Answer: No|True|
+1rb1k1n1/3pp1Q1/pp5B/3nRr1p/3PP2P/P3qBP1/5P2/1R2N1K1 w - - 4 35|True|g7g8|Answer: No|False|
